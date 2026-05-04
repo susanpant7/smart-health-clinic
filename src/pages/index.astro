@@ -1,99 +1,178 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import DoctorSlider from '../components/DoctorSlider.astro';
 ---
 
 <Layout>
-  <!-- HERO SECTION -->
-  <section class="relative overflow-hidden bg-white py-16 lg:py-24">
+
+  <!-- HERO -->
+  <section class="relative overflow-hidden py-16 lg:py-24">
+    <div class="absolute inset-0">
+      <img src="/images/clinic-hero1.png" class="h-full w-full object-cover" />
+      <div class="absolute inset-0 bg-gradient-to-br from-clinic-slate/90 via-clinic-slate/80 to-clinic-teal/70"></div>
+    </div>
+
+    <div class="relative container mx-auto px-4 text-center text-white">
+      
+      <div class="mb-4 inline-flex items-center rounded-full bg-white/10 px-4 py-1 text-sm backdrop-blur">
+        📍 <span data-t="location">Pepsicola, Kathmandu</span>
+      </div>
+
+      <h1 data-t="hero_title" class="mb-5 text-4xl md:text-6xl font-black"></h1>
+
+      <p data-t="hero_desc" class="mb-8 text-slate-200 max-w-2xl mx-auto"></p>
+
+      <div class="flex justify-center gap-4 flex-wrap">
+        <a href="/book" class="bg-clinic-teal px-7 py-3 rounded-full font-bold">
+          <span data-t="cta_book"></span>
+        </a>
+        <a href="/contact" class="border px-7 py-3 rounded-full">
+          <span data-t="nav_contact"></span>
+        </a>
+      </div>
+
+      <div class="mt-8 flex flex-wrap justify-center gap-5 text-sm font-bold text-slate-100">
+        <span>👉 <span data-t="hero_tag1"></span></span>
+        <span>👉 <span data-t="hero_tag2"></span></span>
+        <span>👉 <span data-t="hero_tag3"></span></span>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- BASIC INFO -->
+  <section class="relative -mt-12 z-10">
     <div class="container mx-auto px-4">
-      <div class="flex flex-col items-center text-center">
-        <div class="mb-4 inline-flex items-center rounded-full bg-slate-50 px-3 py-1 text-sm font-medium text-clinic-teal">
-          <span class="mr-2">📍</span> <span data-t="location">Pepsicola, Kathmandu</span>
-        </div>
-        <h1 data-t="hero_title" class="mb-6 text-4xl font-black tracking-tight text-clinic-slate md:text-6xl">
-          Your Health, Our Priority.
-        </h1>
-        <p data-t="hero_desc" class="mb-10 max-w-2xl text-lg text-gray-600 md:text-xl">
-          Delivering trusted, affordable, and modern healthcare services for you and your family.
-        </p>
-        
-        <div class="flex flex-wrap justify-center gap-4">
-          <a href="/book" class="rounded-full bg-clinic-teal px-8 py-4 text-lg font-bold text-white shadow-lg hover:bg-clinic-slate transition-all active:scale-95">
-            <span data-t="cta_book">Book Appointment</span>
-          </a>
-          <a href="/contact" data-t="nav_contact" class="rounded-full border-2 border-clinic-teal px-8 py-4 text-lg font-bold text-clinic-teal hover:bg-slate-50 transition-all">
-            Contact Us
-          </a>
+      <div class="grid md:grid-cols-4 gap-5 bg-white rounded-3xl shadow-xl p-6 text-center">
+
+        <div>
+          <div class="text-xl">🏥</div>
+          <p data-t="info_name_label" class="text-sm text-gray-500"></p>
+          <p data-t="info_name" class="font-bold"></p>
         </div>
 
-        <!-- Hero Tags -->
-        <div class="mt-12 flex flex-wrap justify-center gap-6 text-sm font-bold text-clinic-slate">
-          <span class="flex items-center gap-2">👉 <span data-t="hero_tag1">10,000+ Patients Served</span></span>
-          <span class="flex items-center gap-2">👉 <span data-t="hero_tag2">Advanced Health Screening</span></span>
-          <span class="flex items-center gap-2">👉 <span data-t="hero_tag3">Community-Focused</span></span>
+        <div>
+          <div class="text-xl">📍</div>
+          <p data-t="info_location_label" class="text-sm text-gray-500"></p>
+          <p data-t="info_location" class="font-bold"></p>
         </div>
+
+        <div>
+          <div class="text-xl">📞</div>
+          <p data-t="info_phone_label" class="text-sm text-gray-500"></p>
+          <p data-t="info_phone" class="font-bold"></p>
+        </div>
+
+        <div>
+          <div class="text-xl">⏰</div>
+          <p data-t="info_time_label" class="text-sm text-gray-500"></p>
+          <p data-t="info_time" class="font-bold"></p>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- WHY CHOOSE US -->
-  <section class="bg-slate-50 py-20">
-    <div class="container mx-auto px-4">
-      <h2 data-t="section_why_title" class="mb-12 text-center text-3xl font-bold text-clinic-slate">
-        Why Choose Smart Health Clinic?
-      </h2>
-      <div class="grid gap-8 md:grid-cols-3 lg:grid-cols-5">
+
+  <!-- WHY -->
+  <section class="bg-slate-50 py-16 mt-10">
+    <div class="container mx-auto px-4 text-center">
+
+      <h2 data-t="section_why_title" class="mb-10 text-3xl font-bold text-clinic-slate"></h2>
+
+      <div class="grid md:grid-cols-5 gap-5">
         {[
           { icon: "👨‍⚕️", key: "why_1" },
           { icon: "🏥", key: "why_2" },
           { icon: "💯", key: "why_3" },
           { icon: "⚡", key: "why_4" },
           { icon: "🤝", key: "why_5" },
-        ].map((item) => (
-          <div class="rounded-2xl bg-white p-6 shadow-sm transition-transform hover:-translate-y-1">
-            <div class="mb-4 text-3xl">{item.icon}</div>
-            <p class="font-bold text-clinic-slate leading-tight" data-t={item.key}>{item.text}</p>
+        ].map(i => (
+          <div class="bg-white p-5 rounded-xl shadow-sm hover:shadow transition">
+            <div class="text-2xl mb-2">{i.icon}</div>
+            <p data-t={i.key}></p>
           </div>
         ))}
       </div>
+
     </div>
   </section>
 
-  <!-- COMMUNITY IMPACT -->
-  <section class="py-20">
+
+  <!-- DOCTORS -->
+  <section class="py-12 bg-white">
     <div class="container mx-auto px-4 text-center">
-      <h2 data-t="section_impact_title" class="mb-4 text-3xl font-bold text-clinic-slate">Community Impact</h2>
-      <p data-t="impact_desc" class="mb-12 text-gray-600">We don’t just treat patients—we care for the community.</p>
-      
-      <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-        <div class="rounded-xl border border-gray-100 p-8">
-          <div class="text-4xl font-black text-clinic-teal">800+</div>
-          <div class="mt-2 text-sm font-bold uppercase tracking-wide text-gray-500">Mobile Health Camps</div>
+
+      <h2 class="mb-6 text-3xl font-bold text-clinic-slate">
+        Our Doctors
+      </h2>
+
+      <p class="mb-8 text-gray-600 max-w-2xl mx-auto">
+        Experienced professionals dedicated to your health and care.
+      </p>
+
+      <!-- removed extra vertical whitespace by controlling section padding -->
+      <div class="max-w-6xl mx-auto">
+        <DoctorSlider />
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- IMPACT -->
+  <section class="py-16 bg-gray-50 text-center">
+    <div class="container mx-auto px-4">
+
+      <h2 data-t="section_impact_title"
+          class="mb-3 text-3xl font-bold text-clinic-slate">
+      </h2>
+
+      <p data-t="home_impact_desc"
+         class="mb-10 text-gray-600 max-w-2xl mx-auto">
+      </p>
+
+      <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+
+        <div class="bg-white rounded-2xl shadow-sm p-6">
+          <div class="text-3xl font-bold text-clinic-slate">800+</div>
+          <div class="mt-1 text-gray-600">Health Camps</div>
         </div>
-        <div class="rounded-xl border border-gray-100 p-8">
-          <div class="text-4xl font-black text-clinic-teal">18,000+</div>
-          <div class="mt-2 text-sm font-bold uppercase tracking-wide text-gray-500">Free Sugar Tests</div>
+
+        <div class="bg-white rounded-2xl shadow-sm p-6">
+          <div class="text-3xl font-bold text-clinic-slate">18,000+</div>
+          <div class="mt-1 text-gray-600">Medical Tests</div>
         </div>
-        <div class="rounded-xl border border-gray-100 p-8">
-          <div class="text-4xl font-black text-clinic-teal">10,000+</div>
-          <div class="mt-2 text-sm font-bold uppercase tracking-wide text-gray-500">Happy Patients</div>
+
+        <div class="bg-white rounded-2xl shadow-sm p-6">
+          <div class="text-3xl font-bold text-clinic-slate">10,000+</div>
+          <div class="mt-1 text-gray-600">Patients Served</div>
         </div>
-        <div class="rounded-xl border border-gray-100 p-8">
-          <div class="text-4xl font-black text-clinic-teal">1,000+</div>
-          <div class="mt-2 text-sm font-bold uppercase tracking-wide text-gray-500">Health Packages</div>
+
+        <div class="bg-white rounded-2xl shadow-sm p-6">
+          <div class="text-3xl font-bold text-clinic-slate">1,000+</div>
+          <div class="mt-1 text-gray-600">Health Packages</div>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- CALL TO ACTION -->
-  <section class="container mx-auto px-4 pb-20">
-    <div class="rounded-3xl bg-clinic-slate p-12 text-center text-white shadow-2xl">
-      <h2 class="mb-4 text-3xl font-bold md:text-4xl" data-t="join_thousands">Join thousands who trust Smart Health Clinic.</h2>
-      <p class="mb-8 text-lg text-slate-300" data-t="health_journey">Your health journey starts here.</p>
-      <a href="/book" class="inline-block rounded-full bg-clinic-teal px-10 py-4 text-lg font-bold transition-transform hover:scale-105 active:scale-95">
-        <span data-t="cta_main">Book Your Visit Today</span>
+
+  <!-- CTA -->
+  <section class="py-16 text-center">
+    <div class="bg-clinic-slate text-white py-12 px-6 rounded-3xl mx-4">
+
+      <h2 data-t="join_thousands" class="mb-3 text-3xl font-bold"></h2>
+
+      <p data-t="health_journey" class="mb-6 text-slate-200"></p>
+
+      <a href="/book" class="bg-clinic-teal px-7 py-3 rounded-full font-bold inline-block">
+        <span data-t="cta_main"></span>
       </a>
+
     </div>
   </section>
+
 </Layout>

@@ -1,0 +1,157 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+
+  <!-- HERO -->
+  <section class="bg-clinic-slate py-24 text-white">
+    <div class="container mx-auto px-8 max-w-5xl">
+      
+      <div class="mb-6 inline-flex items-center rounded-full bg-clinic-teal/20 px-4 py-2 text-sm font-bold text-clinic-teal ring-1 ring-clinic-teal/30">
+        <span data-t="established">Established: 18 January 2024</span>
+      </div>
+
+      <h1 data-t="about_title" class="mb-6 text-5xl font-black md:text-7xl">
+        About Smart Health Clinic
+      </h1>
+
+      <p data-t="about_who_1" class="text-xl leading-relaxed text-slate-200 md:text-2xl mb-4">
+        Smart Health Clinic is a rapidly growing healthcare center in Pepsicola, Kathmandu, dedicated to providing quality, affordable, and patient-focused medical services.
+      </p>
+
+      <p data-t="about_who_2" class="text-lg text-slate-400">
+        Since our establishment on 18 January 2024, we have proudly served 10,000+ patients, building trust through compassionate care and reliable service.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- MISSION / VISION -->
+  <section class="bg-slate-50 py-24">
+    <div class="container mx-auto px-8 grid gap-10 md:grid-cols-2">
+
+      <div class="rounded-3xl bg-white p-10 shadow-sm border-t-4 border-clinic-teal">
+        <div class="text-5xl mb-6">🎯</div>
+        <h3 data-t="mission_title" class="text-2xl font-bold mb-3">Mission</h3>
+        <p data-t="mission_desc" class="text-gray-600">
+          To deliver accessible, affordable, and high-quality healthcare while improving community health through awareness, prevention, and early diagnosis.
+        </p>
+      </div>
+
+      <div class="rounded-3xl bg-white p-10 shadow-sm border-t-4 border-clinic-slate">
+        <div class="text-5xl mb-6">👁️</div>
+        <h3 data-t="vision_title" class="text-2xl font-bold mb-3">Vision</h3>
+        <p data-t="vision_desc" class="text-gray-600">
+          To become one of Nepal’s most trusted and community-focused healthcare providers, known for excellence in patient care and innovation.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section class="py-24">
+    <div class="container mx-auto px-8 text-center">
+
+      <h2 data-t="values_title" class="text-4xl font-bold mb-14 text-clinic-slate">
+        Our Core Values
+      </h2>
+
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+
+        <div class="p-6 rounded-2xl border">
+          <div class="text-3xl mb-2">❤️</div>
+          <h4 data-t="val_1_t" class="font-bold">Patient First</h4>
+          <p data-t="val_1_d" class="text-sm text-gray-500">Every decision prioritizes patient well-being.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl border">
+          <div class="text-3xl mb-2">⭐</div>
+          <h4 data-t="val_2_t" class="font-bold">Quality Care</h4>
+          <p data-t="val_2_d" class="text-sm text-gray-500">Maintaining high standards in every service.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl border">
+          <div class="text-3xl mb-2">🤝</div>
+          <h4 data-t="val_3_t" class="font-bold">Trust & Transparency</h4>
+          <p data-t="val_3_d" class="text-sm text-gray-500">Building long-term patient relationships.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl border">
+          <div class="text-3xl mb-2">🏡</div>
+          <h4 data-t="val_4_t" class="font-bold">Community Commitment</h4>
+          <p data-t="val_4_d" class="text-sm text-gray-500">Giving back through health initiatives.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPACT -->
+  <section class="bg-clinic-slate py-24 text-white">
+    <div class="container mx-auto px-8 text-center">
+
+      <h2 data-t="impact_title" class="text-4xl font-bold mb-4">Our Journey & Impact</h2>
+      <p data-t="impact_desc" class="text-slate-300 mb-12">
+        In a short time, Smart Health Clinic has made a significant impact:
+      </p>
+
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+
+        <div>
+          <div class="text-4xl">👥</div>
+          <p data-t="stat_1" class="mt-2 font-bold text-clinic-teal">10,000+ Patients</p>
+        </div>
+
+        <div>
+          <div class="text-4xl">🏕️</div>
+          <p data-t="stat_2" class="mt-2 font-bold text-clinic-teal">800+ Health Camps</p>
+        </div>
+
+        <div>
+          <div class="text-4xl">🩺</div>
+          <p data-t="stat_3" class="mt-2 font-bold text-clinic-teal">18,000+ Sugar Tests</p>
+        </div>
+
+        <div>
+          <div class="text-4xl">📚</div>
+          <p data-t="stat_4" class="mt-2 font-bold text-clinic-teal">Training & Awareness</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- COMMUNITY -->
+  <section class="py-24">
+    <div class="container mx-auto px-8 grid lg:grid-cols-2 gap-12 items-center">
+
+      <div>
+        <h2 data-t="community_title" class="text-4xl font-bold mb-6 text-clinic-slate">
+          Community Engagement
+        </h2>
+
+        <p data-t="community_desc" class="text-gray-600 mb-6">
+          We actively collaborate with organizations to conduct:
+        </p>
+
+        <ul class="space-y-3 text-gray-700 font-medium">
+          <li data-t="eng_1">✔ Health Camps</li>
+          <li data-t="eng_2">✔ Blood Donation Drives</li>
+          <li data-t="eng_3">✔ Awareness Campaigns</li>
+          <li data-t="eng_4">✔ Training Programs</li>
+        </ul>
+      </div>
+
+      <div class="bg-clinic-teal text-white p-12 rounded-3xl text-center shadow-xl">
+        <p class="text-3xl md:text-5xl font-black italic">
+          “<span data-t="quote">Healthy Community = Strong Nation</span>”
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+</Layout>
