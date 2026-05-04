@@ -1,5 +1,7 @@
 ---
 import { doctors } from "../data/doctors";
+
+const { showDetails = false } = Astro.props;
 ---
 
 <link
@@ -10,9 +12,15 @@ import { doctors } from "../data/doctors";
 <section class="py-20 bg-white">
   <div class="container mx-auto px-4">
 
-    <h2 class="text-center text-3xl font-bold text-clinic-slate mb-12">
+    <h2 class="text-center text-3xl font-bold text-clinic-slate mb-4">
       Our Doctors
     </h2>
+
+    {showDetails && (
+      <p class="mb-8 text-gray-600 max-w-2xl mx-auto text-center">
+        Experienced professionals dedicated to your health and care.
+      </p>
+    )}
 
     <div class="swiper doctorSwiper max-w-6xl mx-auto">
       <div class="swiper-wrapper">
@@ -21,7 +29,7 @@ import { doctors } from "../data/doctors";
           <div class="swiper-slide !h-auto">
             <div class="rounded-2xl overflow-hidden shadow-md mx-2 bg-slate-50">
 
-              <!-- IMAGE ONLY -->
+              <!-- IMAGE -->
               <div class="h-96 w-full flex items-center justify-center p-3">
                 <img
                   src={doc.image}
@@ -29,6 +37,16 @@ import { doctors } from "../data/doctors";
                   alt={doc.name}
                 />
               </div>
+
+              <!-- DETAILS (ONLY IF ENABLED) -->
+              {showDetails && (
+                <div class="p-4 text-center">
+                  <h3 class="font-bold text-lg">{doc.name}</h3>
+                  {doc.specialty && (
+                    <p class="text-gray-500 text-sm">{doc.specialty}</p>
+                  )}
+                </div>
+              )}
 
             </div>
           </div>
@@ -40,7 +58,6 @@ import { doctors } from "../data/doctors";
   </div>
 </section>
 
-<!-- SWIPER -->
 <script is:inline>
   window.addEventListener("load", async () => {
     const { default: Swiper } = await import(
@@ -49,17 +66,12 @@ import { doctors } from "../data/doctors";
 
     new Swiper(".doctorSwiper", {
       loop: true,
-
-      // 🔥 CONTINUOUS SMOOTH AUTO SLIDE
       autoplay: {
-        delay: 0,              // no pause
+        delay: 0,
         disableOnInteraction: false,
       },
-
-      speed: 4000,            // slow smooth movement
+      speed: 4000,
       spaceBetween: 25,
-
-      // RESPONSIVE
       slidesPerView: 1.1,
       breakpoints: {
         640: { slidesPerView: 1.5 },

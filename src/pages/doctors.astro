@@ -1,0 +1,144 @@
+---
+import Layout from "../layouts/Layout.astro";
+import DoctorSlider from "../components/DoctorSlider.astro";
+import { doctors } from "../data/doctors";
+---
+
+<Layout>
+
+  <!-- HERO -->
+  <section class="bg-clinic-slate text-white py-20">
+    <div class="container mx-auto px-6 max-w-5xl text-center">
+
+      <h1 class="text-4xl md:text-6xl font-black mb-6">
+        Our Doctors
+      </h1>
+
+      <p class="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto">
+        Meet our experienced medical professionals dedicated to providing quality and compassionate care.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- INTRO -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-6 max-w-4xl text-center">
+
+      <h2 class="text-3xl font-bold text-clinic-slate mb-4">
+        Trusted Healthcare Experts
+      </h2>
+
+      <p class="text-gray-600 leading-relaxed">
+        Our team of doctors includes specialists from leading hospitals of Nepal, bringing years of experience in
+        diagnosis, treatment, and patient care.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- SLIDER -->
+  <DoctorSlider showDetails={true} />
+
+
+  <!-- MEET THE TEAM (ALL DOCTORS) -->
+  <section class="py-20 bg-slate-50">
+    <div class="container mx-auto px-6 max-w-6xl">
+
+      <h2 class="text-3xl font-bold text-center text-clinic-slate mb-10">
+        Meet the Team
+      </h2>
+
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+        {doctors.map((doc) => (
+            <div class="bg-white rounded-2xl shadow-sm border hover:shadow-lg transition overflow-hidden">
+
+                <!-- IMAGE -->
+                <div class="h-80 flex items-center justify-center bg-slate-50 p-4">
+                <img
+                    src={doc.image}
+                    alt={doc.name}
+                    class="h-full w-full object-contain"
+                />
+                </div>
+
+                <!-- DETAILS -->
+                <div class="p-5 text-center space-y-2">
+
+                <!-- NAME -->
+                <h3 class="font-bold text-lg text-clinic-slate">
+                    {doc.name}
+                </h3>
+
+                <!-- SPECIALTY -->
+                {doc.specialty && (
+                    <p class="text-clinic-teal font-medium text-sm">
+                    {doc.specialty}
+                    </p>
+                )}
+
+                <!-- DEPARTMENT -->
+                {doc.department && (
+                    <p class="text-gray-500 text-xs">
+                    {doc.department}
+                    </p>
+                )}
+
+                <!-- EXPERIENCE -->
+                {doc.experience && (
+                    <p class="text-gray-500 text-xs">
+                    {doc.experience} Experience
+                    </p>
+                )}
+
+                <!-- QUALIFICATION -->
+                {doc.qualification && (
+                    <p class="text-gray-400 text-xs">
+                    {doc.qualification}
+                    </p>
+                )}
+
+                <!-- CTA BUTTON
+                <div class="pt-3">
+                    <a
+                    href="/book"
+                    class="inline-block bg-clinic-teal text-white text-sm px-4 py-2 rounded-full font-semibold hover:opacity-90 transition"
+                    >
+                    Book Appointment
+                    </a>
+                </div> -->
+
+                </div>
+            </div>
+        ))}
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- CTA -->
+  <section class="py-20 bg-clinic-slate text-white text-center">
+    <div class="container mx-auto px-6 max-w-3xl">
+
+      <h2 class="text-3xl font-bold mb-4">
+        Book an Appointment
+      </h2>
+
+      <p class="text-slate-300 mb-8">
+        Consult with our expert doctors for personalized medical care.
+      </p>
+
+      <a href="/book"
+         class="bg-clinic-teal px-7 py-3 rounded-full font-bold inline-block">
+        Book Now
+      </a>
+
+    </div>
+  </section>
+
+</Layout>
