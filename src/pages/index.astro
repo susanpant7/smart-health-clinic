@@ -15,12 +15,12 @@ import DoctorSlider from '../components/DoctorSlider.astro';
     <div class="relative container mx-auto px-4 text-center text-white">
       
       <div class="mb-4 inline-flex items-center rounded-full bg-white/10 px-4 py-1 text-sm backdrop-blur">
-        📍 <span data-t="location">Pepsicola, Kathmandu</span>
+        📍 <span data-t="home_hero_location"></span>
       </div>
 
-      <h1 data-t="hero_title" class="mb-5 text-4xl md:text-6xl font-black"></h1>
+      <h1 data-t="home_hero_title" class="mb-5 text-4xl md:text-6xl font-black"></h1>
 
-      <p data-t="hero_desc" class="mb-8 text-slate-200 max-w-2xl mx-auto"></p>
+      <p data-t="home_hero_desc" class="mb-8 text-slate-200 max-w-2xl mx-auto"></p>
 
       <div class="flex justify-center gap-4 flex-wrap">
         <a href="/book" class="bg-clinic-teal px-7 py-3 rounded-full font-bold">
@@ -32,9 +32,9 @@ import DoctorSlider from '../components/DoctorSlider.astro';
       </div>
 
       <div class="mt-8 flex flex-wrap justify-center gap-5 text-sm font-bold text-slate-100">
-        <span>👉 <span data-t="hero_tag1"></span></span>
-        <span>👉 <span data-t="hero_tag2"></span></span>
-        <span>👉 <span data-t="hero_tag3"></span></span>
+        <span>👉 <span data-t="home_hero_tag1"></span></span>
+        <span>👉 <span data-t="home_hero_tag2"></span></span>
+        <span>👉 <span data-t="home_hero_tag3"></span></span>
       </div>
 
     </div>
@@ -48,26 +48,26 @@ import DoctorSlider from '../components/DoctorSlider.astro';
 
         <div>
           <div class="text-xl">🏥</div>
-          <p data-t="info_name_label" class="text-sm text-gray-500"></p>
-          <p data-t="info_name" class="font-bold"></p>
+          <p data-t="home_info_name_label" class="text-sm text-gray-500"></p>
+          <p data-t="home_info_name" class="font-bold"></p>
         </div>
 
         <div>
           <div class="text-xl">📍</div>
-          <p data-t="info_location_label" class="text-sm text-gray-500"></p>
-          <p data-t="info_location" class="font-bold"></p>
+          <p data-t="home_info_location_label" class="text-sm text-gray-500"></p>
+          <p data-t="home_info_location" class="font-bold"></p>
         </div>
 
         <div>
           <div class="text-xl">📞</div>
-          <p data-t="info_phone_label" class="text-sm text-gray-500"></p>
-          <p data-t="info_phone" class="font-bold"></p>
+          <p data-t="home_info_phone_label" class="text-sm text-gray-500"></p>
+          <p data-t="home_info_phone" class="font-bold"></p>
         </div>
 
         <div>
           <div class="text-xl">⏰</div>
-          <p data-t="info_time_label" class="text-sm text-gray-500"></p>
-          <p data-t="info_time" class="font-bold"></p>
+          <p data-t="home_info_time_label" class="text-sm text-gray-500"></p>
+          <p data-t="home_info_time" class="font-bold"></p>
         </div>
 
       </div>
@@ -79,15 +79,15 @@ import DoctorSlider from '../components/DoctorSlider.astro';
   <section class="bg-slate-50 py-16 mt-10">
     <div class="container mx-auto px-4 text-center">
 
-      <h2 data-t="section_why_title" class="mb-10 text-3xl font-bold text-clinic-slate"></h2>
+      <h2 data-t="home_why_title" class="mb-10 text-3xl font-bold text-clinic-slate"></h2>
 
       <div class="grid md:grid-cols-5 gap-5">
         {[
-          { icon: "👨‍⚕️", key: "why_1" },
-          { icon: "🏥", key: "why_2" },
-          { icon: "💯", key: "why_3" },
-          { icon: "⚡", key: "why_4" },
-          { icon: "🤝", key: "why_5" },
+          { icon: "👨‍⚕️", key: "home_why_1" },
+          { icon: "🏥", key: "home_why_2" },
+          { icon: "💯", key: "home_why_3" },
+          { icon: "⚡", key: "home_why_4" },
+          { icon: "🤝", key: "home_why_5" },
         ].map(i => (
           <div class="bg-white p-5 rounded-xl shadow-sm hover:shadow transition">
             <div class="text-2xl mb-2">{i.icon}</div>
@@ -103,12 +103,9 @@ import DoctorSlider from '../components/DoctorSlider.astro';
   <!-- DOCTORS -->
   <section class="py-12 bg-white">
     <div class="container mx-auto px-4 text-center">
-
-      <!-- removed extra vertical whitespace by controlling section padding -->
       <div class="max-w-6xl mx-auto">
         <DoctorSlider showDetails={true}/>
       </div>
-
     </div>
   </section>
 
@@ -117,7 +114,7 @@ import DoctorSlider from '../components/DoctorSlider.astro';
   <section class="py-16 bg-gray-50 text-center">
     <div class="container mx-auto px-4">
 
-      <h2 data-t="section_impact_title"
+      <h2 data-t="home_impact_title"
           class="mb-3 text-3xl font-bold text-clinic-slate">
       </h2>
 
@@ -127,27 +124,27 @@ import DoctorSlider from '../components/DoctorSlider.astro';
 
       <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
 
-        <div class="bg-white rounded-2xl shadow-sm p-6">
-          <div class="text-3xl font-bold text-clinic-slate">800+</div>
-          <div class="mt-1 text-gray-600">Health Camps</div>
-        </div>
+		<div class="bg-white rounded-2xl shadow-sm p-6">
+			<div class="text-3xl font-bold text-clinic-slate">800+</div>
+			<div class="mt-1 text-gray-600" data-t="home_impact_card1"></div>
+		</div>
 
-        <div class="bg-white rounded-2xl shadow-sm p-6">
-          <div class="text-3xl font-bold text-clinic-slate">18,000+</div>
-          <div class="mt-1 text-gray-600">Medical Tests</div>
-        </div>
+		<div class="bg-white rounded-2xl shadow-sm p-6">
+			<div class="text-3xl font-bold text-clinic-slate">18,000+</div>
+			<div class="mt-1 text-gray-600" data-t="home_impact_card2"></div>
+		</div>
 
-        <div class="bg-white rounded-2xl shadow-sm p-6">
-          <div class="text-3xl font-bold text-clinic-slate">10,000+</div>
-          <div class="mt-1 text-gray-600">Patients Served</div>
-        </div>
+		<div class="bg-white rounded-2xl shadow-sm p-6">
+			<div class="text-3xl font-bold text-clinic-slate">10,000+</div>
+			<div class="mt-1 text-gray-600" data-t="home_impact_card3"></div>
+		</div>
 
-        <div class="bg-white rounded-2xl shadow-sm p-6">
-          <div class="text-3xl font-bold text-clinic-slate">1,000+</div>
-          <div class="mt-1 text-gray-600">Health Packages</div>
-        </div>
+		<div class="bg-white rounded-2xl shadow-sm p-6">
+			<div class="text-3xl font-bold text-clinic-slate">1,000+</div>
+			<div class="mt-1 text-gray-600" data-t="home_impact_card4"></div>
+		</div>
 
-      </div>
+		</div>
     </div>
   </section>
 
@@ -156,12 +153,12 @@ import DoctorSlider from '../components/DoctorSlider.astro';
   <section class="py-16 text-center">
     <div class="bg-clinic-slate text-white py-12 px-6 rounded-3xl mx-4">
 
-      <h2 data-t="join_thousands" class="mb-3 text-3xl font-bold"></h2>
+      <h2 data-t="home_cta_join" class="mb-3 text-3xl font-bold"></h2>
 
-      <p data-t="health_journey" class="mb-6 text-slate-200"></p>
+      <p data-t="home_cta_desc" class="mb-6 text-slate-200"></p>
 
       <a href="/book" class="bg-clinic-teal px-7 py-3 rounded-full font-bold inline-block">
-        <span data-t="cta_main"></span>
+        <span data-t="home_cta_main"></span>
       </a>
 
     </div>

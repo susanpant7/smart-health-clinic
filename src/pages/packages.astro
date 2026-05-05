@@ -8,13 +8,9 @@ import Layout from "../layouts/Layout.astro";
   <section class="bg-clinic-slate text-white py-20">
     <div class="container mx-auto px-6 max-w-5xl text-center">
 
-      <h1 class="text-4xl md:text-6xl font-black mb-6">
-        Health Packages
-      </h1>
+      <h1 data-t="package_hero_title" class="text-4xl md:text-6xl font-black mb-6"></h1>
 
-      <p class="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto">
-        Affordable preventive health checkups designed to keep you and your family safe and healthy.
-      </p>
+      <p data-t="package_hero_desc" class="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto"></p>
 
     </div>
   </section>
@@ -24,14 +20,9 @@ import Layout from "../layouts/Layout.astro";
   <section class="py-16 bg-white">
     <div class="container mx-auto px-6 max-w-4xl text-center">
 
-      <h2 class="text-3xl font-bold text-clinic-slate mb-4">
-        Preventive Care Made Simple
-      </h2>
+      <h2 data-t="package_intro_title" class="text-3xl font-bold text-clinic-slate mb-4"></h2>
 
-      <p class="text-gray-600 leading-relaxed">
-        Early detection saves lives. Our health packages include essential diagnostic tests at affordable prices
-        so you can monitor your health regularly without financial stress.
-      </p>
+      <p data-t="package_intro_desc" class="text-gray-600 leading-relaxed"></p>
 
     </div>
   </section>
@@ -42,80 +33,60 @@ import Layout from "../layouts/Layout.astro";
     <div class="container mx-auto px-6 max-w-6xl">
 
       <div class="text-center mb-12">
-        <h2 class="text-3xl font-bold text-clinic-slate">
-          Available Packages
-        </h2>
-        <p class="text-gray-600 mt-2">
-          Choose the right package for your health needs
-        </p>
+        <h2 data-t="package_section_title" class="text-3xl font-bold text-clinic-slate"></h2>
+
+        <p data-t="package_section_subtitle" class="text-gray-600 mt-2"></p>
       </div>
 
       <div class="grid gap-8 md:grid-cols-2">
 
-        <!-- BASIC CHECKUP -->
+        <!-- PACKAGE 1 -->
         <div class="bg-white rounded-3xl p-8 shadow-sm border hover:shadow-lg transition">
 
           <div class="text-4xl mb-4">🎉</div>
 
-          <h3 class="text-2xl font-bold text-clinic-slate mb-3">
-            Whole Body Checkup
-          </h3>
+          <h3 data-t="package_1_title" class="text-2xl font-bold text-clinic-slate mb-3"></h3>
 
-          <p class="text-gray-600 mb-4">
-            Comprehensive health screening for early detection and prevention.
-          </p>
+          <p data-t="package_1_desc" class="text-gray-600 mb-4"></p>
 
           <ul class="space-y-2 text-gray-700 mb-6">
-            <li>✔ 40+ Diagnostic Tests</li>
-            <li>✔ Blood & Urine Analysis</li>
-            <li>✔ Liver & Kidney Function Tests</li>
-            <li>✔ Diabetes Screening</li>
-            <li>✔ Lipid Profile</li>
+            <li data-t="package_1_li1"></li>
+            <li data-t="package_1_li2"></li>
+            <li data-t="package_1_li3"></li>
+            <li data-t="package_1_li4"></li>
+            <li data-t="package_1_li5"></li>
           </ul>
 
           <div class="flex items-center justify-between">
-            <p class="text-2xl font-bold text-clinic-teal">
-              Rs. 2950
-            </p>
-
-           
+            <p data-t="package_price_1" class="text-2xl font-bold text-clinic-teal"></p>
           </div>
 
         </div>
 
 
-        <!-- FESTIVAL OFFER -->
+        <!-- PACKAGE 2 -->
         <div class="bg-white rounded-3xl p-8 shadow-sm border hover:shadow-lg transition relative overflow-hidden">
 
-          <!-- badge -->
           <div class="absolute top-4 right-4 bg-red-500 text-white text-xs px-3 py-1 rounded-full font-bold">
-            LIMITED OFFER
+            <span data-t="package_offer_badge"></span>
           </div>
 
           <div class="text-4xl mb-4">🎊</div>
 
-          <h3 class="text-2xl font-bold text-clinic-slate mb-3">
-            Festival Offer Package
-          </h3>
+          <h3 data-t="package_2_title" class="text-2xl font-bold text-clinic-slate mb-3"></h3>
 
-          <p class="text-gray-600 mb-4">
-            Special discounted health package for complete seasonal health screening.
-          </p>
+          <p data-t="package_2_desc" class="text-gray-600 mb-4"></p>
 
           <ul class="space-y-2 text-gray-700 mb-6">
-            <li>✔ 50+ Advanced Tests</li>
-            <li>✔ Full Body Screening</li>
-            <li>✔ Cardiac Risk Check</li>
-            <li>✔ Liver & Kidney Panel</li>
-            <li>✔ Diabetes + Thyroid Test</li>
+            <li data-t="package_2_li1"></li>
+            <li data-t="package_2_li2"></li>
+            <li data-t="package_2_li3"></li>
+            <li data-t="package_2_li4"></li>
+            <li data-t="package_2_li5"></li>
           </ul>
 
           <div class="flex items-center justify-between">
-            <p class="text-2xl font-bold text-clinic-teal">
-              Rs. 2999
-            </p>
-
-           
+            <p data-t="package_price_2" class="text-2xl font-bold text-clinic-teal"></p>
           </div>
 
         </div>
@@ -130,20 +101,17 @@ import Layout from "../layouts/Layout.astro";
   <section class="py-20 bg-clinic-slate text-white text-center">
     <div class="container mx-auto px-6 max-w-3xl">
 
-      <h2 class="text-3xl font-bold mb-4">
-        Take Control of Your Health Today
-      </h2>
+      <h2 data-t="package_cta_title" class="text-3xl font-bold mb-4"></h2>
 
-      <p class="text-slate-300 mb-8">
-        Book your health package and get timely diagnosis and prevention care.
-      </p>
+      <p data-t="package_cta_desc" class="text-slate-300 mb-8"></p>
 
-      <a 
+      <a
         href="https://vendor.smarthealthnepal.com/"
         target="_blank"
         rel="noopener noreferrer"
-        class="bg-clinic-teal px-7 py-3 rounded-full font-bold inline-block">
-        Book Appointment
+        class="bg-clinic-teal px-7 py-3 rounded-full font-bold inline-block"
+      >
+        <span data-t="package_cta_btn"></span>
       </a>
 
     </div>

@@ -13,80 +13,282 @@ export const translations = {
         nav_contact: "Contact",
         cta_book: "Book Now",
 
-        hero_title: "Your Health, Our Priority.",
-        hero_desc: "Delivering trusted, affordable, and modern healthcare services for you and your family.",
-        hero_tag1: "10,000+ Patients Served",
-        hero_tag2: "Advanced Diagnostics",
-        hero_tag3: "Community-Focused",
-        section_why_title: "Why Choose Smart Health Clinic?",
-        why_1: "Expert Doctors & Caring Team",
-        why_2: "Modern Equipment",
-        why_3: "Patient-Centered Approach",
-        why_4: "Fast & Reliable",
-        why_5: "Community Engagement",
-        section_impact_title: "Community Impact",
+        // HOME - HERO
+        home_hero_title: "Your Health, Our Priority.",
+        home_hero_desc: "Delivering trusted, affordable, and modern healthcare services for you and your family.",
+        home_hero_tag1: "10,000+ Patients Served",
+        home_hero_tag2: "Advanced Diagnostics",
+        home_hero_tag3: "Community-Focused",
+        home_hero_location: "Pepsicola, Kathmandu",
+
+        // HOME - WHY
+        home_why_title: "Why Choose Smart Health Clinic?",
+        home_why_1: "Expert Doctors & Caring Team",
+        home_why_2: "Modern Equipment",
+        home_why_3: "Patient-Centered Approach",
+        home_why_4: "Fast & Reliable",
+        home_why_5: "Community Engagement",
+
+        // HOME - IMPACT
+        home_impact_title: "Community Impact",
         home_impact_desc: "We don’t just treat patients—we care for the community.",
-        cta_main: "Book Your Visit Today",
-        location: "Pepsicola, Kathmandu",
-        established: "Established: 18 January 2024",
-        join_thousands: "Join thousands who trust Smart Health Clinic.",
-        health_journey: "Your health journey starts here.",
-        info_name_label: "Clinic Name",
-        info_name: "Smart Health Clinic",
 
-        info_location_label: "Location",
-        info_location: "Sun City Road, Pepsicola, Kathmandu",
+        // HOME - CTA
+        home_cta_main: "Book Your Visit Today",
+        home_cta_join: "Join thousands who trust Smart Health Clinic.",
+        home_cta_desc: "Your health journey starts here.",
 
-        info_phone_label: "Phone",
-        info_phone: "01-5923005 / 5924005",
+        // HOME - INFO
+        home_info_name_label: "Clinic Name",
+        home_info_name: "Smart Health Clinic",
 
-        info_time_label: "Timing",
-        info_time: "Morning & Evening (5 AM - 8 PM)",
+        home_info_location_label: "Location",
+        home_info_location: "Sun City Road, Pepsicola, Kathmandu",
 
-        //about page
+        home_info_phone_label: "Phone",
+        home_info_phone: "01-5923005 / 5924005",
+
+        home_info_time_label: "Timing",
+        home_info_time: "Morning & Evening (5 AM - 8 PM)",
+
+        // HOME - IMPACT CARDS
+        home_impact_card1: "Health Camps",
+        home_impact_card2: "Medical Tests",
+        home_impact_card3: "Patients Served",
+        home_impact_card4: "Health Packages",
+
+        // DOCTORS COMPONENT
+        doctors_title: "Our Doctors",
+        doctors_desc: "Experienced professionals dedicated to your health and care.",
+
+        // ABOUT - HERO
         about_title: "About Smart Health Clinic",
+        about_established: "Established: 18 January 2024",
         about_who_1: "Smart Health Clinic is a rapidly growing healthcare center in Pepsicola, Kathmandu, dedicated to providing quality, affordable, and patient-focused medical services.",
         about_who_2: "Since our establishment on 18 January 2024, we have proudly served 10,000+ patients, building trust through compassionate care and reliable service.",
 
-        mission_title: "Our Mission",
-        mission_desc: "To deliver accessible, affordable, and high-quality healthcare while improving community health through awareness, prevention, and early diagnosis.",
+        // ABOUT - OVERVIEW
+        about_overview_title: "Who We Are",
+        about_overview_subtitle: "A modern approach to accessible and affordable healthcare",
+        about_overview_p1: "Smart Health Clinic is a modern, ISO-certified healthcare center located in Pepsicola, Kathmandu, dedicated to providing affordable, accessible, and high-quality medical services.",
+        about_overview_p2: "With a team of experienced specialists from leading hospitals of Nepal, we offer comprehensive healthcare services ranging from general consultation to advanced diagnostics and minor surgical procedures.",
+        about_overview_p3: "Our clinic is equipped with state-of-the-art technology including 4D Ultrasound, Digital X-ray, Endoscopy, and Minor OT, ensuring accurate diagnosis and effective treatment.",
+        about_overview_list_title: "We believe in:",
+        about_overview_li1: "Fast & hassle-free service",
+        about_overview_li2: "Patient-centered care",
+        about_overview_li3: "Affordable pricing",
+        about_overview_li4: "Clean & sterilized environment",
+        about_overview_quote: "Smart Care for Smart Life",
 
-        vision_title: "Our Vision",
-        vision_desc: "To become one of Nepal’s most trusted and community-focused healthcare providers, known for excellence in patient care and innovation.",
+        // ABOUT - MISSION VISION
+        about_mission_title: "Mission",
+        about_mission_desc: "To deliver accessible, affordable, and high-quality healthcare while improving community health through awareness, prevention, and early diagnosis.",
 
-        values_title: "Our Core Values",
+        about_vision_title: "Vision",
+        about_vision_desc: "To become one of Nepal’s most trusted and community-focused healthcare providers, known for excellence in patient care and innovation.",
 
-        val_1_t: "Patient First",
-        val_1_d: "Every decision prioritizes patient well-being.",
+        // ABOUT - VALUES
+        about_values_title: "Our Core Values",
+        about_val1_t: "Patient First",
+        about_val1_d: "Every decision prioritizes patient well-being.",
+        about_val2_t: "Quality Care",
+        about_val2_d: "Maintaining high standards in every service.",
+        about_val3_t: "Trust & Transparency",
+        about_val3_d: "Building long-term patient relationships.",
+        about_val4_t: "Community Commitment",
+        about_val4_d: "Giving back through health initiatives.",
 
-        val_2_t: "Quality Care",
-        val_2_d: "Maintaining high standards in every service.",
+        // ABOUT - IMPACT
+        about_impact_title: "Our Journey & Impact",
+        about_impact_desc: "In a short time, Smart Health Clinic has made a significant impact:",
+        about_stat1: "10,000+ Patients Served",
+        about_stat2: "800+ Health Camps",
+        about_stat3: "18,000+ Sugar Tests",
+        about_stat4: "Training & Awareness Programs",
 
-        val_3_t: "Trust & Transparency",
-        val_3_d: "Building long-term patient relationships.",
+        // ABOUT - COMMUNITY
+        about_community_title: "Community Engagement",
+        about_community_desc: "We actively collaborate with organizations to conduct meaningful healthcare initiatives that improve public well-being.",
+        about_community_li1: "Health Camps",
+        about_community_li2: "Blood Donation Drives",
+        about_community_li3: "Awareness Campaigns",
+        about_community_li4: "Training Programs",
 
-        val_4_t: "Community Commitment",
-        val_4_d: "Giving back through health initiatives.",
+        about_quote: "Healthy Community = Strong Nation",
+        about_quote_sub: "Building a healthier future through collaboration and care",
 
-        impact_title: "Our Journey & Impact",
-        impact_desc: "In a short time, Smart Health Clinic has made a significant impact:",
+        services_hero_title: "Our Services",
+        services_hero_desc: "Comprehensive healthcare services designed for quality, affordability, and convenience.",
 
-        stat_1: "10,000+ Patients Served",
-        stat_2: "800+ Health Camps",
-        stat_3: "18,000+ Sugar Tests",
-        stat_4: "Training & Awareness Programs",
+        services_desk_title: "Smart Health Desk",
+        services_desk_subtitle: "Primary care support & discounted health services",
 
-        community_title: "Community Engagement",
-        community_desc: "We actively collaborate with organizations to conduct:",
+        services_desk_li1: "Blood Pressure Monitoring",
+        services_desk_li2: "Lab Sample Collection",
+        services_desk_li3: "Home Delivery & Home Collection",
+        services_desk_li4: "Oxygen Service & Nebulizer Support",
+        services_desk_li5: "Primary Medication Assistance",
+        services_desk_btn: "Book Smart Health Desk",
 
-        eng_1: "Health Camps",
-        eng_2: "Blood Donation Drives",
-        eng_3: "Awareness Campaigns",
-        eng_4: "Training Programs",
+        services_adv_title: "Advanced Medical Services",
+        services_adv_subtitle: "Specialized care with modern diagnostic and treatment facilities",
 
-        quote: "Healthy Community = Strong Nation"
+        services_consult_title: "General & Specialist Consultation",
+        services_consult_li1: "Pediatric",
+        services_consult_li2: "Gynecology",
+        services_consult_li3: "Cardiology",
+        services_consult_li4: "Orthopedics",
+        services_consult_li5: "Dermatology",
+        services_consult_li6: "Psychiatry",
 
+        services_diag_title: "Diagnostic Services",
+        services_diag_li1: "4D Ultrasound",
+        services_diag_li2: "Digital X-ray",
+        services_diag_li3: "ECG / ECHO",
+        services_diag_li4: "Lab Tests (50+ packages)",
+
+        services_ot_title: "Minor OT Services",
+        services_ot_li1: "Lipoma / Cyst Removal",
+        services_ot_li2: "Abscess Drainage",
+        services_ot_li3: "Suturing",
+        services_ot_li4: "Ingrown Nail Treatment",
+        services_ot_li5: "Biopsy",
+
+        services_adv2_title: "Advanced Services",
+        services_adv2_li1: "Endoscopy (NEW 🔥)",
+        services_adv2_li2: "Day Care & Emergency",
+        services_adv2_li3: "Dressing & Injection",
+
+        services_gallery_title: "Our Clinic in Action",
+        services_gallery_sub: "Smart Health Desk mobile experience",
+
+        services_core_title: "Core Medical Services",
+        services_core_1: "General Checkup",
+        services_core_1_desc: "Routine health consultation and diagnosis.",
+        services_core_2: "Lab Testing",
+        services_core_2_desc: "Accurate pathology and diagnostic tests.",
+        services_core_3: "Vaccination",
+        services_core_3_desc: "Safe immunization services for all ages.",
+        services_core_4: "Wound Dressing",
+        services_core_4_desc: "All types of dressing and minor care.",
+        services_core_5: "Nebulizer Service",
+        services_core_5_desc: "Respiratory treatment support.",
+        services_core_6: "Home Services",
+        services_core_6_desc: "Home sample collection and delivery.",
+
+        services_discount_title: "Smart Health Discount Card",
+        services_discount_1: "Pathology Lab",
+        services_discount_2: "X-Ray",
+        services_discount_3: "Medicine",
+        services_discount_4: "Home Service",
+
+        services_cta_title: "Need Medical Assistance?",
+        services_cta_desc: "Book your appointment or visit Smart Health Clinic today.",
+        services_cta_btn: "Book Appointment",
+
+        doctors_hero_title: "Our Doctors",
+        doctors_hero_desc: "Meet our experienced medical professionals dedicated to providing quality and compassionate care.",
+
+        doctors_intro_title: "Trusted Healthcare Experts",
+        doctors_intro_desc: "Our team of doctors includes specialists from leading hospitals of Nepal, bringing years of experience in diagnosis, treatment, and patient care.",
+
+        doctors_team_title: "Meet the Team",
+
+        doctors_cta_title: "Book an Appointment",
+        doctors_cta_desc: "Consult with our expert doctors for personalized medical care.",
+        doctors_cta_btn: "Book Now",
+
+        facility_hero_title: "Our Facilities",
+        facility_hero_desc: "Modern medical infrastructure designed for accurate diagnosis, safe treatment, and patient comfort.",
+
+        facility_intro_title: "Advanced Healthcare Infrastructure",
+        facility_intro_desc: "Smart Health Clinic is equipped with modern medical facilities that ensure fast diagnosis, safe procedures, and comfortable patient care — all under one roof.",
+
+        facility_grid_title: "Key Facilities",
+        facility_grid_subtitle: "Everything you need for complete healthcare support",
+
+        facility_1_title: "Minor OT",
+        facility_1_desc: "Safe minor surgical procedures with sterile environment and expert care.",
+
+        facility_2_title: "Endoscopy Machine (NEW)",
+        facility_2_desc: "Advanced diagnostic tool for internal examination with high accuracy.",
+
+        facility_3_title: "4D Video X-ray",
+        facility_3_desc: "High-resolution imaging for precise and detailed diagnosis.",
+
+        facility_4_title: "Emergency / Daycare Bed",
+        facility_4_desc: "Immediate care facility for emergency cases and short-term admission.",
+
+        facility_5_title: "Parking Available",
+        facility_5_desc: "Easy and safe parking space for patients and visitors.",
+
+        facility_cta_title: "Visit Our Clinic Today",
+        facility_cta_desc: "Experience modern healthcare facilities with expert medical support.",
+        facility_cta_btn: "Book Appointment",
+
+        package_hero_title: "Health Packages",
+        package_hero_desc: "Affordable preventive health checkups designed to keep you and your family safe and healthy.",
+
+        package_intro_title: "Preventive Care Made Simple",
+        package_intro_desc: "Early detection saves lives. Our health packages include essential diagnostic tests at affordable prices so you can monitor your health regularly without financial stress.",
+
+        package_section_title: "Available Packages",
+        package_section_subtitle: "Choose the right package for your health needs",
+
+        package_1_title: "Whole Body Checkup",
+        package_1_desc: "Comprehensive health screening for early detection and prevention.",
+        package_1_li1: "40+ Diagnostic Tests",
+        package_1_li2: "Blood & Urine Analysis",
+        package_1_li3: "Liver & Kidney Function Tests",
+        package_1_li4: "Diabetes Screening",
+        package_1_li5: "Lipid Profile",
+
+        package_2_title: "Festival Offer Package",
+        package_2_desc: "Special discounted health package for complete seasonal health screening.",
+        package_2_li1: "50+ Advanced Tests",
+        package_2_li2: "Full Body Screening",
+        package_2_li3: "Cardiac Risk Check",
+        package_2_li4: "Liver & Kidney Panel",
+        package_2_li5: "Diabetes + Thyroid Test",
+
+        package_offer_badge: "LIMITED OFFER",
+
+        package_price_1: "Rs. 2950",
+        package_price_2: "Rs. 2999",
+
+        package_cta_title: "Take Control of Your Health Today",
+        package_cta_desc: "Book your health package and get timely diagnosis and prevention care.",
+        package_cta_btn: "Book Appointment",
+
+        contact_hero_title: "Contact Us",
+        contact_hero_desc: "We are always here to help you with appointments, emergencies, and medical inquiries.",
+
+        contact_section_title: "Smart Health Clinic",
+
+        contact_location: "📍 Pepsicola, Kathmandu",
+        contact_phone: "📞 01-5923005 / 5924005",
+        contact_time: "🕒 Open Daily",
+
+        contact_call_btn: "📞 Call Now",
+        contact_whatsapp_btn: "💬 WhatsApp",
+        contact_hint: "Tap to instantly connect with our clinic team",
+
+        contact_map_title: "Location Map",
+
+        contact_quick_title: "Quick Contact",
+        contact_quick_desc: "Choose the fastest way to reach us",
+
+        contact_call_card_title: "Call Clinic",
+        contact_call_card_desc: "Instant phone support",
+
+        contact_whatsapp_card_title: "WhatsApp Chat",
+        contact_whatsapp_card_desc: "Get instant responses from our team",
+
+        contact_cta_title: "Need Medical Help?",
+        contact_cta_desc: "Contact us anytime for appointments, emergencies, or consultation.",
+        contact_cta_btn: "Book Appointment"
     },
+
     ne: {
         lang_toggle: "English",
         nav_home: "गृहपृष्ठ",
@@ -100,78 +302,281 @@ export const translations = {
         nav_packages: "प्याकेज / अफरहरू",
         nav_contact: "सम्पर्क",
         cta_book: "टिकट काट्नुहोस्",
-        hero_title: "तपाईंको स्वास्थ्य, हाम्रो प्राथमिकता।",
-        hero_desc: "तपाईं र तपाईंको परिवारको लागि भरपर्दो, सुलभ र आधुनिक स्वास्थ्य सेवाहरू प्रदान गर्दै।",
-        hero_tag1: "१०,०००+ बिरामीहरूको सेवा",
-        hero_tag2: "उन्नत स्वास्थ्य परीक्षण",
-        hero_tag3: "समुदायमा आधारित सेवा",
-        section_why_title: "स्मार्ट हेल्थ क्लिनिक किन रोज्ने?",
-        why_1: "विशेषज्ञ डाक्टर र सहयोगी टोली",
-        why_2: "आधुनिक उपकरण र सही निदान",
-        why_3: "बिरामी केन्द्रित सेवा",
-        why_4: "छिटो र भरपर्दो",
-        why_5: "सामुदायिक सहभागिता",
-        section_impact_title: "सामुदायिक प्रभाव",
+
+        // HOME - HERO
+        home_hero_title: "तपाईंको स्वास्थ्य, हाम्रो प्राथमिकता।",
+        home_hero_desc: "तपाईं र तपाईंको परिवारको लागि भरपर्दो, सुलभ र आधुनिक स्वास्थ्य सेवाहरू प्रदान गर्दै।",
+        home_hero_tag1: "१०,०००+ बिरामीहरूको सेवा",
+        home_hero_tag2: "उन्नत स्वास्थ्य परीक्षण",
+        home_hero_tag3: "समुदायमा आधारित सेवा",
+        home_hero_location: "पेप्सीकोला, काठमाडौँ",
+
+        // HOME - WHY
+        home_why_title: "स्मार्ट हेल्थ क्लिनिक किन रोज्ने?",
+        home_why_1: "विशेषज्ञ डाक्टर र सहयोगी टोली",
+        home_why_2: "आधुनिक उपकरण र सही निदान",
+        home_why_3: "बिरामी केन्द्रित सेवा",
+        home_why_4: "छिटो र भरपर्दो",
+        home_why_5: "सामुदायिक सहभागिता",
+
+        // HOME - IMPACT
+        home_impact_title: "सामुदायिक प्रभाव",
         home_impact_desc: "हामी बिरामीको उपचार मात्र गर्दैनौं—हामी समुदायको हेरचाह गर्छौं।",
-        cta_main: "आजै आफ्नो भेटघाट सुरक्षित गर्नुहोस्",
-        location: "पेप्सीकोला, काठमाडौँ",
-        established: "स्थापना: १८ जनवरी २०२४",
-        join_thousands: "स्मार्ट हेल्थ क्लिनिकमा विश्वास गर्ने हजारौं मानिसहरूसँग जोडिनुहोस्।",
-        health_journey: "तपाईंको स्वास्थ्य यात्रा यहाँबाट सुरु हुन्छ।",
-        info_name_label: "क्लिनिक नाम",
-        info_name: "स्मार्ट हेल्थ क्लिनिक",
 
-        info_location_label: "ठेगाना",
-        info_location: "सन सिटी रोड, पेप्सीकोला, काठमाडौँ",
+        // HOME - CTA
+        home_cta_main: "आजै आफ्नो भेटघाट सुरक्षित गर्नुहोस्",
+        home_cta_join: "स्मार्ट हेल्थ क्लिनिकमा विश्वास गर्ने हजारौं मानिसहरूसँग जोडिनुहोस्।",
+        home_cta_desc: "तपाईंको स्वास्थ्य यात्रा यहाँबाट सुरु हुन्छ।",
 
-        info_phone_label: "फोन",
-        info_phone: "०१-५९२३००५ / ५९२४००५",
+        // HOME - INFO
+        home_info_name_label: "क्लिनिक नाम",
+        home_info_name: "स्मार्ट हेल्थ क्लिनिक",
 
-        info_time_label: "समय",
-        info_time: "बिहान र साँझ (५ बजे - ८ बजे)",
+        home_info_location_label: "ठेगाना",
+        home_info_location: "सन सिटी रोड, पेप्सीकोला, काठमाडौँ",
 
-        //about page
+        home_info_phone_label: "फोन",
+        home_info_phone: "०१-५९२३००५ / ५९२४००५",
+
+        home_info_time_label: "समय",
+        home_info_time: "बिहान र साँझ (५ बजे - ८ बजे)",
+
+        // HOME - IMPACT CARDS
+        home_impact_card1: "स्वास्थ्य शिविर",
+        home_impact_card2: "स्वास्थ्य परीक्षण",
+        home_impact_card3: "बिरामी सेवा",
+        home_impact_card4: "स्वास्थ्य प्याकेज",
+
+        // DOCTORS COMPONENT
+        doctors_title: "हाम्रा डाक्टरहरू",
+        doctors_desc: "तपाईंको स्वास्थ्य र हेरचाहका लागि समर्पित अनुभवी विशेषज्ञहरू।",
+
+        // ABOUT - HERO
         about_title: "स्मार्ट हेल्थ क्लिनिकको बारेमा",
+        about_established: "स्थापना: १८ जनवरी २०२४",
         about_who_1: "स्मार्ट हेल्थ क्लिनिक पेप्सीकोला, काठमाडौँमा रहेको छ र गुणस्तरीय, सुलभ तथा बिरामी केन्द्रित स्वास्थ्य सेवा प्रदान गर्दछ।",
         about_who_2: "१८ जनवरी २०२४ मा स्थापना भएदेखि हामीले १०,०००+ बिरामीहरूको सेवा गरिसकेका छौं।",
 
-        mission_title: "हाम्रो लक्ष्य",
-        mission_desc: "सुलभ, गुणस्तरीय र प्रभावकारी स्वास्थ्य सेवा प्रदान गर्दै समुदायमा स्वास्थ्य चेतना, रोकथाम र प्रारम्भिक निदानलाई प्रवर्द्धन गर्नु।",
+        // ABOUT - OVERVIEW
+        about_overview_title: "हामी को हौं",
+        about_overview_subtitle: "सुलभ र आधुनिक स्वास्थ्य सेवाको दृष्टिकोण",
+        about_overview_p1: "स्मार्ट हेल्थ क्लिनिक पेप्सीकोला, काठमाडौँमा रहेको ISO प्रमाणित आधुनिक स्वास्थ्य केन्द्र हो।",
+        about_overview_p2: "नेपालका अनुभवी विशेषज्ञहरूको टोलीसँग हामी सामान्य परामर्शदेखि उन्नत परीक्षणसम्म सेवा प्रदान गर्छौं।",
+        about_overview_p3: "हाम्रो क्लिनिक 4D अल्ट्रासाउन्ड, डिजिटल एक्स-रे, इन्डोस्कोपी र मिनर OT जस्ता आधुनिक उपकरणले सुसज्जित छ।",
+        about_overview_list_title: "हामी विश्वास गर्छौं:",
+        about_overview_li1: "छिटो र झन्झटमुक्त सेवा",
+        about_overview_li2: "बिरामी केन्द्रित सेवा",
+        about_overview_li3: "सुलभ मूल्य",
+        about_overview_li4: "स्वच्छ वातावरण",
+        about_overview_quote: "स्मार्ट जीवनका लागि स्मार्ट सेवा",
 
-        vision_title: "हाम्रो दृष्टि",
-        vision_desc: "नेपालकै सबैभन्दा विश्वसनीय र समुदायमुखी स्वास्थ्य सेवा प्रदायक बन्ने।",
+        // ABOUT - MISSION VISION
+        about_mission_title: "हाम्रो लक्ष्य",
+        about_mission_desc: "सुलभ, गुणस्तरीय स्वास्थ्य सेवा प्रदान गर्दै समुदायमा स्वास्थ्य चेतना फैलाउने।",
 
-        values_title: "हाम्रो मूल्यहरू",
+        about_vision_title: "हाम्रो दृष्टि",
+        about_vision_desc: "नेपालकै सबैभन्दा विश्वसनीय र समुदायमुखी स्वास्थ्य सेवा प्रदायक बन्ने।",
 
-        val_1_t: "बिरामी पहिलो",
-        val_1_d: "हरेक निर्णय बिरामीको हितमा केन्द्रित हुन्छ।",
+        // ABOUT - VALUES
+        about_values_title: "हाम्रो मूल्यहरू",
+        about_val1_t: "बिरामी पहिलो",
+        about_val1_d: "हरेक निर्णय बिरामीको हितमा केन्द्रित हुन्छ।",
+        about_val2_t: "गुणस्तरीय सेवा",
+        about_val2_d: "हरेक सेवामा उच्च स्तर कायम गर्ने।",
+        about_val3_t: "विश्वास र पारदर्शिता",
+        about_val3_d: "दीर्घकालीन सम्बन्ध निर्माण गर्ने।",
+        about_val4_t: "समुदायप्रति प्रतिबद्धता",
+        about_val4_d: "स्वास्थ्य कार्यक्रममार्फत समाजलाई फिर्ता दिने।",
 
-        val_2_t: "गुणस्तरीय सेवा",
-        val_2_d: "हरेक सेवामा उच्च स्तर कायम गर्ने।",
+        // ABOUT - IMPACT
+        about_impact_title: "हाम्रो यात्रा र प्रभाव",
+        about_impact_desc: "छोटो समयमा हामीले ठूलो प्रभाव पारेका छौं:",
+        about_stat1: "१०,०००+ बिरामी सेवा",
+        about_stat2: "८००+ स्वास्थ्य शिविर",
+        about_stat3: "१८,०००+ चिनी परीक्षण",
+        about_stat4: "प्रशिक्षण तथा सचेतना कार्यक्रम",
 
-        val_3_t: "विश्वास र पारदर्शिता",
-        val_3_d: "दीर्घकालीन सम्बन्ध निर्माण गर्ने।",
+        // ABOUT - COMMUNITY
+        about_community_title: "समुदाय संलग्नता",
+        about_community_desc: "हामी विभिन्न संस्थासँग मिलेर अर्थपूर्ण स्वास्थ्य कार्यक्रम गर्छौं।",
+        about_community_li1: "स्वास्थ्य शिविर",
+        about_community_li2: "रक्तदान कार्यक्रम",
+        about_community_li3: "सचेतना अभियान",
+        about_community_li4: "प्रशिक्षण कार्यक्रम",
 
-        val_4_t: "समुदायप्रति प्रतिबद्धता",
-        val_4_d: "स्वास्थ्य कार्यक्रममार्फत समाजलाई फिर्ता दिने।",
+        about_quote: "स्वस्थ समुदाय = बलियो राष्ट्र",
+        about_quote_sub: "सहकार्य र हेरचाहमार्फत स्वस्थ भविष्य निर्माण",
 
-        impact_title: "हाम्रो यात्रा र प्रभाव",
-        impact_desc: "छोटो समयमा हामीले ठूलो प्रभाव पारेका छौं:",
+        // SERVICES PAGE
+        services_hero_title: "हाम्रा सेवाहरू",
+        services_hero_desc: "गुणस्तरीय, सुलभ र सुविधाजनक स्वास्थ्य सेवाहरू।",
 
-        stat_1: "१०,०००+ बिरामी सेवा",
-        stat_2: "८००+ स्वास्थ्य शिविर",
-        stat_3: "१८,०००+ चिनी परीक्षण",
-        stat_4: "प्रशिक्षण तथा सचेतना कार्यक्रम",
+        services_desk_title: "स्मार्ट हेल्थ डेस्क",
+        services_desk_subtitle: "प्राथमिक सेवा र छुटसहितका स्वास्थ्य सेवा",
 
-        community_title: "समुदाय संलग्नता",
-        community_desc: "हामी विभिन्न संस्थासँग मिलेर कार्यक्रम गर्छौं:",
+        services_desk_li1: "रक्तचाप जाँच",
+        services_desk_li2: "प्रयोगशाला नमुना संकलन",
+        services_desk_li3: "घरमै सेवा तथा डेलिभरी",
+        services_desk_li4: "अक्सिजन सेवा र नेबुलाइजर",
+        services_desk_li5: "प्राथमिक औषधि सहायता",
+        services_desk_btn: "बुक गर्नुहोस्",
 
-        eng_1: "स्वास्थ्य शिविर",
-        eng_2: "रक्तदान कार्यक्रम",
-        eng_3: "सचेतना अभियान",
-        eng_4: "प्रशिक्षण कार्यक्रम",
+        services_adv_title: "उन्नत चिकित्सा सेवा",
+        services_adv_subtitle: "आधुनिक उपकरण सहित विशेषज्ञ सेवा",
 
-        quote: "स्वस्थ समुदाय = बलियो राष्ट्र"
+        services_consult_title: "सामान्य तथा विशेषज्ञ परामर्श",
+        services_consult_li1: "बाल रोग",
+        services_consult_li2: "स्त्री रोग",
+        services_consult_li3: "हृदय रोग",
+        services_consult_li4: "हड्डी रोग",
+        services_consult_li5: "छाला रोग",
+        services_consult_li6: "मानसिक स्वास्थ्य",
 
+        services_diag_title: "निदान सेवा",
+        services_diag_li1: "४डी अल्ट्रासाउन्ड",
+        services_diag_li2: "डिजिटल एक्स-रे",
+        services_diag_li3: "ECG / ECHO",
+        services_diag_li4: "प्रयोगशाला परीक्षण",
+
+        services_ot_title: "साना शल्यक्रिया",
+        services_ot_li1: "लिपोमा / सिस्ट हटाउने",
+        services_ot_li2: "फोका उपचार",
+        services_ot_li3: "टाँका लगाउने",
+        services_ot_li4: "नङ समस्या उपचार",
+        services_ot_li5: "बायोप्सी",
+
+        services_adv2_title: "विशेष सेवा",
+        services_adv2_li1: "इन्डोस्कोपी (नयाँ 🔥)",
+        services_adv2_li2: "डे केयर र आपतकालीन सेवा",
+        services_adv2_li3: "ड्रेसिङ र इन्जेक्सन",
+
+        services_gallery_title: "हाम्रो क्लिनिक",
+        services_gallery_sub: "स्मार्ट हेल्थ डेस्क मोबाइल अनुभव",
+
+        services_core_title: "मुख्य चिकित्सा सेवा",
+        services_core_1: "सामान्य जाँच",
+        services_core_1_desc: "रुटिन स्वास्थ्य परामर्श।",
+        services_core_2: "प्रयोगशाला परीक्षण",
+        services_core_2_desc: "सटीक परीक्षण सेवा।",
+        services_core_3: "खोप सेवा",
+        services_core_3_desc: "सबै उमेरका लागि सुरक्षित खोप।",
+        services_core_4: "घाउ उपचार",
+        services_core_4_desc: "सबै प्रकारका ड्रेसिङ।",
+        services_core_5: "नेबुलाइजर सेवा",
+        services_core_5_desc: "श्वासप्रश्वास उपचार सहायता।",
+        services_core_6: "घर सेवा",
+        services_core_6_desc: "घरमै नमुना संकलन।",
+
+        services_discount_title: "स्मार्ट हेल्थ छुट कार्ड",
+        services_discount_1: "प्याथोलोजी ल्याब",
+        services_discount_2: "एक्स-रे",
+        services_discount_3: "औषधि",
+        services_discount_4: "घर सेवा",
+
+        services_cta_title: "चिकित्सा सहयोग चाहिन्छ?",
+        services_cta_desc: "आजै अपोइन्टमेन्ट लिनुहोस् वा क्लिनिक आउनुहोस्।",
+        services_cta_btn: "अपोइन्टमेन्ट बुक गर्नुहोस्",
+
+        doctors_hero_title: "हाम्रा डाक्टरहरू",
+        doctors_hero_desc: "अनुभवी र समर्पित चिकित्सा विशेषज्ञहरूसँग भेट्नुहोस्।",
+
+        doctors_intro_title: "विश्वसनीय स्वास्थ्य विशेषज्ञहरू",
+        doctors_intro_desc: "हाम्रो टोलीमा नेपालका अग्रणी अस्पतालहरूबाट आएका अनुभवी विशेषज्ञहरू छन्।",
+
+        doctors_team_title: "टोलीसँग भेट्नुहोस्",
+
+        doctors_cta_title: "अपोइन्टमेन्ट बुक गर्नुहोस्",
+        doctors_cta_desc: "विशेषज्ञ डाक्टरहरूसँग परामर्श लिनुहोस्।",
+        doctors_cta_btn: "बुक गर्नुहोस्",
+
+        facility_hero_title: "हाम्रा सुविधाहरू",
+        facility_hero_desc: "सही निदान, सुरक्षित उपचार र आरामदायी सेवाका लागि आधुनिक चिकित्सा संरचना।",
+
+        facility_intro_title: "उन्नत स्वास्थ्य संरचना",
+        facility_intro_desc: "स्मार्ट हेल्थ क्लिनिक आधुनिक उपकरणले सुसज्जित छ जसले छिटो निदान र सुरक्षित उपचार सुनिश्चित गर्छ।",
+
+        facility_grid_title: "मुख्य सुविधाहरू",
+        facility_grid_subtitle: "पूर्ण स्वास्थ्य सेवाका लागि आवश्यक सबै सुविधा",
+
+        facility_1_title: "साना शल्यक्रिया (OT)",
+        facility_1_desc: "सुरक्षित र सफा वातावरणमा साना शल्यक्रिया सेवा।",
+
+        facility_2_title: "इन्डोस्कोपी मेसिन (नयाँ)",
+        facility_2_desc: "उच्च शुद्धतासहित भित्री अंग परीक्षण गर्ने आधुनिक उपकरण।",
+
+        facility_3_title: "४डी भिडियो एक्स-रे",
+        facility_3_desc: "सही र विस्तृत निदानका लागि उच्च गुणस्तरको इमेजिङ।",
+
+        facility_4_title: "आपतकालीन / डेकेयर बेड",
+        facility_4_desc: "आपतकालीन र छोटो समयको उपचारका लागि सुविधा।",
+
+        facility_5_title: "पार्किङ सुविधा",
+        facility_5_desc: "बिरामी र आगन्तुकका लागि सुरक्षित पार्किङ व्यवस्था।",
+
+        facility_cta_title: "आजै क्लिनिक भ्रमण गर्नुहोस्",
+        facility_cta_desc: "आधुनिक स्वास्थ्य सेवाको अनुभव लिनुहोस्।",
+        facility_cta_btn: "अपोइन्टमेन्ट बुक गर्नुहोस्",
+
+        package_hero_title: "स्वास्थ्य प्याकेजहरू",
+        package_hero_desc: "तपाईं र तपाईंको परिवारलाई स्वस्थ राख्नका लागि सस्तो स्वास्थ्य जाँच प्याकेजहरू।",
+
+        package_intro_title: "रोकथाम नै उत्तम उपचार",
+        package_intro_desc: "प्रारम्भिक रोग पहिचानले जीवन बचाउँछ। हाम्रो प्याकेजहरू सुलभ मूल्यमा आवश्यक परीक्षणहरू समावेश गर्छ।",
+
+        package_section_title: "उपलब्ध प्याकेजहरू",
+        package_section_subtitle: "आफ्नो स्वास्थ्य अनुसार प्याकेज छान्नुहोस्",
+
+        package_1_title: "पूरा शरीर जाँच",
+        package_1_desc: "रोगको प्रारम्भिक पहिचानका लागि विस्तृत स्वास्थ्य परीक्षण।",
+        package_1_li1: "४०+ परीक्षणहरू",
+        package_1_li2: "रक्त र पिसाब परीक्षण",
+        package_1_li3: "कलेजो र मिर्गौला परीक्षण",
+        package_1_li4: "मधुमेह परीक्षण",
+        package_1_li5: "लिपिड प्रोफाइल",
+
+        package_2_title: "चाडपर्व अफर प्याकेज",
+        package_2_desc: "विशेष छुटसहितको पूर्ण स्वास्थ्य जाँच प्याकेज।",
+        package_2_li1: "५०+ उन्नत परीक्षणहरू",
+        package_2_li2: "पूरा शरीर जाँच",
+        package_2_li3: "हृदय जोखिम परीक्षण",
+        package_2_li4: "कलेजो र मिर्गौला प्यानल",
+        package_2_li5: "मधुमेह + थाइराइड परीक्षण",
+
+        package_offer_badge: "सीमित अफर",
+
+        package_price_1: "रु. २९५०",
+        package_price_2: "रु. २९९९",
+
+        package_cta_title: "आजै आफ्नो स्वास्थ्य नियन्त्रण गर्नुहोस्",
+        package_cta_desc: "समयमै जाँच गराएर रोग रोकथाम गर्नुहोस्।",
+        package_cta_btn: "अपोइन्टमेन्ट बुक गर्नुहोस्",
+
+        contact_hero_title: "सम्पर्क गर्नुहोस्",
+        contact_hero_desc: "अपोइन्टमेन्ट, आपतकालीन सेवा र स्वास्थ्य परामर्शका लागि हामी सधैं यहाँ छौं।",
+
+        contact_section_title: "स्मार्ट हेल्थ क्लिनिक",
+
+        contact_location: "📍 पेप्सीकोला, काठमाडौँ",
+        contact_phone: "📞 ०१-५९२३००५ / ५९२४००५",
+        contact_time: "🕒 दैनिक खुला",
+
+        contact_call_btn: "📞 अहिले फोन गर्नुहोस्",
+        contact_whatsapp_btn: "💬 व्हाट्सएप",
+        contact_hint: "क्लिनिक टिमसँग तुरुन्त सम्पर्क गर्नुहोस्",
+
+        contact_map_title: "स्थान नक्सा",
+
+        contact_quick_title: "छिटो सम्पर्क",
+        contact_quick_desc: "हामीलाई सम्पर्क गर्ने छिटो तरिका छान्नुहोस्",
+
+        contact_call_card_title: "फोन गर्नुहोस्",
+        contact_call_card_desc: "तत्काल फोन सहयोग",
+
+        contact_whatsapp_card_title: "व्हाट्सएप च्याट",
+        contact_whatsapp_card_desc: "तत्काल जवाफ पाउनुहोस्",
+
+        contact_cta_title: "चिकित्सकीय सहयोग चाहिन्छ?",
+        contact_cta_desc: "अपोइन्टमेन्ट, आपतकालीन वा परामर्शका लागि हामीलाई सम्पर्क गर्नुहोस्।",
+        contact_cta_btn: "अपोइन्टमेन्ट बुक गर्नुहोस्"
     }
 };

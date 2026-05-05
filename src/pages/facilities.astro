@@ -8,13 +8,9 @@ import Layout from "../layouts/Layout.astro";
   <section class="bg-clinic-slate text-white py-20">
     <div class="container mx-auto px-6 max-w-5xl text-center">
 
-      <h1 class="text-4xl md:text-6xl font-black mb-6">
-        Our Facilities
-      </h1>
+      <h1 data-t="facility_hero_title" class="text-4xl md:text-6xl font-black mb-6"></h1>
 
-      <p class="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto">
-        Modern medical infrastructure designed for accurate diagnosis, safe treatment, and patient comfort.
-      </p>
+      <p data-t="facility_hero_desc" class="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto"></p>
 
     </div>
   </section>
@@ -24,14 +20,9 @@ import Layout from "../layouts/Layout.astro";
   <section class="py-16 bg-white">
     <div class="container mx-auto px-6 max-w-4xl text-center">
 
-      <h2 class="text-3xl font-bold text-clinic-slate mb-4">
-        Advanced Healthcare Infrastructure
-      </h2>
+      <h2 data-t="facility_intro_title" class="text-3xl font-bold text-clinic-slate mb-4"></h2>
 
-      <p class="text-gray-600 leading-relaxed">
-        Smart Health Clinic is equipped with modern medical facilities that ensure fast diagnosis,
-        safe procedures, and comfortable patient care — all under one roof.
-      </p>
+      <p data-t="facility_intro_desc" class="text-gray-600 leading-relaxed"></p>
 
     </div>
   </section>
@@ -42,12 +33,9 @@ import Layout from "../layouts/Layout.astro";
     <div class="container mx-auto px-6 max-w-6xl">
 
       <div class="text-center mb-12">
-        <h2 class="text-3xl font-bold text-clinic-slate">
-          Key Facilities
-        </h2>
-        <p class="text-gray-600 mt-2">
-          Everything you need for complete healthcare support
-        </p>
+        <h2 data-t="facility_grid_title" class="text-3xl font-bold text-clinic-slate"></h2>
+
+        <p data-t="facility_grid_subtitle" class="text-gray-600 mt-2"></p>
       </div>
 
       <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -55,48 +43,38 @@ import Layout from "../layouts/Layout.astro";
         <!-- Minor OT -->
         <div class="bg-white rounded-2xl p-6 shadow-sm border hover:shadow-md transition">
           <div class="text-4xl mb-3">🔧</div>
-          <h3 class="font-bold text-lg text-clinic-slate mb-2">Minor OT</h3>
-          <p class="text-gray-600 text-sm">
-            Safe minor surgical procedures with sterile environment and expert care.
-          </p>
+          <h3 data-t="facility_1_title" class="font-bold text-lg text-clinic-slate mb-2"></h3>
+          <p data-t="facility_1_desc" class="text-gray-600 text-sm"></p>
         </div>
 
         <!-- Endoscopy -->
         <div class="bg-white rounded-2xl p-6 shadow-sm border hover:shadow-md transition">
           <div class="text-4xl mb-3">🔥</div>
           <h3 class="font-bold text-lg text-clinic-slate mb-2">
-            Endoscopy Machine <span class="text-red-500 text-sm">(NEW)</span>
+            <span data-t="facility_2_title"></span>
           </h3>
-          <p class="text-gray-600 text-sm">
-            Advanced diagnostic tool for internal examination with high accuracy.
-          </p>
+          <p data-t="facility_2_desc" class="text-gray-600 text-sm"></p>
         </div>
 
         <!-- 4D X-ray -->
         <div class="bg-white rounded-2xl p-6 shadow-sm border hover:shadow-md transition">
           <div class="text-4xl mb-3">🩻</div>
-          <h3 class="font-bold text-lg text-clinic-slate mb-2">4D Video X-ray</h3>
-          <p class="text-gray-600 text-sm">
-            High-resolution imaging for precise and detailed diagnosis.
-          </p>
+          <h3 data-t="facility_3_title" class="font-bold text-lg text-clinic-slate mb-2"></h3>
+          <p data-t="facility_3_desc" class="text-gray-600 text-sm"></p>
         </div>
 
         <!-- Emergency -->
         <div class="bg-white rounded-2xl p-6 shadow-sm border hover:shadow-md transition">
           <div class="text-4xl mb-3">🚑</div>
-          <h3 class="font-bold text-lg text-clinic-slate mb-2">Emergency / Daycare Bed</h3>
-          <p class="text-gray-600 text-sm">
-            Immediate care facility for emergency cases and short-term admission.
-          </p>
+          <h3 data-t="facility_4_title" class="font-bold text-lg text-clinic-slate mb-2"></h3>
+          <p data-t="facility_4_desc" class="text-gray-600 text-sm"></p>
         </div>
 
         <!-- Parking -->
         <div class="bg-white rounded-2xl p-6 shadow-sm border hover:shadow-md transition">
           <div class="text-4xl mb-3">🅿️</div>
-          <h3 class="font-bold text-lg text-clinic-slate mb-2">Parking Available</h3>
-          <p class="text-gray-600 text-sm">
-            Easy and safe parking space for patients and visitors.
-          </p>
+          <h3 data-t="facility_5_title" class="font-bold text-lg text-clinic-slate mb-2"></h3>
+          <p data-t="facility_5_desc" class="text-gray-600 text-sm"></p>
         </div>
 
       </div>
@@ -109,20 +87,17 @@ import Layout from "../layouts/Layout.astro";
   <section class="py-20 bg-clinic-slate text-white text-center">
     <div class="container mx-auto px-6 max-w-3xl">
 
-      <h2 class="text-3xl font-bold mb-4">
-        Visit Our Clinic Today
-      </h2>
+      <h2 data-t="facility_cta_title" class="text-3xl font-bold mb-4"></h2>
 
-      <p class="text-slate-300 mb-8">
-        Experience modern healthcare facilities with expert medical support.
-      </p>
+      <p data-t="facility_cta_desc" class="text-slate-300 mb-8"></p>
 
-      <a 
+      <a
         href="https://vendor.smarthealthnepal.com/"
         target="_blank"
         rel="noopener noreferrer"
-        class="bg-clinic-teal px-7 py-3 rounded-full font-bold inline-block">
-        Book Appointment
+        class="bg-clinic-teal px-7 py-3 rounded-full font-bold inline-block"
+      >
+        <span data-t="facility_cta_btn"></span>
       </a>
 
     </div>
