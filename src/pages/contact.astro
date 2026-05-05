@@ -1,6 +1,5 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { contact } from "../utils/config.ts";
 ---
 
 <Layout>
@@ -28,11 +27,17 @@ import { contact } from "../utils/config.ts";
 
         <div class="space-y-4 text-gray-700 text-lg">
 
-          <p>{contact.location}</p>
+          <p>
+            <span data-t="contact_location_label"></span>: 
+            <span data-t="contact_location"></span>
+          </p>
 
-          <p>{contact.phoneDisplay}</p>
+          <p>
+            <span data-t="contact_phone_label"></span>: 
+            <span data-t="contact_phone"></span>
+          </p>
 
-          <p>🕒 Open Daily</p>
+          <p data-t="contact_time"></p>
 
         </div>
 
@@ -40,13 +45,13 @@ import { contact } from "../utils/config.ts";
         <div class="mt-8 flex flex-col sm:flex-row gap-4">
 
           <a
-            href={`tel:${contact.phoneRaw}`}
+            href="tel:015923005"
             data-t="contact_call_btn"
             class="bg-clinic-teal text-white px-6 py-3 rounded-full font-bold text-center hover:opacity-90 transition"
           ></a>
 
           <a
-            href={`https://wa.me/${contact.whatsapp}?text=${encodeURIComponent(contact.whatsappMessage)}`}
+            href="https://wa.me/9779812345678?text=Hello%20Smart%20Health%20Clinic,%20I%20would%20like%20to%20book%20an%20appointment."
             target="_blank"
             data-t="contact_whatsapp_btn"
             class="bg-green-500 text-white px-6 py-3 rounded-full font-bold text-center hover:opacity-90 transition"
@@ -78,7 +83,7 @@ import { contact } from "../utils/config.ts";
   </section>
 
 
-  <!-- QUICK CONTACT OPTIONS -->
+  <!-- QUICK CONTACT -->
   <section class="py-20 bg-slate-50">
     <div class="container mx-auto px-6 max-w-5xl text-center">
 
@@ -89,7 +94,7 @@ import { contact } from "../utils/config.ts";
       <div class="grid sm:grid-cols-2 gap-6">
 
         <a
-          href={`tel:${contact.phoneRaw}`}
+          href="tel:015923005"
           class="bg-white border rounded-2xl p-6 shadow-sm hover:shadow-md transition"
         >
           <div class="text-4xl mb-2">📞</div>
@@ -98,7 +103,7 @@ import { contact } from "../utils/config.ts";
         </a>
 
         <a
-          href={`https://wa.me/${contact.whatsapp}?text=${encodeURIComponent(contact.whatsappMessage)}`}
+          href="https://wa.me/9779812345678?text=Hello%20Smart%20Health%20Clinic,%20I%20would%20like%20to%20book%20an%20appointment."
           target="_blank"
           class="bg-white border rounded-2xl p-6 shadow-sm hover:shadow-md transition"
         >
@@ -126,7 +131,7 @@ import { contact } from "../utils/config.ts";
         target="_blank"
         rel="noopener noreferrer"
         data-t="contact_cta_btn"
-        class="bg-clinic-teal px-7 py-3 rounded-full font-bold inline-block hover:opacity-90 transition"
+        class="bg-clinic-teal px-7 py-3 rounded-full font-bold inline-block"
       ></a>
 
     </div>

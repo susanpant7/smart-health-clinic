@@ -265,15 +265,18 @@ export const translations = {
 
         contact_section_title: "Smart Health Clinic",
 
-        contact_location: "📍 Pepsicola, Kathmandu",
-        contact_phone: "📞 01-5923005 / 5924005",
+        contact_location_label: "Location",
+        contact_location: "Sun City Road, Pepsicola",
+
+        contact_phone_label: "Phone",
+        contact_phone: "01-5923005 / 5924005",
+
+        contact_time_label: "Timing",
         contact_time: "🕒 Open Daily",
 
         contact_call_btn: "📞 Call Now",
         contact_whatsapp_btn: "💬 WhatsApp",
         contact_hint: "Tap to instantly connect with our clinic team",
-
-        contact_map_title: "Location Map",
 
         contact_quick_title: "Quick Contact",
         contact_quick_desc: "Choose the fastest way to reach us",
@@ -556,15 +559,18 @@ export const translations = {
 
         contact_section_title: "स्मार्ट हेल्थ क्लिनिक",
 
-        contact_location: "📍 पेप्सीकोला, काठमाडौँ",
-        contact_phone: "📞 ०१-५९२३००५ / ५९२४००५",
+        contact_location_label: "ठेगाना",
+        contact_location: "सन सिटी रोड, पेप्सीकोला",
+
+        contact_phone_label: "फोन",
+        contact_phone: "०१-५९२३००५ / ५९२४००५",
+
+        contact_time_label: "समय",
         contact_time: "🕒 दैनिक खुला",
 
         contact_call_btn: "📞 अहिले फोन गर्नुहोस्",
         contact_whatsapp_btn: "💬 व्हाट्सएप",
         contact_hint: "क्लिनिक टिमसँग तुरुन्त सम्पर्क गर्नुहोस्",
-
-        contact_map_title: "स्थान नक्सा",
 
         contact_quick_title: "छिटो सम्पर्क",
         contact_quick_desc: "हामीलाई सम्पर्क गर्ने छिटो तरिका छान्नुहोस्",
