@@ -1,14 +1,18 @@
 ---
-import { doctors } from "../data/doctors";
+// import { doctors } from "../data/doctors";
 
 const { showDetails = false } = Astro.props;
 ---
 
-<link
+<div class="hidden" data-commented-out="DoctorSlider"></div>
+
+<!-- <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+/> -->
 
+{
+  /*
 <section class="py-20 bg-white">
   <div class="container mx-auto px-4">
 
@@ -59,8 +63,10 @@ const { showDetails = false } = Astro.props;
 
   </div>
 </section>
+*/
+}
 
-<script is:inline>
+<!-- <script is:inline>
   window.addEventListener("load", async () => {
     const { default: Swiper } = await import(
       "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs"
@@ -82,4 +88,4 @@ const { showDetails = false } = Astro.props;
       }
     });
   });
-</script>
+</script> -->
