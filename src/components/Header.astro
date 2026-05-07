@@ -6,7 +6,6 @@ import { translations } from '../utils/i18n';
 
 <header class="sticky top-0 z-50 w-full border-b border-gray-100 bg-white/90 backdrop-blur-md">
   <div class="container mx-auto flex h-20 items-center justify-between px-4">
-    
     <!-- Logo -->
     <a href="/" class="shrink-0 transition-transform active:scale-95">
       <Image src={logoImg} alt="Smart Health Clinic" class="h-10 w-auto md:h-12" />
@@ -15,32 +14,51 @@ import { translations } from '../utils/i18n';
     <!-- Desktop Navigation -->
     <nav class="hidden lg:flex items-center gap-6 font-medium text-clinic-slate">
       <a href="/" data-t="nav_home" class="hover:text-clinic-teal transition-colors">Home</a>
-      <a href="/about" data-t="nav_about" class="hover:text-clinic-teal transition-colors">About Us</a>
-      <a href="/services" data-t="nav_services" class="hover:text-clinic-teal transition-colors">Services</a>
-      <a href="/doctors" data-t="nav_doctors" class="hover:text-clinic-teal transition-colors">Doctors</a>
-      <a href="/facilities" data-t="nav_facilities" class="hover:text-clinic-teal transition-Facilities">Doctors</a>
+      <a href="/about" data-t="nav_about" class="hover:text-clinic-teal transition-colors"
+        >About Us</a
+      >
+      <a href="/services" data-t="nav_services" class="hover:text-clinic-teal transition-colors"
+        >Services</a
+      >
+      <a href="/doctors" data-t="nav_doctors" class="hover:text-clinic-teal transition-colors"
+        >Doctors</a
+      >
+      <a
+        href="/facilities"
+        data-t="nav_facilities"
+        class="hover:text-clinic-teal transition-Facilities">Doctors</a
+      >
 
-      <a href="/packages" data-t="nav_packages" class="hover:text-clinic-teal transition-colors">Packages</a>
-      <a href="/contact" data-t="nav_contact" class="hover:text-clinic-teal transition-colors">Contact</a>
+      <a href="/packages" data-t="nav_packages" class="hover:text-clinic-teal transition-colors"
+        >Packages</a
+      >
+      <a href="/contact" data-t="nav_contact" class="hover:text-clinic-teal transition-colors"
+        >Contact</a
+      >
     </nav>
 
     <!-- Actions -->
     <div class="flex items-center gap-2 md:gap-4">
-      <button id="lang-switcher" class="flex items-center gap-1.5 rounded-lg border border-gray-200 px-3 py-2 text-sm font-bold text-clinic-slate hover:bg-slate-50">
+      <button
+        id="lang-switcher"
+        class="flex items-center gap-1.5 rounded-lg border border-gray-200 px-3 py-2 text-sm font-bold text-clinic-slate hover:bg-slate-50"
+      >
         🌐 <span id="lang-label">नेपाली</span>
       </button>
 
-    <a
+      <a
         href="https://vendor.smarthealthnepal.com/"
         target="_blank"
         rel="noopener noreferrer"
         class="hidden sm:block rounded-full bg-clinic-teal px-6 py-2.5 text-sm font-bold text-white shadow-md hover:bg-clinic-slate transition-all"
-    >
+      >
         <span data-t="cta_book">Book Now</span>
-    </a>
+      </a>
 
       <button id="menu-btn" class="lg:hidden p-2 text-clinic-slate">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16m-7 6h7" stroke-width="2" stroke-linecap="round"/></svg>
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          ><path d="M4 6h16M4 12h16m-7 6h7" stroke-width="2" stroke-linecap="round"></path></svg
+        >
       </button>
     </div>
   </div>
@@ -55,7 +73,12 @@ import { translations } from '../utils/i18n';
       <a href="/facilities" data-t="nav_facilities">Facilities</a>
       <a href="/packages" data-t="nav_packages">Packages</a>
       <a href="/contact" data-t="nav_contact">Contact</a>
-      <a href="/book" class="bg-clinic-teal text-white text-center py-3 rounded-xl" data-t="cta_book">Book Now</a>
+      <a
+        href="https://vendor.smarthealthnepal.com/"
+        target="_blank"
+        class="bg-clinic-teal text-white text-center py-3 rounded-xl"
+        data-t="cta_book">Book Now</a
+      >
     </nav>
   </div>
 </header>
@@ -65,7 +88,7 @@ import { translations } from '../utils/i18n';
 
   const updateUI = (lang: Lang) => {
     localStorage.setItem('preferredLang', lang);
-    document.querySelectorAll('[data-t]').forEach(el => {
+    document.querySelectorAll('[data-t]').forEach((el) => {
       const key = el.getAttribute('data-t') as keyof typeof translations.en;
       if (translations[lang][key]) el.textContent = translations[lang][key];
     });
