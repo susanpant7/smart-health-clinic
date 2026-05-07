@@ -11,22 +11,24 @@ const { title = 'Smart Health Clinic', description = 'Affordable healthcare in K
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Smart Health Clinic" />
 
     <title>{title}</title>
     <meta name="description" content={description} />
 
-    <!-- Canonical URL (VERY important for SEO) -->
-    <link rel="canonical" href={Astro.url} />
+    <!-- Canonical URL -->
+    <link rel="canonical" href={`https://smarthealthclinic.com.np${Astro.url.pathname}`} />
 
     <!-- Favicon -->
     <link rel="icon" href="/favicon.ico" />
 
-    <!-- Open Graph (WhatsApp / Facebook / LinkedIn) -->
+    <!-- Open Graph -->
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content={Astro.url} />
+    <meta property="og:url" content={`https://smarthealthclinic.com.np${Astro.url.pathname}`} />
     <meta property="og:image" content="https://smarthealthclinic.com.np/og-image.png" />
+    <meta property="og:site_name" content="Smart Health Clinic" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -34,9 +36,30 @@ const { title = 'Smart Health Clinic', description = 'Affordable healthcare in K
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content="https://smarthealthclinic.com.np/og-image.png" />
 
-    <!-- Optional: better indexing hint -->
+    <!-- Robots -->
     <meta name="robots" content="index, follow" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalClinic",
+        "name": "Smart Health Clinic",
+        "url": "https://smarthealthclinic.com.np",
+        "logo": "https://smarthealthclinic.com.np/og-image.png",
+        "image": "https://smarthealthclinic.com.np/og-image.png",
+        "telephone": "+977-01-5923005",
+        "openingHours": "Mo-Sa 08:00-18:00",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Sun City Road, Pepsicola",
+          "addressLocality": "Kathmandu",
+          "addressCountry": "NP"
+        }
+      }
+    </script>
   </head>
+
   <body>
     <Header />
     <main>

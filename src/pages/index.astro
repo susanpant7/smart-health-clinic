@@ -21,30 +21,38 @@ import DoctorSlider from '../components/DoctorSlider.astro';
       <div
         class="mb-4 inline-flex items-center rounded-full bg-white/10 px-4 py-1 text-sm backdrop-blur"
       >
-        📍 <span data-t="home_hero_location"></span>
+        📍
+        <span data-t="home_hero_location"> Smart Health Clinic, Pepsicola, Kathmandu </span>
       </div>
 
-      <h1 data-t="home_hero_title" class="mb-5 text-4xl md:text-6xl font-black"></h1>
+      <h1 data-t="home_hero_title" class="mb-5 text-4xl md:text-6xl font-black">
+        Smart Health Clinic – Trusted Healthcare in Kathmandu
+      </h1>
 
-      <p data-t="home_hero_desc" class="mb-8 text-slate-200 max-w-2xl mx-auto"></p>
+      <p data-t="home_hero_desc" class="mb-8 text-slate-200 max-w-2xl mx-auto">
+        Affordable and trusted healthcare services in Pepsicola, Kathmandu. Consult experienced
+        doctors, diagnostics, and patient-focused care.
+      </p>
 
       <div class="flex justify-center gap-4 flex-wrap">
         <a
           href="https://vendor.smarthealthnepal.com/"
           target="_blank"
+          rel="noopener"
           class="bg-clinic-teal px-7 py-3 rounded-full font-bold"
         >
-          <span data-t="cta_book"></span>
+          <span data-t="cta_book">Book Appointment</span>
         </a>
+
         <a href="/contact" class="border px-7 py-3 rounded-full">
-          <span data-t="nav_contact"></span>
+          <span data-t="nav_contact">Contact Us</span>
         </a>
       </div>
 
       <div class="mt-8 flex flex-wrap justify-center gap-5 text-sm font-bold text-slate-100">
-        <span>👉 <span data-t="home_hero_tag1"></span></span>
-        <span>👉 <span data-t="home_hero_tag2"></span></span>
-        <span>👉 <span data-t="home_hero_tag3"></span></span>
+        <span>👉 <span data-t="home_hero_tag1">Experienced Doctors</span></span>
+        <span>👉 <span data-t="home_hero_tag2">Affordable Care</span></span>
+        <span>👉 <span data-t="home_hero_tag3">Modern Facilities</span></span>
       </div>
     </div>
   </section>
@@ -55,26 +63,26 @@ import DoctorSlider from '../components/DoctorSlider.astro';
       <div class="grid md:grid-cols-4 gap-5 bg-white rounded-3xl shadow-xl p-6 text-center">
         <div>
           <div class="text-xl">🏥</div>
-          <p data-t="home_info_name_label" class="text-sm text-gray-500"></p>
-          <p data-t="home_info_name" class="font-bold"></p>
+          <p data-t="home_info_name_label" class="text-sm text-gray-500">Clinic Name</p>
+          <p data-t="home_info_name" class="font-bold">Smart Health Clinic</p>
         </div>
 
         <div>
           <div class="text-xl">📍</div>
-          <p data-t="home_info_location_label" class="text-sm text-gray-500"></p>
-          <p data-t="home_info_location" class="font-bold"></p>
+          <p data-t="home_info_location_label" class="text-sm text-gray-500">Location</p>
+          <p data-t="home_info_location" class="font-bold">Pepsicola, Kathmandu</p>
         </div>
 
         <div>
           <div class="text-xl">📞</div>
-          <p data-t="home_info_phone_label" class="text-sm text-gray-500"></p>
-          <p data-t="home_info_phone" class="font-bold"></p>
+          <p data-t="home_info_phone_label" class="text-sm text-gray-500">Phone</p>
+          <p data-t="home_info_phone" class="font-bold">01-5923005</p>
         </div>
 
         <div>
           <div class="text-xl">⏰</div>
-          <p data-t="home_info_time_label" class="text-sm text-gray-500"></p>
-          <p data-t="home_info_time" class="font-bold"></p>
+          <p data-t="home_info_time_label" class="text-sm text-gray-500">Opening Hours</p>
+          <p data-t="home_info_time" class="font-bold">Mon–Sat 8AM–6PM</p>
         </div>
       </div>
     </div>
@@ -83,62 +91,79 @@ import DoctorSlider from '../components/DoctorSlider.astro';
   <!-- WHY -->
   <section class="bg-slate-50 py-16 mt-10">
     <div class="container mx-auto px-4 text-center">
-      <h2 data-t="home_why_title" class="mb-10 text-3xl font-bold text-clinic-slate"></h2>
+      <h2 data-t="home_why_title" class="mb-10 text-3xl font-bold text-clinic-slate">
+        Why Choose Smart Health Clinic?
+      </h2>
 
       <div class="grid md:grid-cols-5 gap-5">
-        {
-          [
-            { icon: '👨‍⚕️', key: 'home_why_1' },
-            { icon: '🏥', key: 'home_why_2' },
-            { icon: '💯', key: 'home_why_3' },
-            { icon: '⚡', key: 'home_why_4' },
-            { icon: '🤝', key: 'home_why_5' },
-          ].map((i) => (
-            <div class="bg-white p-5 rounded-xl shadow-sm hover:shadow transition">
-              <div class="text-2xl mb-2">{i.icon}</div>
-              <p data-t={i.key} />
-            </div>
-          ))
-        }
+        <div class="bg-white p-5 rounded-xl shadow-sm hover:shadow transition">
+          <div class="text-2xl mb-2">👨‍⚕️</div>
+          <p data-t="home_why_1">Experienced Doctors</p>
+        </div>
+
+        <div class="bg-white p-5 rounded-xl shadow-sm hover:shadow transition">
+          <div class="text-2xl mb-2">🏥</div>
+          <p data-t="home_why_2">Modern Facilities</p>
+        </div>
+
+        <div class="bg-white p-5 rounded-xl shadow-sm hover:shadow transition">
+          <div class="text-2xl mb-2">💯</div>
+          <p data-t="home_why_3">Affordable Care</p>
+        </div>
+
+        <div class="bg-white p-5 rounded-xl shadow-sm hover:shadow transition">
+          <div class="text-2xl mb-2">⚡</div>
+          <p data-t="home_why_4">Fast Service</p>
+        </div>
+
+        <div class="bg-white p-5 rounded-xl shadow-sm hover:shadow transition">
+          <div class="text-2xl mb-2">🤝</div>
+          <p data-t="home_why_5">Patient Friendly</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- DOCTORS -->
-  <section class="py-12 bg-white">
+  <!-- <section class="py-12 bg-white">
     <div class="container mx-auto px-4 text-center">
-      <div class="max-w-6xl mx-auto">
-        <DoctorSlider showDetails={true} />
-      </div>
+      <h2 class="text-3xl font-bold text-clinic-slate mb-6">Meet Our Doctors</h2>
+
+      <DoctorSlider showDetails={true} />
     </div>
-  </section>
+  </section> -->
 
   <!-- IMPACT -->
   <section class="py-16 bg-gray-50 text-center">
     <div class="container mx-auto px-4">
-      <h2 data-t="home_impact_title" class="mb-3 text-3xl font-bold text-clinic-slate"></h2>
+      <h2 data-t="home_impact_title" class="mb-3 text-3xl font-bold text-clinic-slate">
+        Trusted Healthcare in Kathmandu
+      </h2>
 
-      <p data-t="home_impact_desc" class="mb-10 text-gray-600 max-w-2xl mx-auto"></p>
+      <p data-t="home_impact_desc" class="mb-10 text-gray-600 max-w-2xl mx-auto">
+        We provide quality healthcare services to thousands of patients in Kathmandu and surrounding
+        areas.
+      </p>
 
       <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
         <div class="bg-white rounded-2xl shadow-sm p-6">
           <div class="text-3xl font-bold text-clinic-slate">800+</div>
-          <div class="mt-1 text-gray-600" data-t="home_impact_card1"></div>
+          <div data-t="home_impact_card1" class="mt-1 text-gray-600">Patients Served</div>
         </div>
 
         <div class="bg-white rounded-2xl shadow-sm p-6">
           <div class="text-3xl font-bold text-clinic-slate">18,000+</div>
-          <div class="mt-1 text-gray-600" data-t="home_impact_card2"></div>
+          <div data-t="home_impact_card2" class="mt-1 text-gray-600">Consultations</div>
         </div>
 
         <div class="bg-white rounded-2xl shadow-sm p-6">
           <div class="text-3xl font-bold text-clinic-slate">10,000+</div>
-          <div class="mt-1 text-gray-600" data-t="home_impact_card3"></div>
+          <div data-t="home_impact_card3" class="mt-1 text-gray-600">Tests Done</div>
         </div>
 
         <div class="bg-white rounded-2xl shadow-sm p-6">
           <div class="text-3xl font-bold text-clinic-slate">1,000+</div>
-          <div class="mt-1 text-gray-600" data-t="home_impact_card4"></div>
+          <div data-t="home_impact_card4" class="mt-1 text-gray-600">Happy Families</div>
         </div>
       </div>
     </div>
@@ -147,12 +172,19 @@ import DoctorSlider from '../components/DoctorSlider.astro';
   <!-- CTA -->
   <section class="py-16 text-center">
     <div class="bg-clinic-slate text-white py-12 px-6 rounded-3xl mx-4">
-      <h2 data-t="home_cta_join" class="mb-3 text-3xl font-bold"></h2>
+      <h2 data-t="home_cta_join" class="mb-3 text-3xl font-bold">Book Your Appointment Today</h2>
 
-      <p data-t="home_cta_desc" class="mb-6 text-slate-200"></p>
+      <p data-t="home_cta_desc" class="mb-6 text-slate-200">
+        Get quality healthcare from experienced doctors at Smart Health Clinic.
+      </p>
 
-      <a href="/book" class="bg-clinic-teal px-7 py-3 rounded-full font-bold inline-block">
-        <span data-t="home_cta_main"></span>
+      <a
+        href="https://vendor.smarthealthnepal.com/"
+        target="_blank"
+        rel="noopener"
+        class="bg-clinic-teal px-7 py-3 rounded-full font-bold inline-block"
+      >
+        <span data-t="home_cta_main">Book Now</span>
       </a>
     </div>
   </section>
