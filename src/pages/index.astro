@@ -3,18 +3,24 @@ import Layout from '../layouts/Layout.astro';
 import DoctorSlider from '../components/DoctorSlider.astro';
 ---
 
-<Layout>
-
+<Layout
+  title="Smart Health Clinic | Best Clinic in Kathmandu"
+  description="Trusted healthcare services in Pepsicola Kathmandu. Consult doctors, diagnostics, and more."
+>
   <!-- HERO -->
   <section class="relative overflow-hidden py-16 lg:py-24">
     <div class="absolute inset-0">
       <img src="/images/clinic-hero1.png" class="h-full w-full object-cover" />
-      <div class="absolute inset-0 bg-gradient-to-br from-clinic-slate/90 via-clinic-slate/80 to-clinic-teal/70"></div>
+      <div
+        class="absolute inset-0 bg-linear-to-br from-clinic-slate/90 via-clinic-slate/80 to-clinic-teal/70"
+      >
+      </div>
     </div>
 
     <div class="relative container mx-auto px-4 text-center text-white">
-      
-      <div class="mb-4 inline-flex items-center rounded-full bg-white/10 px-4 py-1 text-sm backdrop-blur">
+      <div
+        class="mb-4 inline-flex items-center rounded-full bg-white/10 px-4 py-1 text-sm backdrop-blur"
+      >
         📍 <span data-t="home_hero_location"></span>
       </div>
 
@@ -36,16 +42,13 @@ import DoctorSlider from '../components/DoctorSlider.astro';
         <span>👉 <span data-t="home_hero_tag2"></span></span>
         <span>👉 <span data-t="home_hero_tag3"></span></span>
       </div>
-
     </div>
   </section>
-
 
   <!-- BASIC INFO -->
   <section class="relative -mt-12 z-10">
     <div class="container mx-auto px-4">
       <div class="grid md:grid-cols-4 gap-5 bg-white rounded-3xl shadow-xl p-6 text-center">
-
         <div>
           <div class="text-xl">🏥</div>
           <p data-t="home_info_name_label" class="text-sm text-gray-500"></p>
@@ -69,90 +72,77 @@ import DoctorSlider from '../components/DoctorSlider.astro';
           <p data-t="home_info_time_label" class="text-sm text-gray-500"></p>
           <p data-t="home_info_time" class="font-bold"></p>
         </div>
-
       </div>
     </div>
   </section>
-
 
   <!-- WHY -->
   <section class="bg-slate-50 py-16 mt-10">
     <div class="container mx-auto px-4 text-center">
-
       <h2 data-t="home_why_title" class="mb-10 text-3xl font-bold text-clinic-slate"></h2>
 
       <div class="grid md:grid-cols-5 gap-5">
-        {[
-          { icon: "👨‍⚕️", key: "home_why_1" },
-          { icon: "🏥", key: "home_why_2" },
-          { icon: "💯", key: "home_why_3" },
-          { icon: "⚡", key: "home_why_4" },
-          { icon: "🤝", key: "home_why_5" },
-        ].map(i => (
-          <div class="bg-white p-5 rounded-xl shadow-sm hover:shadow transition">
-            <div class="text-2xl mb-2">{i.icon}</div>
-            <p data-t={i.key}></p>
-          </div>
-        ))}
+        {
+          [
+            { icon: '👨‍⚕️', key: 'home_why_1' },
+            { icon: '🏥', key: 'home_why_2' },
+            { icon: '💯', key: 'home_why_3' },
+            { icon: '⚡', key: 'home_why_4' },
+            { icon: '🤝', key: 'home_why_5' },
+          ].map((i) => (
+            <div class="bg-white p-5 rounded-xl shadow-sm hover:shadow transition">
+              <div class="text-2xl mb-2">{i.icon}</div>
+              <p data-t={i.key} />
+            </div>
+          ))
+        }
       </div>
-
     </div>
   </section>
-
 
   <!-- DOCTORS -->
   <section class="py-12 bg-white">
     <div class="container mx-auto px-4 text-center">
       <div class="max-w-6xl mx-auto">
-        <DoctorSlider showDetails={true}/>
+        <DoctorSlider showDetails={true} />
       </div>
     </div>
   </section>
 
-
   <!-- IMPACT -->
   <section class="py-16 bg-gray-50 text-center">
     <div class="container mx-auto px-4">
+      <h2 data-t="home_impact_title" class="mb-3 text-3xl font-bold text-clinic-slate"></h2>
 
-      <h2 data-t="home_impact_title"
-          class="mb-3 text-3xl font-bold text-clinic-slate">
-      </h2>
-
-      <p data-t="home_impact_desc"
-         class="mb-10 text-gray-600 max-w-2xl mx-auto">
-      </p>
+      <p data-t="home_impact_desc" class="mb-10 text-gray-600 max-w-2xl mx-auto"></p>
 
       <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="bg-white rounded-2xl shadow-sm p-6">
+          <div class="text-3xl font-bold text-clinic-slate">800+</div>
+          <div class="mt-1 text-gray-600" data-t="home_impact_card1"></div>
+        </div>
 
-		<div class="bg-white rounded-2xl shadow-sm p-6">
-			<div class="text-3xl font-bold text-clinic-slate">800+</div>
-			<div class="mt-1 text-gray-600" data-t="home_impact_card1"></div>
-		</div>
+        <div class="bg-white rounded-2xl shadow-sm p-6">
+          <div class="text-3xl font-bold text-clinic-slate">18,000+</div>
+          <div class="mt-1 text-gray-600" data-t="home_impact_card2"></div>
+        </div>
 
-		<div class="bg-white rounded-2xl shadow-sm p-6">
-			<div class="text-3xl font-bold text-clinic-slate">18,000+</div>
-			<div class="mt-1 text-gray-600" data-t="home_impact_card2"></div>
-		</div>
+        <div class="bg-white rounded-2xl shadow-sm p-6">
+          <div class="text-3xl font-bold text-clinic-slate">10,000+</div>
+          <div class="mt-1 text-gray-600" data-t="home_impact_card3"></div>
+        </div>
 
-		<div class="bg-white rounded-2xl shadow-sm p-6">
-			<div class="text-3xl font-bold text-clinic-slate">10,000+</div>
-			<div class="mt-1 text-gray-600" data-t="home_impact_card3"></div>
-		</div>
-
-		<div class="bg-white rounded-2xl shadow-sm p-6">
-			<div class="text-3xl font-bold text-clinic-slate">1,000+</div>
-			<div class="mt-1 text-gray-600" data-t="home_impact_card4"></div>
-		</div>
-
-		</div>
+        <div class="bg-white rounded-2xl shadow-sm p-6">
+          <div class="text-3xl font-bold text-clinic-slate">1,000+</div>
+          <div class="mt-1 text-gray-600" data-t="home_impact_card4"></div>
+        </div>
+      </div>
     </div>
   </section>
-
 
   <!-- CTA -->
   <section class="py-16 text-center">
     <div class="bg-clinic-slate text-white py-12 px-6 rounded-3xl mx-4">
-
       <h2 data-t="home_cta_join" class="mb-3 text-3xl font-bold"></h2>
 
       <p data-t="home_cta_desc" class="mb-6 text-slate-200"></p>
@@ -160,8 +150,6 @@ import DoctorSlider from '../components/DoctorSlider.astro';
       <a href="/book" class="bg-clinic-teal px-7 py-3 rounded-full font-bold inline-block">
         <span data-t="home_cta_main"></span>
       </a>
-
     </div>
   </section>
-
 </Layout>

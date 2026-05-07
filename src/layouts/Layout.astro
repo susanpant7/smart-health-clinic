@@ -1,22 +1,46 @@
 ---
 import Header from '../components/Header.astro';
 import '../styles/global.css';
+
+const { title = 'Smart Health Clinic', description = 'Affordable healthcare in Kathmandu' } =
+  Astro.props;
 ---
+
 <!doctype html>
 <html lang="en">
-    <head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Smart Health Clinic</title>
-    <meta name="description" content="Affordable healthcare in Kathmandu" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
 
+    <!-- Canonical URL (VERY important for SEO) -->
+    <link rel="canonical" href={Astro.url} />
+
+    <!-- Favicon -->
     <link rel="icon" href="/favicon.ico" />
-    </head>
+
+    <!-- Open Graph (WhatsApp / Facebook / LinkedIn) -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url} />
+    <meta property="og:image" content="https://smarthealthclinic.com.np/og-image.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content="https://smarthealthclinic.com.np/og-image.png" />
+
+    <!-- Optional: better indexing hint -->
+    <meta name="robots" content="index, follow" />
+  </head>
   <body>
     <Header />
     <main>
-      <slot /> <!-- This is where index.astro content goes -->
+      <slot />
     </main>
   </body>
 </html>

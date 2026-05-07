@@ -3,38 +3,34 @@ import Layout from '../layouts/Layout.astro';
 import { service_images } from '../data/services-images';
 ---
 
-<Layout>
-
+<Layout
+  title="Our Services | Smart Health Clinic"
+  description="Medical services including consultation, diagnostics, and treatment."
+>
   <!-- HERO -->
   <section class="bg-clinic-slate text-white py-20">
     <div class="container mx-auto px-6 max-w-5xl text-center">
-
       <h1 data-t="services_hero_title" class="text-4xl md:text-6xl font-black mb-6"></h1>
 
-      <p data-t="services_hero_desc" class="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto"></p>
-
+      <p data-t="services_hero_desc" class="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto">
+      </p>
     </div>
   </section>
-
-
 
   <!-- SMART HEALTH DESK -->
   <section class="py-20 bg-slate-50">
     <div class="container mx-auto px-6 max-w-6xl">
-
       <div class="text-center mb-12">
         <h2 data-t="services_desk_title" class="text-3xl font-bold text-clinic-slate"></h2>
         <p data-t="services_desk_subtitle" class="text-gray-600 mt-2"></p>
       </div>
 
       <div class="grid lg:grid-cols-2 gap-10 items-center">
-
         <div class="rounded-2xl overflow-hidden shadow-lg">
           <img src="/images/smart-health-desk.jpeg" class="w-full h-auto" />
         </div>
 
         <div class="space-y-4">
-
           <div class="flex gap-3">
             <span class="text-clinic-teal font-bold">✓</span>
             <p data-t="services_desk_li1"></p>
@@ -60,31 +56,26 @@ import { service_images } from '../data/services-images';
             <p data-t="services_desk_li5"></p>
           </div>
 
-          <a href="/book"
-             class="inline-block mt-6 bg-clinic-teal text-white px-6 py-3 rounded-full font-bold">
+          <a
+            href="/book"
+            class="inline-block mt-6 bg-clinic-teal text-white px-6 py-3 rounded-full font-bold"
+          >
             <span data-t="services_desk_btn"></span>
           </a>
-
         </div>
-
       </div>
-
     </div>
   </section>
-
-
 
   <!-- ADVANCED SERVICES -->
   <section class="py-20 bg-slate-50">
     <div class="container mx-auto px-6 max-w-6xl">
-
       <div class="text-center mb-12">
         <h2 data-t="services_adv_title" class="text-3xl font-bold text-clinic-slate"></h2>
         <p data-t="services_adv_subtitle" class="text-gray-600 mt-2"></p>
       </div>
 
       <div class="grid gap-8 md:grid-cols-2">
-
         <div class="bg-white rounded-2xl p-6 shadow-sm border">
           <h3 data-t="services_consult_title" class="text-xl font-bold mb-4"></h3>
           <ul class="space-y-2 text-gray-700">
@@ -126,18 +117,13 @@ import { service_images } from '../data/services-images';
             <li data-t="services_adv2_li3"></li>
           </ul>
         </div>
-
       </div>
-
     </div>
   </section>
-
-
 
   <!-- GALLERY -->
   <section class="py-20 bg-white">
     <div class="container mx-auto px-6 max-w-6xl">
-
       <div class="text-center mb-12">
         <h2 data-t="services_gallery_title" class="text-3xl font-bold text-clinic-slate"></h2>
         <p data-t="services_gallery_sub" class="text-gray-600 mt-2"></p>
@@ -148,26 +134,27 @@ import { service_images } from '../data/services-images';
       </div>
 
       <div class="grid md:grid-cols-3 gap-6">
-        {service_images.slice(1).map((img) => (
-          <div class="rounded-2xl overflow-hidden shadow-md bg-slate-50 flex justify-center p-4">
-            <img src={img} class="h-[420px] w-auto object-contain" />
-          </div>
-        ))}
+        {
+          service_images.slice(1).map((img) => (
+            <div class="rounded-2xl overflow-hidden shadow-md bg-slate-50 flex justify-center p-4">
+              <img src={img} class="h-[420px] w-auto object-contain" />
+            </div>
+          ))
+        }
       </div>
-
     </div>
   </section>
-
-
 
   <!-- CORE SERVICES -->
   <section class="py-20 bg-white">
     <div class="container mx-auto px-6 max-w-6xl">
-
-      <h2 data-t="services_core_title" class="text-3xl font-bold text-center text-clinic-slate mb-12"></h2>
+      <h2
+        data-t="services_core_title"
+        class="text-3xl font-bold text-center text-clinic-slate mb-12"
+      >
+      </h2>
 
       <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-
         <div class="p-6 border rounded-2xl">
           <h3 class="font-bold mb-2">🩺 <span data-t="services_core_1"></span></h3>
           <p class="text-gray-600 text-sm" data-t="services_core_1_desc"></p>
@@ -197,22 +184,16 @@ import { service_images } from '../data/services-images';
           <h3 class="font-bold mb-2">🏠 <span data-t="services_core_6"></span></h3>
           <p class="text-gray-600 text-sm" data-t="services_core_6_desc"></p>
         </div>
-
       </div>
-
     </div>
   </section>
-
-
 
   <!-- DISCOUNT -->
   <section class="py-20 bg-white">
     <div class="container mx-auto px-6 max-w-6xl text-center">
-
       <h2 data-t="services_discount_title" class="text-3xl font-bold mb-10"></h2>
 
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-
         <div class="p-6 border rounded-2xl">
           <p class="text-2xl font-bold text-clinic-teal">15%</p>
           <p data-t="services_discount_1" class="text-gray-600 mt-2"></p>
@@ -232,32 +213,25 @@ import { service_images } from '../data/services-images';
           <p class="text-2xl font-bold text-clinic-teal">FREE</p>
           <p data-t="services_discount_4" class="text-gray-600 mt-2"></p>
         </div>
-
       </div>
-
     </div>
   </section>
-
-
 
   <!-- CTA -->
   <section class="py-20 bg-clinic-slate text-white text-center">
     <div class="container mx-auto px-6 max-w-3xl">
-
       <h2 data-t="services_cta_title" class="text-3xl font-bold mb-4"></h2>
 
       <p data-t="services_cta_desc" class="text-slate-300 mb-8"></p>
 
-      <a href="https://vendor.smarthealthnepal.com/"
-         target="_blank"
-         rel="noopener noreferrer"
-         class="bg-clinic-teal px-7 py-3 rounded-full font-bold inline-block">
-
+      <a
+        href="https://vendor.smarthealthnepal.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="bg-clinic-teal px-7 py-3 rounded-full font-bold inline-block"
+      >
         <span data-t="services_cta_btn"></span>
-
       </a>
-
     </div>
   </section>
-
 </Layout>

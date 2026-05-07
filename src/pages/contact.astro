@@ -1,49 +1,43 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout>
-
+<Layout
+  title="Contact Us | Smart Health Clinic"
+  description="Get in touch with Smart Health Clinic in Kathmandu for appointments and inquiries."
+>
   <!-- HERO -->
   <section class="bg-clinic-slate text-white py-20">
     <div class="container mx-auto px-6 max-w-5xl text-center">
-
       <h1 data-t="contact_hero_title" class="text-4xl md:text-6xl font-black mb-6"></h1>
 
       <p data-t="contact_hero_desc" class="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto"></p>
-
     </div>
   </section>
-
 
   <!-- CONTACT DETAILS + MAP -->
   <section class="py-20 bg-white">
     <div class="container mx-auto px-6 max-w-6xl grid lg:grid-cols-2 gap-10 items-start">
-
       <!-- LEFT INFO -->
       <div>
-
         <h2 data-t="contact_section_title" class="text-3xl font-bold text-clinic-slate mb-6"></h2>
 
         <div class="space-y-4 text-gray-700 text-lg">
-
           <p>
-            <span data-t="contact_location_label"></span>: 
+            <span data-t="contact_location_label"></span>:
             <span data-t="contact_location"></span>
           </p>
 
           <p>
-            <span data-t="contact_phone_label"></span>: 
+            <span data-t="contact_phone_label"></span>:
             <span data-t="contact_phone"></span>
           </p>
 
           <p data-t="contact_time"></p>
-
         </div>
 
         <!-- ACTION BUTTONS -->
         <div class="mt-8 flex flex-col sm:flex-row gap-4">
-
           <a
             href="tel:015923005"
             data-t="contact_call_btn"
@@ -56,43 +50,35 @@ import Layout from "../layouts/Layout.astro";
             data-t="contact_whatsapp_btn"
             class="bg-green-500 text-white px-6 py-3 rounded-full font-bold text-center hover:opacity-90 transition"
           ></a>
-
         </div>
 
         <p data-t="contact_hint" class="text-sm text-gray-500 mt-4"></p>
-
       </div>
-
 
       <!-- RIGHT MAP -->
       <div class="rounded-2xl overflow-hidden shadow-lg border">
-
-        <iframe 
+        <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.777128931389!2d85.36649781036867!3d27.693282426013614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1b0054415ff9%3A0xe624334cca561124!2sSmart%20Health%20Clinic%2CPepsicola!5e0!3m2!1sen!2sus!4v1777928908889!5m2!1sen!2sus"
           width="600"
           height="450"
           style="border:0;"
           allowfullscreen
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
+          referrerpolicy="no-referrer-when-downgrade"
+        >
         </iframe>
-
       </div>
-
     </div>
   </section>
-
 
   <!-- QUICK CONTACT -->
   <section class="py-20 bg-slate-50">
     <div class="container mx-auto px-6 max-w-5xl text-center">
-
       <h2 data-t="contact_quick_title" class="text-3xl font-bold text-clinic-slate mb-4"></h2>
 
       <p data-t="contact_quick_desc" class="text-gray-600 mb-10"></p>
 
       <div class="grid sm:grid-cols-2 gap-6">
-
         <a
           href="tel:015923005"
           class="bg-white border rounded-2xl p-6 shadow-sm hover:shadow-md transition"
@@ -111,17 +97,13 @@ import Layout from "../layouts/Layout.astro";
           <h3 data-t="contact_whatsapp_card_title" class="font-bold text-clinic-slate"></h3>
           <p data-t="contact_whatsapp_card_desc" class="text-gray-500 text-sm mt-1"></p>
         </a>
-
       </div>
-
     </div>
   </section>
-
 
   <!-- CTA -->
   <section class="py-20 bg-clinic-slate text-white text-center">
     <div class="container mx-auto px-6 max-w-3xl">
-
       <h2 data-t="contact_cta_title" class="text-3xl font-bold mb-4"></h2>
 
       <p data-t="contact_cta_desc" class="text-slate-300 mb-8"></p>
@@ -131,10 +113,7 @@ import Layout from "../layouts/Layout.astro";
         target="_blank"
         rel="noopener noreferrer"
         data-t="contact_cta_btn"
-        class="bg-clinic-teal px-7 py-3 rounded-full font-bold inline-block"
-      ></a>
-
+        class="bg-clinic-teal px-7 py-3 rounded-full font-bold inline-block"></a>
     </div>
   </section>
-
 </Layout>

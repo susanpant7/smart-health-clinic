@@ -1,107 +1,79 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import DoctorSlider from "../components/DoctorSlider.astro";
-import { doctors } from "../data/doctors";
+import Layout from '../layouts/Layout.astro';
+import DoctorSlider from '../components/DoctorSlider.astro';
+import { doctors } from '../data/doctors';
 ---
 
-<Layout>
-
+<Layout
+  title="Our Doctors | Smart Health Clinic"
+  description="Meet experienced doctors at Smart Health Clinic in Kathmandu."
+>
   <!-- HERO -->
   <section class="bg-clinic-slate text-white py-20">
     <div class="container mx-auto px-6 max-w-5xl text-center">
-
       <h1 data-t="doctors_hero_title" class="text-4xl md:text-6xl font-black mb-6"></h1>
 
       <p data-t="doctors_hero_desc" class="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto"></p>
-
     </div>
   </section>
-
 
   <!-- INTRO -->
   <section class="py-16 bg-white">
     <div class="container mx-auto px-6 max-w-4xl text-center">
-
       <h2 data-t="doctors_intro_title" class="text-3xl font-bold text-clinic-slate mb-4"></h2>
 
       <p data-t="doctors_intro_desc" class="text-gray-600 leading-relaxed"></p>
-
     </div>
   </section>
-
 
   <!-- SLIDER -->
   <DoctorSlider showDetails={true} />
 
-
   <!-- MEET THE TEAM -->
   <section class="py-20 bg-slate-50">
     <div class="container mx-auto px-6 max-w-6xl">
-
-      <h2 data-t="doctors_team_title" class="text-3xl font-bold text-center text-clinic-slate mb-10"></h2>
+      <h2
+        data-t="doctors_team_title"
+        class="text-3xl font-bold text-center text-clinic-slate mb-10"
+      >
+      </h2>
 
       <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-
-        {doctors.map((doc) => (
+        {
+          doctors.map((doc) => (
             <div class="bg-white rounded-2xl shadow-sm border hover:shadow-lg transition overflow-hidden">
+              <div class="h-80 flex items-center justify-center bg-slate-50 p-4">
+                <img src={doc.image} alt={doc.name} class="h-full w-full object-contain" />
+              </div>
 
-                <div class="h-80 flex items-center justify-center bg-slate-50 p-4">
-                  <img
-                    src={doc.image}
-                    alt={doc.name}
-                    class="h-full w-full object-contain"
-                  />
-                </div>
+              <div class="p-5 text-center space-y-2">
+                <h3 class="font-bold text-lg text-clinic-slate">{doc.name}</h3>
 
-                <div class="p-5 text-center space-y-2">
+                {doc.specialty && (
+                  <p class="text-clinic-teal font-medium text-sm">{doc.specialty}</p>
+                )}
 
-                  <h3 class="font-bold text-lg text-clinic-slate">
-                    {doc.name}
-                  </h3>
+                {doc.department && <p class="text-gray-500 text-xs">{doc.department}</p>}
 
-                  {doc.specialty && (
-                    <p class="text-clinic-teal font-medium text-sm">
-                      {doc.specialty}
-                    </p>
-                  )}
+                {doc.experience && <p class="text-gray-500 text-xs">{doc.experience} Experience</p>}
 
-                  {doc.department && (
-                    <p class="text-gray-500 text-xs">
-                      {doc.department}
-                    </p>
-                  )}
-
-                  {doc.experience && (
-                    <p class="text-gray-500 text-xs">
-                      {doc.experience} Experience
-                    </p>
-                  )}
-
-                  {doc.qualification && (
-                    <p class="text-gray-400 text-xs">
-                      {doc.qualification}
-                    </p>
-                  )}
-
-                </div>
+                {doc.qualification && <p class="text-gray-400 text-xs">{doc.qualification}</p>}
+              </div>
             </div>
-        ))}
-
+          ))
+        }
       </div>
-
     </div>
   </section>
-
 
   <!-- CTA -->
   <section class="py-20 bg-clinic-slate text-white text-center">
     <div class="container mx-auto px-6 max-w-3xl">
-
       <h2 data-t="doctors_cta_title" class="text-3xl font-bold mb-4"></h2>
 
       <p data-t="doctors_cta_desc" class="text-slate-300 mb-8"></p>
 
-      <a 
+      <a
         href="https://vendor.smarthealthnepal.com/"
         target="_blank"
         rel="noopener noreferrer"
@@ -109,8 +81,6 @@ import { doctors } from "../data/doctors";
       >
         <span data-t="doctors_cta_btn"></span>
       </a>
-
     </div>
   </section>
-
 </Layout>
