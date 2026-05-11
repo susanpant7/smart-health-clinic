@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import DoctorSlider from '../components/DoctorSlider.astro';
-import { doctors } from '../data/doctors';
+import doctors from '../data/doctors.json';
 ---
 
 <Layout
@@ -30,7 +30,7 @@ import { doctors } from '../data/doctors';
   <DoctorSlider showDetails={true} />
 
   <!-- MEET THE TEAM -->
-  <!-- <section class="py-20 bg-slate-50">
+  <section class="py-20 bg-slate-50">
     <div class="container mx-auto px-6 max-w-6xl">
       <h2
         data-t="doctors_team_title"
@@ -38,33 +38,71 @@ import { doctors } from '../data/doctors';
       >
       </h2>
 
-      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {
-          doctors.map((doc) => (
-            <div class="bg-white rounded-2xl shadow-sm border hover:shadow-lg transition overflow-hidden">
-              <div class="h-80 flex items-center justify-center bg-slate-50 p-4">
-                <img src={doc.image} alt={doc.name} class="h-full w-full object-contain" />
-              </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+  {
+    doctors.map((doc) => (
+      <div class="relative group text-center bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition">
 
-              <div class="p-5 text-center space-y-2">
-                <h3 class="font-bold text-lg text-clinic-slate">{doc.name}</h3>
+        <!-- IMAGE -->
+        <div class="relative">
+          <img
+            src={`/images/doctors/dp/${doc.image}`}
+            alt={doc.name.en}
+            class="w-32 h-32 mx-auto rounded-full object-cover"
+            onerror="this.onerror=null; this.src='/images/doctors/dp/default.png'"
+            loading="lazy"
+          />
 
-                {doc.specialty && (
-                  <p class="text-clinic-teal font-medium text-sm">{doc.specialty}</p>
-                )}
+          <!-- HOVER DESCRIPTION OVERLAY -->
+          <div class="absolute inset-0 bg-black/80 text-white text-xs p-3 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+            <p
+              data-en={doc.description.en}
+              data-ne={doc.description.ne}
+              data-i18n="description"
+              class="line-clamp-6"
+            >
+              {doc.description.en}
+            </p>
+          </div>
+        </div>
 
-                {doc.department && <p class="text-gray-500 text-xs">{doc.department}</p>}
+        <!-- NAME -->
+        <h3
+          class="mt-3 font-semibold"
+          data-en={doc.name.en}
+          data-ne={doc.name.ne}
+        >
+          {doc.name.en}
+        </h3>
 
-                {doc.experience && <p class="text-gray-500 text-xs">{doc.experience} Experience</p>}
+        <!-- SPECIALTY -->
+        <p
+          class="text-sm text-gray-500"
+          data-en={doc.specialty.en}
+          data-ne={doc.specialty.ne}
+        >
+          {doc.specialty.en}
+        </p>
 
-                {doc.qualification && <p class="text-gray-400 text-xs">{doc.qualification}</p>}
-              </div>
-            </div>
-          ))
-        }
+        <!-- QUALIFICATION -->
+        <p class="text-xs text-gray-600 mt-1">
+          {doc.qualification}
+        </p>
+
+        <!-- SCHEDULE -->
+        <p
+          class="text-xs text-gray-500 mt-1"
+          data-en={doc.schedule.en}
+          data-ne={doc.schedule.ne}
+        >
+          {doc.schedule.en}
+        </p>
       </div>
+    ))
+  }
+</div>
     </div>
-  </section> -->
+  </section>
 
   <!-- CTA -->
   <section class="py-20 bg-clinic-slate text-white text-center">

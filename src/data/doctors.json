@@ -1,0 +1,425 @@
+[
+  {
+    "id": "pawan-kumar",
+    "image": "pawan-kumar.png",
+    "name": { "en": "Dr. Pawan Kumar", "ne": "डा. पवन कुमार" },
+    "specialty": { "en": "Senior Neurologist", "ne": "वरिष्ठ नशा रोग विशेषज्ञ" },
+    "qualification": "MBBS, MS (Neuro)",
+    "nmc": "NMC-614",
+    "experience": { "en": "20 years", "ne": "२० वर्ष" },
+    "description": {
+      "en": "I am Dr. Pawan Kumar, a senior neurologist with MBBS and MS (Neuro) specialization. I am dedicated to improving long-term neurological health and enhancing quality of life through expert diagnosis, modern treatment, and patient-friendly care of brain, spine, nerve, and neurological disorders.",
+      "ne": "म डा. पवन कुमार, MBBS, MS (Neuro) विशेषज्ञता प्राप्त वरिष्ठ नशा रोग विशेषज्ञ हुँ। मस्तिष्क, मेरुदण्ड, नसा तथा स्नायुसम्बन्धी रोगहरूको विशेषज्ञ जाँच, आधुनिक उपचार र बिरामीमैत्री सेवामार्फत दीर्घकालीन स्नायु स्वास्थ्य सुधार र जीवनस्तर उकास्न समर्पित छु।"
+    },
+    "schedule": {
+      "en": "Tuesday and Thursday (4:00 PM to 5:00 PM)",
+      "ne": "मंगलबार र विहिबार (साँझ ४:०० बजेदेखि ५:०० बजेसम्म)"
+    },
+    "language": { "en": "Nepali / English", "ne": "नेपाली / अंग्रेजी" }
+  },
+  {
+    "id": "prajay-shikhar-shrestha",
+    "image": "prajay-shikhar-shrestha.png",
+    "name": { "en": "Dr. Prajay Shikhar Shrestha", "ne": "डा. प्रजय शिखर श्रेष्ठ" },
+    "specialty": {
+      "en": "Endocrinologist (Diabetes, Thyroid & Hormonal Disorders)",
+      "ne": "मधुमेह, थाईराइड तथा हर्मोन रोग विशेषज्ञ"
+    },
+    "qualification": "MD (Endocrine)",
+    "nmc": "NMC-4733",
+    "experience": { "en": "15 years", "ne": "१५ वर्ष" },
+    "description": {
+      "en": "I am an endocrinologist with MD (Endocrine) specialization, dedicated to the expert treatment of diabetes, thyroid, hormonal imbalance, and metabolic disorders. My goal is to improve long-term health through modern diagnostics, personalized treatment plans, and patient-friendly care.",
+      "ne": "म MD (Endocrine) विशेषज्ञता प्राप्त एन्डोक्राइनोलोजिस्ट हुँ, र मधुमेह, थाइराइड, हर्मोन असन्तुलन तथा मेटाबोलिक रोगहरूको विशेषज्ञ उपचारमा समर्पित छु। मेरो लक्ष्य आधुनिक जाँच, व्यक्तिगत उपचार योजना तथा बिरामीमैत्री सेवामार्फत दीर्घकालीन स्वास्थ्य सुधार गर्नु हो।"
+    },
+    "schedule": {
+      "en": "First, second and third Friday (5:00 PM to 6:00 PM)",
+      "ne": "पहिलो, दोस्रो र तेस्रो शुक्रबार (साँझ ५:०० बजेदेखि ६:०० बजेसम्म)"
+    },
+    "language": { "en": "Nepali / English", "ne": "नेपाली / अंग्रेजी" }
+  },
+  {
+    "id": "Dr-Shahid-Murtuja",
+    "image": "Dr-Shahid-Murtuja.png",
+    "name": { "en": "Dr. Shahid Murtuza", "ne": "डा. शाहिद मुर्तुजा" },
+    "specialty": { "en": "Senior Cardiologist", "ne": "वरिष्ठ मुटु रोग विशेषज्ञ" },
+    "qualification": "MBBS, MD (Cardio), Fellowship in cardiology (3years, Lincoln University, Malaysia) Ex Sr. Cardiologist, RAMA Heart Center, Delhi NCR, India",
+    "nmc": "NMC-6796",
+    "experience": { "en": "15 years", "ne": "१५ वर्ष" },
+    "description": {
+      "en": "I am Dr. Shahid Murtuza, a senior cardiologist with MBBS, MD (Cardiology) and a Fellowship in Cardiology from Lincoln University, Malaysia. With experience as a senior cardiologist at RAMA Heart Center, Delhi NCR, India, I am dedicated to long-term heart health protection through expert examination, prevention, modern treatment, and patient-friendly service.",
+      "ne": "म डा. शाहिद मुर्तुजा, MBBS, MD (Cardiology) तथा Lincoln University, Malaysia बाट Fellowship in Cardiology प्राप्त वरिष्ठ मुटुरोग विशेषज्ञ हुँ। साथै RAMA Heart Center, Delhi NCR, India मा वरिष्ठ मुटुरोग विशेषज्ञको अनुभवसहित मुटु सम्बन्धी रोगहरूको विशेषज्ञ जाँच, रोकथाम, आधुनिक उपचार तथा बिरामीमैत्री सेवामार्फत दीर्घकालीन मुटु स्वास्थ्य संरक्षणमा समर्पित छु।"
+    },
+    "schedule": {
+      "en": "Monday, Wednesday and Friday (From 5:00 PM onwards)",
+      "ne": "सोमबार, बुधबार र शुक्रबार (साँझ ५:०० बजेदेखि)"
+    },
+    "language": { "en": "Nepali / English", "ne": "नेपाली / अंग्रेजी" }
+  },
+  {
+    "id": "Dr-Subash-Chandra-Sah",
+    "image": "Dr-Subash-Chandra-Sah.png",
+    "name": { "en": "Dr. Subash Chandra Sah", "ne": "डा. सुबास चन्द्र साह" },
+    "specialty": { "en": "Senior Pediatric Cardiologist", "ne": "वरिष्ठ बाल मुटु रोग विशेषज्ञ" },
+    "qualification": "MBBS, MD (Pediatric Cardiology, Pediatric cardiac critical care, fetal ECO cardiography)",
+    "nmc": "NMC-5468",
+    "experience": { "en": "15 years", "ne": "१५ वर्ष" },
+    "description": {
+      "en": "I am Dr. Subash Chandra Sah, a senior pediatric cardiologist with MBBS and MD specialization. With expertise in Pediatric Cardiology, Pediatric Cardiac Critical Care, and Fetal Echocardiography, I am dedicated to expert examination, modern treatment, and patient-friendly care for the heart health of infants, children, and unborn babies.",
+      "ne": "म डा. सुबास चन्द्र साह, MBBS, MD विशेषज्ञता प्राप्त वरिष्ठ बाल मुटुरोग विशेषज्ञ हुँ। Pediatric Cardiology, Pediatric Cardiac Critical Care तथा Fetal Echocardiography मा विशेष दक्षतासहित शिशु, बालबालिका तथा गर्भस्थ शिशुको मुटु स्वास्थ्यका लागि विशेषज्ञ जाँच, आधुनिक उपचार र बिरामीमैत्री सेवामा समर्पित छु।"
+    },
+    "schedule": {
+      "en": "Every Saturday (From 5:00 PM onwards)",
+      "ne": "हरेक शनिबार दिन (साँझ ५:०० बजेदेखि)"
+    },
+    "language": { "en": "Nepali / English", "ne": "नेपाली / अंग्रेजी" }
+  },
+  {
+    "id": "Dr-Prakash-Jyoti-Pokhrel",
+    "image": "Dr-Prakash-Jyoti-Pokhrel.png",
+    "name": { "en": "Dr. Prakash Jyoti Pokhrel", "ne": "डा. प्रकाश ज्योति पोख्रेल" },
+    "specialty": {
+      "en": "Senior Pediatrician and Neonatologist",
+      "ne": "वरिष्ठ बाल तथा नवजात शिशु रोग विशेषज्ञ"
+    },
+    "qualification": "MBBS, MD (PAED), Fellowship in Clinical hematology & bone marrow transplant",
+    "nmc": "NMC-6965",
+    "experience": { "en": "15 years", "ne": "१५ वर्ष" },
+    "description": {
+      "en": "I am Dr. Prakash Jyoti Pokhrel, a senior pediatrician and neonatologist with MBBS, MD (Paediatrics) and a Fellowship in Clinical Hematology & Bone Marrow Transplant. I am dedicated to the healthy growth, development, and overall health of newborns, children, and adolescents through expert check-ups, modern treatments, and patient-friendly services.",
+      "ne": "म डा. प्रकाश ज्योति पोख्रेल, MBBS, MD (Paediatrics) तथा Fellowship in Clinical Hematology & Bone Marrow Transplant विशेषज्ञता प्राप्त वरिष्ठ बाल तथा नवजात शिशु रोग विशेषज्ञ हुँ। नवजात शिशु, बालबालिका तथा किशोरकिशोरीहरूको स्वास्थ्यका लागि विशेषज्ञ जाँच, आधुनिक उपचार र बिरामीमैत्री सेवामार्फत स्वस्थ वृद्धि, विकास र समग्र स्वास्थ्यमा समर्पित छु।"
+    },
+    "schedule": {
+      "en": "Every Day (From 5:00 PM onwards)",
+      "ne": "हरेक दिन (साँझ ५:०० बजेदेखि)"
+    },
+    "language": { "en": "Nepali / English", "ne": "नेपाली / अंग्रेजी" }
+  },
+  {
+    "id": "Dr-Jhuma-Silwal",
+    "image": "Dr-Jhuma-Silwal.png",
+    "name": { "en": "Dr. Jhuma Silwal", "ne": "डा. झुमा सिलवाल" },
+    "specialty": {
+      "en": "Senior Obstetrician and Gynecologist",
+      "ne": "वरिष्ठ प्रसुती तथा स्त्री रोग विशेषज्ञ"
+    },
+    "qualification": "MBBS, MD (OBS & Gynae)",
+    "nmc": "NMC-7776",
+    "experience": { "en": "15 years", "ne": "१५ वर्ष" },
+    "description": {
+      "en": "I am Dr. Jhuma Silwal, a senior Obstetrician and Gynecologist. Having achieved MBBS and MD (OBS & Gynae) proficiency, I have been providing expert treatment services for women's health, pregnancy, and gynecological problems.",
+      "ne": "म डा. झुमा सिलवाल, वरिष्ठ प्रसुती तथा स्त्री रोग विशेषज्ञ हुँ। मैले MBBS तथा MD (OBS & Gynae) दक्षता हासिल गरी महिला स्वास्थ्य, गर्भावस्था तथा स्त्री रोग सम्बन्धी समस्याहरूको विशेषज्ञ उपचार सेवा प्रदान गर्दै आइरहेकी छु।"
+    },
+    "schedule": {
+      "en": "Every Day (From 5:00 PM onwards)",
+      "ne": "हरेक दिन (साँझ ५:०० बजेदेखि)"
+    },
+    "language": { "en": "Nepali / English", "ne": "नेपाली / अंग्रेजी" }
+  },
+  {
+    "id": "Dr-Deepak-Sharma",
+    "image": "Dr-Deepak-Sharma.png",
+    "name": { "en": "Dr. Deepak Sharma", "ne": "डा. दीपक शर्मा" },
+    "specialty": { "en": "Senior Nephrologist", "ne": "वरिष्ठ मृगौला रोग विशेषज्ञ" },
+    "qualification": "MD (Internal Medicine), DM (Nephrology)",
+    "nmc": "NMC-8751",
+    "experience": { "en": "15 years", "ne": "१५ वर्ष" },
+    "description": {
+      "en": "I am Dr. Deepak Sharma, a senior Nephrologist. Having achieved MD (Internal Medicine) and DM (Nephrology) proficiency, I have been providing expert treatment services for kidney-related diseases.",
+      "ne": "म डा. दीपक शर्मा, वरिष्ठ मृगौला रोग विशेषज्ञ हुँ। मैले MD (Internal Medicine) तथा DM (Nephrology) दक्षता हासिल गरी मृगौला सम्बन्धी रोगहरूको विशेषज्ञ उपचार सेवा प्रदान गर्दै आइरहेको छु।"
+    },
+    "schedule": {
+      "en": "Tuesday (From 5:30 PM), Saturday (From 4:00 PM)",
+      "ne": "मंगलबार (साँझ ५:३० बजेदेखि), शनिबार (साँझा ४:०० बजेदेखि)"
+    },
+    "language": { "en": "Nepali / English", "ne": "नेपाली / अंग्रेजी" }
+  },
+  {
+    "id": "Dr-Chunumila-Maharjan",
+    "image": "Dr-Chunumila-Maharjan.png",
+    "name": { "en": "Dr. Chunumila Maharjan", "ne": "डा. चुनुमिला महर्जन" },
+    "specialty": {
+      "en": "Senior Obstetrician, Gynecologist and Infertility Specialist",
+      "ne": "वरिष्ठ प्रसुति, स्त्री रोग तथा बझोपन विशेषज्ञ"
+    },
+    "qualification": "MBBS, MD (Consultant Obgyn, Infertility Specialist)",
+    "nmc": "NMC-9886",
+    "experience": { "en": "15 years", "ne": "१५ वर्ष" },
+    "description": {
+      "en": "I am Dr. Chunumila Maharjan, a senior obstetrician, gynecologist, and infertility specialist with MBBS, MD (Consultant OBGYN, Infertility Specialist) expertise. I am dedicated to the overall health of women, safe motherhood, gynecological treatment, and modern solutions for infertility issues through expert examination, effective treatment, and patient-friendly care.",
+      "ne": "म डा. चुनुमिला महर्जन, MBBS, MD (Consultant OBGYN, Infertility Specialist) विशेषज्ञता प्राप्त वरिष्ठ प्रसुति, स्त्री रोग तथा बझोपन विशेषज्ञ हुँ। महिलाहरूको समग्र स्वास्थ्य, सुरक्षित मातृत्व, स्त्रीरोग उपचार तथा बाँझोपन समस्याको आधुनिक समाधानका लागि विशेषज्ञ जाँच, प्रभावकारी उपचार र बिरामीमैत्री सेवामा समर्पित छु।"
+    },
+    "schedule": {
+      "en": "Every Tuesday and Saturday (From 4:00 PM onwards)",
+      "ne": "हरेक मंगलबार र शनिबार (साँझ ४:०० बजेदेखि)"
+    },
+    "language": { "en": "Nepali / English", "ne": "नेपाली / अंग्रेजी" }
+  },
+  {
+    "id": "Dr-Roshan-Bhagat",
+    "image": "Dr-Roshan-Bhagat.png",
+    "name": { "en": "Dr. Roshan Bhagat", "ne": "डा. रोशन भगत" },
+    "specialty": {
+      "en": "Orthopedic and Nerve Specialist",
+      "ne": "हाड, जोर्नी तथा नशा रोग विशेषज्ञ"
+    },
+    "qualification": "MBBS, MS (Ortho)",
+    "nmc": "NMC-15727",
+    "experience": { "en": "10 years", "ne": "१० वर्ष" },
+    "description": {
+      "en": "I am Dr. Roshan Bhagat, an orthopedic and nerve specialist with MBBS, MS (Ortho) expertise. I am dedicated to improving the mobility and quality of life of patients through expert examination, modern treatment, and patient-friendly care for bone, joint, spine, and nerve-related problems.",
+      "ne": "म डा. रोशन भगत, MBBS, MS (Ortho) विशेषज्ञता प्राप्त हाड, जोर्नी तथा नशा रोग विशेषज्ञ हुँ। हाड, जोर्नी, मेरुदण्ड तथा नसा सम्बन्धी समस्याहरूको विशेषज्ञ जाँच, आधुनिक उपचार र बिरामीमैत्री सेवामार्फत बिरामीहरूको सहज गतिशीलता र जीवनस्तर सुधारमा समर्पित छु।"
+    },
+    "schedule": {
+      "en": "Every Day (5:00 PM to 6:00 PM)",
+      "ne": "हरेक दिन (साँझ ५:०० बजेदेखि ६:०० बजेसम्म)"
+    },
+    "language": { "en": "Nepali / English", "ne": "नेपाली / अंग्रेजी" }
+  },
+  {
+    "id": "Dr-Rabin-Pandit",
+    "image": "Dr-Rabin-Pandit.png",
+    "name": { "en": "Dr. Rabin Pandit", "ne": "डा. रबिन पण्डित" },
+    "specialty": {
+      "en": "General and Laparoscopic Surgeon",
+      "ne": "जनरल तथा ल्यापोरोस्कोपिक सर्जन"
+    },
+    "qualification": "MBBS, MS (General Surgery)",
+    "nmc": "NMC-6093",
+    "experience": { "en": "15 years", "ne": "१५ वर्ष" },
+    "description": {
+      "en": "I am Dr. Rabin Pandit, a general and laparoscopic surgeon with MBBS, MS (General Surgery) expertise. I am dedicated to providing effective treatment, fast recovery, and patient-friendly care through modern examination, safe surgery, and minimally invasive (Laparoscopic Surgery) technology.",
+      "ne": "म डा. रबिन पण्डित, MBBS, MS (General Surgery) विशेषज्ञता प्राप्त जनरल तथा ल्यापोरोस्कोपिक सर्जन हुँ। आधुनिक जाँच, सुरक्षित शल्यक्रिया तथा न्यूनतम चिरफार (Laparoscopic Surgery) प्रविधिमार्फत प्रभावकारी उपचार, छिटो स्वास्थ्य लाभ र बिरामीमैत्री सेवामा समर्पित छु।"
+    },
+    "schedule": {
+      "en": "Every Day (From 5:30 PM onwards)",
+      "ne": "हरेक दिन (साँझ ५:३० बजेदेखि)"
+    },
+    "language": { "en": "Nepali / English", "ne": "नेपाली / अंग्रेजी" }
+  },
+  {
+    "id": "Dr-Riju-Vaidhya",
+    "image": "Dr-Riju-Vaidhya.png",
+    "name": { "en": "Dr. Riju Vaidhya", "ne": "डा. रिजु वैद्य" },
+    "specialty": { "en": "Family Physician", "ne": "फ्यामिली फिजिसियन" },
+    "qualification": "MBBS, MD (GP & EM)",
+    "nmc": "NMC-19199",
+    "experience": { "en": "8 years", "ne": "८ वर्ष" },
+    "description": {
+      "en": "I am Dr. Riju Vaidya, a family physician with MBBS, MD (GP & EM) expertise. I am dedicated to long-term health and overall quality of life through primary care, disease prevention, emergency medical services, and patient-friendly counseling for individual and family health.",
+      "ne": "म डा. रिजु वैद्य, MBBS, MD (GP & EM) विशेषज्ञता प्राप्त फ्यामिली फिजिसियन हुँ। व्यक्ति तथा परिवारको समग्र स्वास्थ्यका लागि प्राथमिक उपचार, रोग रोकथाम, आकस्मिक चिकित्सा सेवा तथा बिरामीमैत्री परामर्शमार्फत दीर्घकालीन स्वास्थ्य र समग्र जीवनस्तर सुधारमा समर्पित छु।"
+    },
+    "schedule": {
+      "en": "Every Day (9:00 AM to 4:00 PM)",
+      "ne": "हरेक दिन (बिहान ९:०० बजेदेखि ४:०० बजेसम्म)"
+    },
+    "language": { "en": "Nepali / English", "ne": "नेपाली / अंग्रेजी" }
+  },
+  {
+    "id": "Dr-Rohit-Gupta",
+    "image": "Dr-Rohit-Gupta.png",
+    "name": { "en": "Dr. Rohit Gupta", "ne": "डा. रोहित गुप्ता" },
+    "specialty": { "en": "Consultant Radiologist", "ne": "कन्सल्टेण्ट रेडियोलोजिस्ट" },
+    "qualification": "MBBS, MD (AIIMS)",
+    "nmc": "NMC-23896",
+    "experience": { "en": "5 years", "ne": "५ वर्ष" },
+    "description": {
+      "en": "I am Dr. Rohit Gupta, a consultant radiologist with MBBS, MD (AIIMS) expertise. I am dedicated to accurate diagnosis, effective treatment support, and patient-friendly service through modern radiological technology, precise reporting, and expert examination.",
+      "ne": "म डा. रोहित गुप्ता, MBBS, MD (AIIMS) विशेषज्ञता प्राप्त कन्सल्टेण्ट रेडियोलोजिस्ट हुँ। आधुनिक रेडियोलोजिकल प्रविधि, सटीक रिपोर्टिङ तथा विशेषज्ञ जाँचमार्फत सही निदान, प्रभावकारी उपचार सहयोग र बिरामीमैत्री सेवामा समर्पित छु।"
+    },
+    "schedule": {
+      "en": "Every Day (7:30 AM to 8:30 AM)",
+      "ne": "हरेक दिन (बिहान ७:३० बजेदेखि ८:३० बजेसम्म)"
+    },
+    "language": { "en": "Nepali / English", "ne": "नेपाली / अंग्रेजी" }
+  },
+  {
+    "id": "Dr-Sandeep-Koirala",
+    "image": "Dr-Sandeep-Koirala.png",
+    "name": { "en": "Dr. Sandeep Koirala", "ne": "डा. सन्दीप कोइराला" },
+    "specialty": { "en": "Consultant Radiologist", "ne": "कन्सल्टेण्ट रेडियोलोजिस्ट" },
+    "qualification": "MBBS, MD (Radiology)",
+    "nmc": "NMC-15800",
+    "experience": { "en": "8 years", "ne": "८ वर्ष" },
+    "description": {
+      "en": "I am Dr. Sandeep Koirala, a consultant radiologist with MBBS, MD (Radiology) expertise. I am dedicated to accurate diagnosis, effective treatment support, and patient-friendly service through modern radiological technology, precise reporting, and expert examination.",
+      "ne": "म डा. सन्दीप कोइराला, MBBS, MD (AIIMS) विशेषज्ञता प्राप्त कन्सल्टेण्ट रेडियोलोजिस्ट हुँ। आधुनिक रेडियोलोजिकल प्रविधि, सटीक रिपोर्टिङ तथा विशेषज्ञ जाँचमार्फत सही निदान, प्रभावकारी उपचार सहयोग र बिरामीमैत्री सेवामा समर्पित छु।"
+    },
+    "schedule": {
+      "en": "Every Day (5:00 PM to 7:00 PM)",
+      "ne": "हरेक दिन (साँझ ५:०० बजेदेखि ७:०० बजेसम्म)"
+    },
+    "language": { "en": "Nepali / English", "ne": "नेपाली / अंग्रेजी" }
+  },
+  {
+    "id": "Dr-Ashtha-Karki",
+    "image": "Dr-Ashtha-Karki.png",
+    "name": { "en": "Dr. Aastha Karki", "ne": "डा. आस्था कार्की" },
+    "specialty": { "en": "General Physician", "ne": "जनरल फिजिसियन" },
+    "qualification": "MBBS (General Physician)",
+    "nmc": "NMC-31472",
+    "experience": { "en": "3 years", "ne": "३ वर्ष" },
+    "description": {
+      "en": "I am Dr. Aastha Karki, a general physician with MBBS expertise. I am dedicated to overall health and long-term health improvement through expert examination of various general and chronic health problems, disease prevention, effective treatment, and patient-friendly care.",
+      "ne": "म डा. आस्था कार्की, MBBS विशेषज्ञता प्राप्त जनरल फिजिसियन हुँ। विभिन्न सामान्य तथा दीर्घकालीन स्वास्थ्य समस्याहरूको विशेषज्ञ जाँच, रोग रोकथाम, प्रभावकारी उपचार तथा बिरामीमैत्री सेवामार्फत समग्र स्वास्थ्य र दीर्घकालीन स्वास्थ्य सुधारमा समर्पित छु।"
+    },
+    "schedule": {
+      "en": "Every Day (9:00 AM to 4:00 PM)",
+      "ne": "हरेक दिन (बिहान ९:०० बजेदेखि ४:०० बजेसम्म)"
+    },
+    "language": { "en": "Nepali / English", "ne": "नेपाली / अंग्रेजी" }
+  },
+  {
+    "id": "Dr-Amrita-Shrestha",
+    "image": "Dr-Amrita-Shrestha.png",
+    "name": { "en": "Dr. Amrita Shrestha", "ne": "डा. अमृता श्रेष्ठ" },
+    "specialty": {
+      "en": "Dermatologist, Venereologist and Aesthetic Specialist",
+      "ne": "छाला तथा यौन रोग एबं सौन्दर्य विशेषज्ञ"
+    },
+    "qualification": "MBBS, MD (Derma)",
+    "nmc": "NMC-13374",
+    "experience": { "en": "8 years", "ne": "८ वर्ष" },
+    "description": {
+      "en": "I am Dr. Amrita Shrestha, a skin and venereal disease as well as beauty specialist. Having achieved MBBS and MD (Derma) proficiency, I have been providing expert treatment for problems related to skin, hair, nails, and venereal diseases.",
+      "ne": "म डा. अमृता श्रेष्ठ, छाला तथा यौन रोग एवं सौन्दर्य विशेषज्ञ हुँ। मैले MBBS तथा MD (Derma) दक्षता हासिल गरी छाला, कपाल, नङ तथा यौन रोग सम्बन्धी समस्याहरूको विशेषज्ञ उपचार सेवा प्रदान गर्दै आइरहेकी छु।"
+    },
+    "schedule": {
+      "en": "Sunday, Tuesday and Wednesday (From 5:00 PM onwards)",
+      "ne": "आइतबार, मंगलबार र बुधबार (साँझ ५:०० बजेदेखि)"
+    },
+    "language": { "en": "Nepali / English", "ne": "नेपाली / अंग्रेजी" }
+  },
+  {
+    "id": "Dr-Bishwas-Pokhrel",
+    "image": "Dr-Biswas-Pokhrel.png",
+    "name": { "en": "Dr. Bishwas Pokhrel", "ne": "डा. विश्वास पोख्रेल" },
+    "specialty": {
+      "en": "Orthopedic and Nerve Specialist",
+      "ne": "हाड, जोर्नी तथा नशा रोग विशेषज्ञ"
+    },
+    "qualification": "MBBS, MS (Ortho)",
+    "nmc": "NMC-14908",
+    "experience": { "en": "7 years", "ne": "७ वर्ष" },
+    "description": {
+      "en": "I am Dr. Bishwas Pokhrel, an orthopedic and nerve specialist with MBBS, MS (Ortho) expertise. I am dedicated to improving the mobility and quality of life of patients through expert examination, modern treatment, and patient-friendly care for bone, joint, spine, and nerve-related problems.",
+      "ne": "म डा. विश्वास पोख्रेल, MBBS, MS (Ortho) विशेषज्ञता प्राप्त हाड, जोर्नी तथा नशा रोग विशेषज्ञ हुँ। हाड, जोर्नी, मेरुदण्ड तथा नसा सम्बन्धी समस्याहरूको विशेषज्ञ जाँच, आधुनिक उपचार र बिरामीमैत्री सेवामार्फत बिरामीहरूको सहज गतिशीलता र जीवनस्तर सुधारमा समर्पित छु।"
+    },
+    "schedule": {
+      "en": "Every Day (9:00 AM to 10:00 AM)",
+      "ne": "हरेक दिन (बिहान ९:०० बजेदेखि १०:०० बजेसम्म)"
+    },
+    "language": { "en": "Nepali / English", "ne": "नेपाली / अंग्रेजी" }
+  },
+  {
+    "id": "Dr-Deep-Sijapati",
+    "image": "Dr-Deep-Sijapati.png",
+    "name": { "en": "Dr. Deep Sijapati", "ne": "डा. दीप सिजापति" },
+    "specialty": { "en": "ENT Specialist", "ne": "नाक, कान तथा घाँटी रोग विशेषज्ञ" },
+    "qualification": "MBBS, MS (ENT)",
+    "nmc": "NMC-19200",
+    "experience": { "en": "5 years", "ne": "५ वर्ष" },
+    "description": {
+      "en": "I am Dr. Deep Sijapati, an ENT specialist. Having achieved MBBS and MS (ENT) proficiency, I have been providing expert treatment services for ear, nose, and throat-related problems.",
+      "ne": "म डा. दीप सिजापति, नाक, कान तथा घाँटी रोग विशेषज्ञ हुँ। मैले MBBS तथा MS (ENT) दक्षता हासिल गरी नाक, कान तथा घाँटी सम्बन्धी समस्याहरूको विशेषज्ञ उपचार सेवा प्रदान गर्दै आइरहेको छु।"
+    },
+    "schedule": {
+      "en": "Every Day (5:00 PM to 6:00 PM)",
+      "ne": "हरेक दिन (साँझ ५:०० बजेदेखि ६:०० बजेसम्म)"
+    },
+    "language": { "en": "Nepali / English", "ne": "नेपाली / अंग्रेजी" }
+  },
+  {
+    "id": "Dr-Dikshya-Neupane",
+    "image": "Dr-Diksha-Neupane.png",
+    "name": { "en": "Dr. Dikshya Neupane", "ne": "डा. दिक्षा न्यौपाने" },
+    "specialty": { "en": "Psychiatrist", "ne": "मनोरोग विशेषज्ञ" },
+    "qualification": "MBBS, MD (AIIMS) Consultant Psychiatric",
+    "nmc": "NMC-26204",
+    "experience": { "en": "3 years", "ne": "३ वर्ष" },
+    "description": {
+      "en": "I am Dr. Dikshya Neupane, a psychiatrist. Having achieved MBBS and MD (AIIMS) proficiency, I have been providing expert treatment for mental health and emotional problems.",
+      "ne": "म डा. दिक्षा न्यौपाने, मनोरोग विशेषज्ञ हुँ। मैले MBBS तथा MD (AIIMS) दक्षता हासिल गरी मानसिक स्वास्थ्य तथा भावनात्मक समस्याहरूको विशेषज्ञ उपचार सेवा प्रदान गर्दै आइरहेकी छु।"
+    },
+    "schedule": {
+      "en": "Every Day (4:00 PM to 5:00 PM)",
+      "ne": "हरेक दिन (साँझ ४:०० बजेदेखि ५:०० बजेसम्म)"
+    },
+    "language": { "en": "Nepali / English", "ne": "नेपाली / अंग्रेजी" }
+  },
+  {
+    "id": "Dr-Prerana-Sah",
+    "image": "Dr-Prerana-Sah.png",
+    "name": { "en": "Dr. Prerana Sah", "ne": "डा. प्रेरणा साह" },
+    "specialty": { "en": "Dental Specialist", "ne": "दन्त रोग विशेषज्ञ" },
+    "qualification": "BDS (Dental)",
+    "nmc": "NMC-31338",
+    "experience": { "en": "6 years", "ne": "६ वर्ष" },
+    "description": {
+      "en": "I am Dr. Prerana Sah, a dental specialist with BDS expertise. I am dedicated to a healthy smile, personalized care, and patient-friendly service through modern dental treatments for prevention, aesthetics, and restoration for oral and dental health.",
+      "ne": "म डा. प्रेरणा साह, BDS विशेषज्ञता प्राप्त दन्त रोग विशेषज्ञ हुँ। मुख तथा दाँत स्वास्थ्यका लागि रोकथाम, सौन्दर्य तथा पुनर्स्थापना सम्बन्धी आधुनिक दन्त उपचारमार्फत स्वस्थ मुस्कान, व्यक्तिगत हेरचाह र बिरामीमैत्री सेवामा समर्पित छु।"
+    },
+    "schedule": {
+      "en": "Every Day (10:00 AM to 4:00 PM)",
+      "ne": "हरेक दिन (बिहान १०:०० बजेदेखि ४:०० बजेसम्म)"
+    },
+    "language": { "en": "Nepali / English", "ne": "नेपाली / अंग्रेजी" }
+  },
+  {
+    "id": "Dr-Diwash-Baskota",
+    "image": "Dr-Diwash-Baskota.png",
+    "name": { "en": "Dr. Diwash Baskota", "ne": "डा. दिवश बास्कोटा" },
+    "specialty": { "en": "Family Physician", "ne": "फ्यामिली फिजिसियन" },
+    "qualification": "MBBS, MD (GP & EM)",
+    "nmc": "NMC-18482",
+    "experience": { "en": "7 years", "ne": "७ वर्ष" },
+    "description": {
+      "en": "I am Dr. Diwash Baskota, a family physician with MBBS, MD (GP & EM) expertise. I am dedicated to long-term health and overall quality of life through primary care, disease prevention, emergency medical services, and patient-friendly counseling for individual and family health.",
+      "ne": "म डा. दिवश बास्कोटा, MBBS, MD (GP & EM) विशेषज्ञता प्राप्त फ्यामिली फिजिसियन हुँ। व्यक्ति तथा परिवारको समग्र स्वास्थ्यका लागि प्राथमिक उपचार, रोग रोकथाम, आकस्मिक चिकित्सा सेवा तथा बिरामीमैत्री परामर्शमार्फत दीर्घकालीन स्वास्थ्य र समग्र जीवनस्तर सुधारमा समर्पित छु।"
+    },
+    "schedule": {
+      "en": "Every Day (5:00 PM to 7:00 PM)",
+      "ne": "हरेक दिन (साँझ ५:०० बजेदेखि ७:०० बजेसम्म)"
+    },
+    "language": { "en": "Nepali / English", "ne": "नेपाली / अंग्रेजी" }
+  },
+  {
+    "id": "Dr-Elina-Mulmi",
+    "image": "Dr-Elina-Mulmi.png",
+    "name": { "en": "Dr. Elina Mulmi", "ne": "डा. एलिना मुल्मी" },
+    "specialty": { "en": "Consultant Physician", "ne": "कन्सल्टेण्ट फिजिसियन" },
+    "qualification": "MBBS, MD (Internal Medicine)",
+    "nmc": "NMC-13886",
+    "experience": { "en": "10 years", "ne": "१० वर्ष" },
+    "description": {
+      "en": "I am Dr. Elina Mulmi, a consultant physician. Having achieved MBBS and MD (Internal Medicine) proficiency, I have been providing expert treatment for various internal and general health problems.",
+      "ne": "म डा. एलिना मुल्मी, कन्सल्टेण्ट फिजिसियन हुँ। मैले MBBS तथा MD (Internal Medicine) दक्षता हासिल गरी विभिन्न आन्तरिक तथा सामान्य स्वास्थ्य समस्याहरूको विशेषज्ञ उपचार सेवा प्रदान गर्दै आइरहेकी छु।"
+    },
+    "schedule": {
+      "en": "Every Day (10:00 AM to 4:00 PM)",
+      "ne": "हरेक दिन (बिहान १०:०० बजेदेखि ४:०० बजेसम्म)"
+    },
+    "language": { "en": "Nepali / English", "ne": "नेपाली / अंग्रेजी" }
+  },
+  {
+    "id": "Dr-Manisha-Koirala",
+    "image": "Dr-Manisha-Koirala.png",
+    "name": { "en": "Dr. Manisha Koirala", "ne": "डा. मनिषा कोइराला" },
+    "specialty": {
+      "en": "Dermatologist, Venereologist and Aesthetic Specialist",
+      "ne": "छाला तथा यौन रोग एबं सौन्दर्य विशेषज्ञ"
+    },
+    "qualification": "MBBS, MD (Derma)",
+    "nmc": "NMC-16383",
+    "experience": { "en": "8 years", "ne": "८ वर्ष" },
+    "description": {
+      "en": "I am Dr. Manisha Koirala, a specialist in skin and venereal diseases as well as beauty. Having achieved MBBS and MD (Derma) proficiency, I have been providing modern and effective treatment for skin, hair, nails, and venereal diseases. I am especially focused on healthy skin and enhancing confidence.",
+      "ne": "म डा. मनिषा कोइराला, छाला तथा यौन रोग एवं सौन्दर्य विशेषज्ञ हुँ। मैले MBBS तथा MD (Derma) दक्षता हासिल गरी छाला, कपाल, नङ तथा यौन रोग सम्बन्धी समस्याहरूको आधुनिक तथा प्रभावकारी उपचार सेवा प्रदान गर्दै आइरहेकी छु। स्वस्थ छाला र आत्मविश्वास अभिवृद्धिमा म विशेष रूपमा केन्द्रित छु।"
+    },
+    "schedule": {
+      "en": "Tuesday, Thursday and Friday (5:00 PM to 6:00 PM)",
+      "ne": "मंगलबार, विहिबार र शुक्रबार (साँझ ५:०० बजेदेखि ६:०० बजेसम्म)"
+    },
+    "language": { "en": "Nepali / English", "ne": "नेपाली / अंग्रेजी" }
+  }
+]
