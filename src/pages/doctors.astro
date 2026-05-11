@@ -39,68 +39,62 @@ import doctors from '../data/doctors.json';
       </h2>
 
       <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
-  {
-    doctors.map((doc) => (
-      <div class="relative group text-center bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition">
+        {
+          doctors.map((doc) => (
+            <div class="relative group text-center bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition">
+              <div class="relative">
+                <img
+                  src={`/images/doctors/dp/${doc.image}`}
+                  alt={doc.name.en}
+                  class="w-32 h-32 mx-auto rounded-full object-cover"
+                  onerror="this.onerror=null; this.src='/images/doctors/dp/default.png'"
+                  loading="lazy"
+                />
 
-        <!-- IMAGE -->
-        <div class="relative">
-          <img
-            src={`/images/doctors/dp/${doc.image}`}
-            alt={doc.name.en}
-            class="w-32 h-32 mx-auto rounded-full object-cover"
-            onerror="this.onerror=null; this.src='/images/doctors/dp/default.png'"
-            loading="lazy"
-          />
+                <div class="absolute inset-0 bg-black/80 text-white text-xs p-3 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                  <p
+                    data-en={doc.description.en}
+                    data-ne={doc.description.ne}
+                    data-i18n="description"
+                    class="line-clamp-6"
+                  >
+                    {doc.description.en}
+                  </p>
+                </div>
+              </div>
 
-          <!-- HOVER DESCRIPTION OVERLAY -->
-          <div class="absolute inset-0 bg-black/80 text-white text-xs p-3 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-            <p
-              data-en={doc.description.en}
-              data-ne={doc.description.ne}
-              data-i18n="description"
-              class="line-clamp-6"
-            >
-              {doc.description.en}
-            </p>
-          </div>
-        </div>
+              <h3
+                class="mt-3 font-semibold"
+                data-i18n="name"
+                data-value-en={doc.name.en}
+                data-value-ne={doc.name.ne}
+              >
+                {doc.name.en}
+              </h3>
 
-        <!-- NAME -->
-        <h3
-          class="mt-3 font-semibold"
-          data-en={doc.name.en}
-          data-ne={doc.name.ne}
-        >
-          {doc.name.en}
-        </h3>
+              <p
+                class="text-sm text-gray-500"
+                data-i18n="specialty"
+                data-value-en={doc.specialty.en}
+                data-value-ne={doc.specialty.ne}
+              >
+                {doc.specialty.en}
+              </p>
 
-        <!-- SPECIALTY -->
-        <p
-          class="text-sm text-gray-500"
-          data-en={doc.specialty.en}
-          data-ne={doc.specialty.ne}
-        >
-          {doc.specialty.en}
-        </p>
+              <p
+                class="text-xs text-gray-500 mt-1"
+                data-i18n="schedule"
+                data-value-en={doc.schedule.en}
+                data-value-ne={doc.schedule.ne}
+              >
+                {doc.schedule.en}
+              </p>
 
-        <!-- QUALIFICATION -->
-        <p class="text-xs text-gray-600 mt-1">
-          {doc.qualification}
-        </p>
-
-        <!-- SCHEDULE -->
-        <p
-          class="text-xs text-gray-500 mt-1"
-          data-en={doc.schedule.en}
-          data-ne={doc.schedule.ne}
-        >
-          {doc.schedule.en}
-        </p>
+              <p class="text-xs text-gray-600 mt-1" >{doc.qualification}</p>
+            </div>
+          ))
+        }
       </div>
-    ))
-  }
-</div>
     </div>
   </section>
 

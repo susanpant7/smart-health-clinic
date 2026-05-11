@@ -95,7 +95,7 @@ import { translations } from '../utils/i18n';
 
     // for doctors page descriptions
     document.querySelectorAll('[data-i18n]').forEach((el) => {
-      const value = el.getAttribute(`data-${lang}`);
+      const value = el.getAttribute(`data-value-${lang}`);
       if (value) el.textContent = value;
     });
 
