@@ -122,6 +122,77 @@ import { service_images } from '../data/services-images';
     </div>
   </section>
 
+  <!-- DETAILED SERVICES GRID -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6 max-w-6xl">
+      <div class="text-center mb-16">
+        <h2 data-t="serv_overview_title" class="text-3xl md:text-4xl font-bold text-clinic-slate">
+        </h2>
+        <p data-t="serv_overview_subtitle" class="text-gray-600 mt-4 max-w-2xl mx-auto"></p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {
+          [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((i) => (
+            <div class="flex gap-4 p-4 rounded-xl hover:bg-slate-50 transition-colors">
+              <div class="text-3xl shrink-0" data-t={`serv_item_${i}_icon`} />
+              <div>
+                <h3 class="font-bold text-lg text-clinic-slate" data-t={`serv_item_${i}_title`} />
+                <p class="text-gray-600 text-sm mt-1" data-t={`serv_item_${i}_desc`} />
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- PACKAGES & TRUST -->
+  <section class="py-20 bg-slate-50">
+    <div class="container mx-auto px-6 max-w-6xl">
+      <div class="grid lg:grid-cols-2 gap-12 items-start">
+        <!-- Packages -->
+        <div class="bg-white p-8 rounded-3xl shadow-sm border">
+          <h2 class="text-2xl font-bold mb-2 flex items-center gap-2">
+            📦 <span data-t="serv_pkgs_title"></span>
+          </h2>
+          <p class="text-gray-600 mb-6" data-t="serv_pkgs_subtitle"></p>
+          <div class="grid sm:grid-cols-2 gap-3">
+            {
+              [1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
+                <div class="flex items-center gap-2 text-gray-700">
+                  <span class="text-clinic-teal text-sm">●</span>
+                  <span data-t={`serv_pkg_li${i}`} />
+                </div>
+              ))
+            }
+          </div>
+          <p
+            class="mt-8 text-clinic-slate font-medium italic border-l-4 border-clinic-teal pl-4"
+            data-t="serv_pkgs_footer"
+          >
+          </p>
+        </div>
+
+        <!-- Trust/Why Us -->
+        <div class="space-y-8">
+          <h2 class="text-3xl font-bold text-clinic-slate" data-t="serv_trust_title"></h2>
+          <div class="grid gap-4">
+            {
+              [1, 2, 3, 4, 5].map((i) => (
+                <div class="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm border-l-4 border-clinic-teal">
+                  <span class="text-clinic-teal font-bold">✓</span>
+                  <span class="font-semibold text-clinic-slate" data-t={`serv_trust_li${i}`} />
+                </div>
+              ))
+            }
+          </div>
+          <p class="text-xl font-bold text-clinic-teal" data-t="serv_trust_footer"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- GALLERY -->
   <section class="py-20 bg-white">
     <div class="container mx-auto px-6 max-w-6xl">
