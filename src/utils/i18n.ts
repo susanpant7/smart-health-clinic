@@ -58,6 +58,19 @@ export const translations = {
     home_impact_card3: 'Patients Served',
     home_impact_card4: 'Health Packages',
 
+    // COMMUNITY - ENGLISH
+    community_blood_title: 'Blood Donation Programs',
+    community_blood_desc:
+      'We regularly organize blood donation drives to support emergency medical needs in our community.',
+
+    community_camp_title: 'Free Health Camps',
+    community_camp_desc:
+      'We conduct free health camps providing consultation, basic tests, and awareness services.',
+
+    community_women_title: 'Women Health Camps',
+    community_women_desc:
+      'Special health camps focused on women’s health, pregnancy care, and awareness programs.',
+
     // DOCTORS COMPONENT
     doctors_title: 'Our Doctors',
     doctors_desc: 'Experienced professionals dedicated to your health and care.',
@@ -435,6 +448,18 @@ export const translations = {
     home_impact_card2: 'स्वास्थ्य परीक्षण',
     home_impact_card3: 'बिरामी सेवा',
     home_impact_card4: 'स्वास्थ्य प्याकेज',
+
+    community_blood_title: 'रक्तदान कार्यक्रम',
+    community_blood_desc:
+      'हामी समुदायको आपतकालीन स्वास्थ्य आवश्यकताका लागि नियमित रूपमा रक्तदान कार्यक्रम सञ्चालन गर्छौं।',
+
+    community_camp_title: 'निःशुल्क स्वास्थ्य शिविर',
+    community_camp_desc:
+      'हामी निःशुल्क स्वास्थ्य शिविर सञ्चालन गर्छौं जसमा परामर्श, आधारभूत परीक्षण र स्वास्थ्य सचेतना सेवा समावेश हुन्छ।',
+
+    community_women_title: 'महिला स्वास्थ्य शिविर',
+    community_women_desc:
+      'महिलाहरूको स्वास्थ्य, गर्भावस्था हेरचाह र सचेतनाका लागि विशेष स्वास्थ्य शिविरहरू सञ्चालन गरिन्छ।',
 
     // DOCTORS COMPONENT
     doctors_title: 'हाम्रा डाक्टरहरू',

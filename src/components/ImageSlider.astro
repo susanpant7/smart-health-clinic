@@ -1,0 +1,75 @@
+---
+const { images, title = '', autoplay = false, interval = 3000 } = Astro.props;
+---
+
+<!-- Pass props directly to data attributes here -->
+<div class="w-full image-slider" data-autoplay={autoplay.toString()} data-interval={interval}>
+  {title && <h3 class="text-xl font-bold mb-4">{title}</h3>}
+
+  <div class="relative w-full overflow-hidden rounded-2xl">
+    <!-- TRACK -->
+    <div class="flex transition-transform duration-500 ease-in-out track">
+      {
+        images.map((img) => (
+          <img
+            src={img}
+            class="w-full h-auto max-h-125 object-contain shrink-0"
+            alt="Slider Image"
+          />
+        ))
+      }
+    </div>
+
+    <!-- LEFT -->
+    <button
+      class="prev absolute left-2 top-1/2 -translate-y-1/2 text-black text-5xl font-bold z-10 drop-shadow-lg hover:text-clinic-teal transition-colors"
+    >
+      ‹
+    </button>
+
+    <!-- RIGHT -->
+    <button
+      class="next absolute right-2 top-1/2 -translate-y-1/2 text-black text-5xl font-bold z-10 drop-shadow-lg hover:text-clinic-teal transition-colors"
+    >
+      ›
+    </button>
+  </div>
+</div>
+
+<script>
+  // This runs on the client
+  document.querySelectorAll('.image-slider').forEach((slider) => {
+    const track = slider.querySelector('.track');
+    const slides = track.children.length;
+    const nextBtn = slider.querySelector('.next');
+    const prevBtn = slider.querySelector('.prev');
+
+    // Grab data from the attributes set above
+    const autoplayEnabled = slider.getAttribute('data-autoplay') === 'true';
+    const intervalTime = Number(slider.getAttribute('data-interval')) || 3000;
+
+    let index = 0;
+
+    const update = () => {
+      track.style.transform = `translateX(-${index * 100}%)`;
+    };
+
+    nextBtn.addEventListener('click', () => {
+      index = (index + 1) % slides;
+      update();
+    });
+
+    prevBtn.addEventListener('click', () => {
+      index = (index - 1 + slides) % slides;
+      update();
+    });
+
+    // Autoplay logic
+    if (autoplayEnabled && slides > 1) {
+      setInterval(() => {
+        index = (index + 1) % slides;
+        update();
+      }, intervalTime);
+    }
+  });
+</script>

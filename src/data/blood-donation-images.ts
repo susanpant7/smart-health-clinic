@@ -1,0 +1,20 @@
+export const bloodDonationImages =
+[
+    '/images/blood-donation/IMG_4186.JPG',
+    '/images/blood-donation/IMG_4187.JPG',
+    '/images/blood-donation/IMG_4188.JPG',
+    '/images/blood-donation/IMG_4189.JPG',
+    '/images/blood-donation/IMG_4190.JPG',
+    '/images/blood-donation/IMG_4191.JPG',
+    '/images/blood-donation/IMG_4192.JPG',
+    '/images/blood-donation/IMG_4193.JPG',
+    '/images/blood-donation/IMG_4194.JPG',
+    '/images/blood-donation/IMG_4195.JPG',
+    '/images/blood-donation/IMG_4196.JPG',
+    '/images/blood-donation/IMG_4197.JPG',
+    '/images/blood-donation/IMG_4198.JPG',
+    '/images/blood-donation/IMG_4199.JPG',
+    '/images/blood-donation/IMG_4200.JPG',
+    '/images/blood-donation/IMG_4201.JPG',
+    '/images/blood-donation/IMG_4202.JPG',
+]
