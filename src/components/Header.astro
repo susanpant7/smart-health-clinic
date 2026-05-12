@@ -2,6 +2,19 @@
 import { Image } from 'astro:assets';
 import logoImg from '../assets/logo.png';
 import { translations } from '../utils/i18n';
+
+// Get current path to determine active link
+const pathname = new URL(Astro.url).pathname;
+const currentPath = pathname === '/' ? '/' : pathname.replace(/\/$/, '');
+
+// Helper function to define classes
+const linkClass = (path: string) =>
+  `transition-colors hover:text-clinic-teal ${
+    currentPath === path ? 'text-clinic-teal font-bold' : 'text-clinic-slate'
+  }`;
+
+const mobileLinkClass = (path: string) =>
+  `transition-colors ${currentPath === path ? 'text-clinic-teal font-bold' : 'text-clinic-slate'}`;
 ---
 
 <header class="sticky top-0 z-50 w-full border-b border-gray-100 bg-white/90 backdrop-blur-md">
@@ -12,29 +25,14 @@ import { translations } from '../utils/i18n';
     </a>
 
     <!-- Desktop Navigation -->
-    <nav class="hidden lg:flex items-center gap-6 font-medium text-clinic-slate">
-      <a href="/" data-t="nav_home" class="hover:text-clinic-teal transition-colors">Home</a>
-      <a href="/about" data-t="nav_about" class="hover:text-clinic-teal transition-colors"
-        >About Us</a
-      >
-      <a href="/services" data-t="nav_services" class="hover:text-clinic-teal transition-colors"
-        >Services</a
-      >
-      <a href="/doctors" data-t="nav_doctors" class="hover:text-clinic-teal transition-colors"
-        >Doctors</a
-      >
-      <a
-        href="/facilities"
-        data-t="nav_facilities"
-        class="hover:text-clinic-teal transition-Facilities">Doctors</a
-      >
-
-      <a href="/packages" data-t="nav_packages" class="hover:text-clinic-teal transition-colors"
-        >Packages</a
-      >
-      <a href="/contact" data-t="nav_contact" class="hover:text-clinic-teal transition-colors"
-        >Contact</a
-      >
+    <nav class="hidden lg:flex items-center gap-6 font-medium">
+      <a href="/" data-t="nav_home" class={linkClass('/')}>Home</a>
+      <a href="/about" data-t="nav_about" class={linkClass('/about')}>About Us</a>
+      <a href="/services" data-t="nav_services" class={linkClass('/services')}>Services</a>
+      <a href="/doctors" data-t="nav_doctors" class={linkClass('/doctors')}>Doctors</a>
+      <a href="/facilities" data-t="nav_facilities" class={linkClass('/facilities')}>Facilities</a>
+      <a href="/packages" data-t="nav_packages" class={linkClass('/packages')}>Packages</a>
+      <a href="/contact" data-t="nav_contact" class={linkClass('/contact')}>Contact</a>
     </nav>
 
     <!-- Actions -->
@@ -65,18 +63,20 @@ import { translations } from '../utils/i18n';
 
   <!-- Mobile Menu -->
   <div id="mobile-nav" class="hidden lg:hidden bg-white border-t border-gray-50 p-6 shadow-xl">
-    <nav class="flex flex-col gap-5 text-lg font-medium text-clinic-slate">
-      <a href="/" data-t="nav_home">Home</a>
-      <a href="/about" data-t="nav_about">About Us</a>
-      <a href="/services" data-t="nav_services">Services</a>
-      <a href="/doctors" data-t="nav_doctors">Doctors</a>
-      <a href="/facilities" data-t="nav_facilities">Facilities</a>
-      <a href="/packages" data-t="nav_packages">Packages</a>
-      <a href="/contact" data-t="nav_contact">Contact</a>
+    <nav class="flex flex-col gap-5 text-lg font-medium">
+      <a href="/" data-t="nav_home" class={mobileLinkClass('/')}>Home</a>
+      <a href="/about" data-t="nav_about" class={mobileLinkClass('/about')}>About Us</a>
+      <a href="/services" data-t="nav_services" class={mobileLinkClass('/services')}>Services</a>
+      <a href="/doctors" data-t="nav_doctors" class={mobileLinkClass('/doctors')}>Doctors</a>
+      <a href="/facilities" data-t="nav_facilities" class={mobileLinkClass('/facilities')}
+        >Facilities</a
+      >
+      <a href="/packages" data-t="nav_packages" class={mobileLinkClass('/packages')}>Packages</a>
+      <a href="/contact" data-t="nav_contact" class={mobileLinkClass('/contact')}>Contact</a>
       <a
         href="https://vendor.smarthealthnepal.com/"
         target="_blank"
-        class="bg-clinic-teal text-white text-center py-3 rounded-xl"
+        class="bg-clinic-teal text-white text-center py-3 rounded-xl mt-2 font-bold"
         data-t="cta_book">Book Now</a
       >
     </nav>
