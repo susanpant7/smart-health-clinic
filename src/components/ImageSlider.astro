@@ -2,19 +2,29 @@
 const { images, title = '', autoplay = false, interval = 3000 } = Astro.props;
 ---
 
-<!-- Pass props directly to data attributes here -->
 <div class="w-full image-slider" data-autoplay={autoplay.toString()} data-interval={interval}>
   {title && <h3 class="text-xl font-bold mb-4">{title}</h3>}
 
-  <div class="relative w-full overflow-hidden rounded-2xl">
+  <div class="relative w-full overflow-hidden">
+    <!-- 🔥 FADE EDGES (PUT HERE) -->
+    <div
+      class="pointer-events-none absolute inset-y-0 left-0 w-12 bg-linear-to-r from-white to-transparent z-10"
+    >
+    </div>
+    <div
+      class="pointer-events-none absolute inset-y-0 right-0 w-12 bg-linear-to-l from-white to-transparent z-10"
+    >
+    </div>
+
     <!-- TRACK -->
-    <div class="flex transition-transform duration-500 ease-in-out track">
+    <div class="flex track will-change-transform">
       {
         images.map((img) => (
           <img
             src={img}
-            class="w-full h-auto max-h-125 object-contain shrink-0"
+            class="w-full h-auto max-h-125 object-contain shrink-0 select-none"
             alt="Slider Image"
+            draggable="false"
           />
         ))
       }
@@ -22,14 +32,14 @@ const { images, title = '', autoplay = false, interval = 3000 } = Astro.props;
 
     <!-- LEFT -->
     <button
-      class="prev absolute left-2 top-1/2 -translate-y-1/2 text-black text-5xl font-bold z-10 drop-shadow-lg hover:text-clinic-teal transition-colors"
+      class="prev absolute left-3 top-1/2 -translate-y-1/2 text-6xl font-bold z-20 text-black hover:text-clinic-teal transition"
     >
       ‹
     </button>
 
     <!-- RIGHT -->
     <button
-      class="next absolute right-2 top-1/2 -translate-y-1/2 text-black text-5xl font-bold z-10 drop-shadow-lg hover:text-clinic-teal transition-colors"
+      class="next absolute right-3 top-1/2 -translate-y-1/2 text-6xl font-bold z-20 text-black hover:text-clinic-teal transition"
     >
       ›
     </button>
@@ -37,39 +47,84 @@ const { images, title = '', autoplay = false, interval = 3000 } = Astro.props;
 </div>
 
 <script>
-  // This runs on the client
   document.querySelectorAll('.image-slider').forEach((slider) => {
     const track = slider.querySelector('.track');
     const slides = track.children.length;
     const nextBtn = slider.querySelector('.next');
     const prevBtn = slider.querySelector('.prev');
 
-    // Grab data from the attributes set above
     const autoplayEnabled = slider.getAttribute('data-autoplay') === 'true';
     const intervalTime = Number(slider.getAttribute('data-interval')) || 3000;
 
     let index = 0;
+    let autoSlide;
+    let startX = 0;
+    let isDragging = false;
+
+    // smooth animation
+    track.style.transition = 'transform 0.6s cubic-bezier(0.22, 1, 0.36, 1)';
 
     const update = () => {
       track.style.transform = `translateX(-${index * 100}%)`;
     };
 
-    nextBtn.addEventListener('click', () => {
+    const next = () => {
       index = (index + 1) % slides;
       update();
+    };
+
+    const prev = () => {
+      index = (index - 1 + slides) % slides;
+      update();
+    };
+
+    const startAutoplay = () => {
+      if (!autoplayEnabled || slides <= 1) return;
+      stopAutoplay();
+      autoSlide = setInterval(next, intervalTime);
+    };
+
+    const stopAutoplay = () => {
+      if (autoSlide) clearInterval(autoSlide);
+    };
+
+    // Buttons
+    nextBtn.addEventListener('click', () => {
+      next();
+      startAutoplay();
     });
 
     prevBtn.addEventListener('click', () => {
-      index = (index - 1 + slides) % slides;
-      update();
+      prev();
+      startAutoplay();
     });
 
-    // Autoplay logic
-    if (autoplayEnabled && slides > 1) {
-      setInterval(() => {
-        index = (index + 1) % slides;
-        update();
-      }, intervalTime);
-    }
+    // Pause on hover
+    slider.addEventListener('mouseenter', stopAutoplay);
+    slider.addEventListener('mouseleave', startAutoplay);
+
+    // Swipe (mobile)
+    track.addEventListener('touchstart', (e) => {
+      startX = e.touches[0].clientX;
+      isDragging = true;
+      stopAutoplay();
+    });
+
+    track.addEventListener('touchend', (e) => {
+      if (!isDragging) return;
+
+      const endX = e.changedTouches[0].clientX;
+      const diff = startX - endX;
+
+      if (Math.abs(diff) > 50) {
+        diff > 0 ? next() : prev();
+      }
+
+      isDragging = false;
+      startAutoplay();
+    });
+
+    update();
+    startAutoplay();
   });
 </script>
