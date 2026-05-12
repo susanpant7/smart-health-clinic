@@ -1,7 +1,7 @@
 [
   {
     "id": "pawan-kumar",
-    "image": "pawan-kumar.png",
+    "image": "Dr-Pawan-Kumar.png",
     "name": { "en": "Dr. Pawan Kumar", "ne": "डा. पवन कुमार" },
     "specialty": { "en": "Senior Neurologist", "ne": "वरिष्ठ नशा रोग विशेषज्ञ" },
     "qualification": "MBBS, MS (Neuro)",
@@ -19,7 +19,7 @@
   },
   {
     "id": "prajay-shikhar-shrestha",
-    "image": "prajay-shikhar-shrestha.png",
+    "image": "Dr-Prajay-Shikhar-Shrestha.png",
     "name": { "en": "Dr. Prajay Shikhar Shrestha", "ne": "डा. प्रजय शिखर श्रेष्ठ" },
     "specialty": {
       "en": "Endocrinologist (Diabetes, Thyroid & Hormonal Disorders)",
