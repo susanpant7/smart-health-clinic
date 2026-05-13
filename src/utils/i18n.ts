@@ -14,12 +14,14 @@ export const translations = {
     cta_book: 'Book Now',
 
     // HOME - HERO
-    home_hero_title: 'Your Health, Our Priority.',
+    home_hero_title_1: 'Trusted',
+    home_hero_title_2: 'Specialist Healthcare',
+    home_hero_title_3: 'in Pepsicola.',
     home_hero_desc:
       'Delivering trusted, affordable, and modern healthcare services for you and your family.',
-    home_hero_tag1: '10,000+ Patients Served',
-    home_hero_tag2: 'Advanced Diagnostics',
-    home_hero_tag3: 'Community-Focused',
+    home_hero_tag1: 'Modern Care',
+    home_hero_tag2: 'Experienced Doctors',
+    home_hero_tag3: 'Compassionate Service',
     home_hero_location: 'Pepsicola, Kathmandu',
 
     // HOME - WHY

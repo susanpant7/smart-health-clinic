@@ -20,42 +20,261 @@ import { womenCampImages } from '../data/women-camp-images';
       </div>
     </div>
 
-    <div class="relative container mx-auto px-4 text-center text-white">
-      <div
-        class="mb-4 inline-flex items-center rounded-full bg-white/10 px-4 py-1 text-sm backdrop-blur"
+    <div class="absolute top-6 right-6 z-20 flex items-center gap-4">
+      <span
+        class="text-white text-sm font-bold tracking-widest uppercase"
+        data-t="home_hero_follow"
       >
-        📍
-        <span data-t="home_hero_location"> Smart Health Clinic, Pepsicola, Kathmandu </span>
-      </div>
+        Follow Us:
+      </span>
 
-      <h1 data-t="home_hero_title" class="mb-5 text-4xl md:text-6xl font-black">
-        Smart Health Clinic – Trusted Healthcare in Kathmandu
+      <div class="flex gap-2">
+        <a
+          href="https://www.facebook.com/shnclinic/"
+          target="_blank"
+          aria-label="Facebook"
+          class="flex items-center justify-center transition-transform hover:scale-110"
+        >
+          <img
+            src="https://www.svgrepo.com/show/494273/facebook-round.svg"
+            alt="Facebook"
+            class="h-6 w-6 invert"
+          />
+        </a>
+
+        <a
+          href="https://www.instagram.com/smarthealthclinic_"
+          target="_blank"
+          aria-label="Instagram"
+          class="flex items-center justify-center transition-transform hover:scale-110"
+        >
+          <img
+            src="https://www.svgrepo.com/show/474324/instagram.svg"
+            alt="Instagram"
+            class="h-6 w-6 invert"
+          />
+        </a>
+
+        <a
+          href="https://www.youtube.com/@SmartHealthClinic-c6t"
+          target="_blank"
+          aria-label="YouTube"
+          class="flex items-center justify-center transition-transform hover:scale-110"
+        >
+          <img
+            src="https://www.svgrepo.com/show/513089/youtube-168.svg"
+            alt="YouTube"
+            class="h-6 w-6 invert"
+          />
+        </a>
+
+        <a
+          href="https://www.google.com/maps?cid=16583436132790178084&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAMYASAF&hl=en&gl=US&source=embed"
+          target="_blank"
+          aria-label="GoogleMaps"
+          class="flex items-center justify-center transition-transform hover:scale-110"
+        >
+          <img
+            src="https://www.svgrepo.com/show/532539/location-pin.svg"
+            alt="GoogleMaps"
+            class="h-6 w-6 invert"
+          />
+        </a>
+      </div>
+    </div>
+
+    <div class="relative container px-4 text-white w-full">
+      <h1 class="text-4xl md:text-6xl font-black leading-tight drop-shadow-2xl">
+        <!-- Line 1: Trusted -->
+        <span class="block" data-t="home_hero_title_1">
+          Smart Health Clinic – Trusted Specialist Healthcare in Pepsicola
+        </span>
+
+        <!-- Line 2: Specialist Healthcare (Different Color) -->
+        <span class="block text-clinic-teal" data-t="home_hero_title_2"> </span>
+
+        <!-- Line 3: in Pepsicola -->
+        <span class="block" data-t="home_hero_title_3"></span>
       </h1>
 
-      <p data-t="home_hero_desc" class="mb-8 text-slate-200 max-w-2xl mx-auto">
-        Affordable and trusted healthcare services in Pepsicola, Kathmandu. Consult experienced
-        doctors, diagnostics, and patient-focused care.
-      </p>
+      <div class="mt-8 flex flex-wrap gap-x-8 gap-y-4 text-sm font-bold text-slate-100">
+        <!-- Tag 1 -->
+        <div class="flex items-center gap-2">
+          <span
+            class="h-2 w-2 shrink-0 rounded-full bg-clinic-teal shadow-[0_0_8px_rgba(var(--color-clinic-teal),0.6)]"
+          ></span>
+          <span data-t="home_hero_tag1">Modern Care</span>
+        </div>
 
-      <div class="flex justify-center gap-4 flex-wrap">
+        <!-- Tag 2 -->
+        <div class="flex items-center gap-2">
+          <span
+            class="h-2 w-2 shrink-0 rounded-full bg-clinic-teal shadow-[0_0_8px_rgba(var(--color-clinic-teal),0.6)]"
+          ></span>
+          <span data-t="home_hero_tag2">Experienced Doctors</span>
+        </div>
+
+        <!-- Tag 3 -->
+        <div class="flex items-center gap-2">
+          <span
+            class="h-2 w-2 shrink-0 rounded-full bg-clinic-teal shadow-[0_0_8px_rgba(var(--color-clinic-teal),0.6)]"
+          ></span>
+          <span data-t="home_hero_tag3">Compassionate Service</span>
+        </div>
+      </div>
+
+      <div class="relative z-10 py-5">
+        <div class="flex flex-wrap items-start gap-4 -ml-2">
+          <!-- Item 1 -->
+          <div class="flex flex-col items-start text-left group w-20">
+            <div
+              class="h-16 w-16 bg-clinic-teal rounded-full flex items-center justify-center border-2 border-white shadow-lg transition-transform group-hover:scale-110 overflow-hidden"
+            >
+              <img
+                src="https://www.svgrepo.com/show/484074/doctor.svg"
+                alt="Doctor"
+                class="h-10 w-10 invert"
+              />
+            </div>
+            <p
+              class="mt-2 text-[10px] font-black tracking-tighter text-white uppercase leading-tight drop-shadow-md"
+              data-t="home_tag_spec"
+            >
+              Experienced Specialists
+            </p>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="flex flex-col items-start text-left group w-20">
+            <div
+              class="h-16 w-16 bg-clinic-teal rounded-full flex items-center justify-center border-2 border-white shadow-lg transition-transform group-hover:scale-110 overflow-hidden"
+            >
+              <img
+                src="https://www.svgrepo.com/show/347004/hand-heart.svg"
+                alt="Care"
+                class="h-10 w-10 invert"
+              />
+            </div>
+            <p
+              class="mt-2 text-[10px] font-black tracking-tighter text-white uppercase leading-tight drop-shadow-md"
+              data-t="home_tag_patient"
+            >
+              Patient Focused Care
+            </p>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="flex flex-col items-start text-left group w-20">
+            <div
+              class="h-16 w-16 bg-clinic-teal rounded-full flex items-center justify-center border-2 border-white shadow-lg transition-transform group-hover:scale-110 overflow-hidden"
+            >
+              <img
+                src="https://www.svgrepo.com/show/181792/microscope-medical.svg"
+                alt="Care"
+                class="h-10 w-10 invert"
+              />
+            </div>
+            <p
+              class="mt-2 text-[10px] font-black tracking-tighter text-white uppercase leading-tight drop-shadow-md"
+              data-t="home_tag_diag"
+            >
+              Advanced Diagnostics
+            </p>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="flex flex-col items-start text-left group w-20">
+            <div
+              class="h-16 w-16 bg-clinic-teal rounded-full flex items-center justify-center border-2 border-white shadow-lg transition-transform group-hover:scale-110 overflow-hidden"
+            >
+              <img
+                src="https://www.svgrepo.com/show/281628/chiropractic-physiotherapy.svg"
+                alt="Care"
+                class="h-10 w-10 invert"
+              />
+            </div>
+            <p
+              class="mt-2 text-[10px] font-black tracking-tighter text-white uppercase leading-tight drop-shadow-md"
+              data-t="home_tag_physio"
+            >
+              Physiotherapy & Rehabilitation
+            </p>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="flex flex-col items-start text-left group w-20">
+            <div
+              class="h-16 w-16 bg-clinic-teal rounded-full flex items-center justify-center border-2 border-white shadow-lg transition-transform group-hover:scale-110 overflow-hidden"
+            >
+              <img
+                src="https://www.svgrepo.com/show/421930/health-medical-medical-report.svg"
+                alt="Care"
+                class="h-10 w-10 invert"
+              />
+            </div>
+            <p
+              class="mt-2 text-[10px] font-black tracking-tighter text-white uppercase leading-tight drop-shadow-md"
+              data-t="home_tag_checkup"
+            >
+              Health Checkups
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col lg:flex-row items-start lg:items-center gap-4 py-8">
+        <div
+          class="flex flex-col md:flex-row items-start md:items-center bg-[#0a1e29]/80 backdrop-blur-sm border border-clinic-teal/30 rounded-2xl overflow-hidden"
+        >
+          <div
+            class="flex items-center gap-3 px-6 py-4 border-b md:border-b-0 md:border-r border-clinic-teal/30 w-full md:w-auto justify-start"
+          >
+            <div class="bg-white rounded-full p-1.5 shrink-0">
+              <img
+                src="https://www.svgrepo.com/show/526086/phone.svg"
+                alt="Phone"
+                class="h-5 w-5"
+              />
+            </div>
+            <span class="text-white font-bold text-lg whitespace-nowrap">01-5924005</span>
+          </div>
+
+          <div
+            class="flex items-center gap-3 px-6 py-4 border-b md:border-b-0 md:border-r border-clinic-teal/30 w-full md:w-auto justify-start"
+          >
+            <img
+              src="https://www.svgrepo.com/show/522167/location.svg"
+              alt="Location"
+              class="h-6 w-6 invert shrink-0"
+            />
+            <div class="text-white text-sm leading-tight text-left">
+              <p class="font-semibold">Kandaghari, Pepsicola,</p>
+              <p class="font-semibold">Kathmandu</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3 px-6 py-4 w-full md:w-auto justify-start">
+            <img
+              src="https://www.svgrepo.com/show/415803/website-ui-web.svg"
+              alt="Web"
+              class="h-6 w-6 invert shrink-0"
+            />
+            <span class="text-white font-semibold text-sm text-left">smarthealthclinic.com.np</span>
+          </div>
+        </div>
+
         <a
           href="https://vendor.smarthealthnepal.com/"
           target="_blank"
-          rel="noopener"
-          class="bg-clinic-teal px-7 py-3 rounded-full font-bold"
+          class="flex self-start items-center gap-3 bg-clinic-teal hover:bg-teal-500 text-white px-8 py-5 rounded-full font-bold shadow-lg transition-all transform hover:scale-105"
         >
-          <span data-t="cta_book">Book Appointment</span>
+          <img
+            src="https://www.svgrepo.com/show/533396/calendar-lines-pen.svg"
+            alt="Calendar"
+            class="h-6 w-6 invert"
+          />
+          <span class="uppercase tracking-wider">Book Appointment</span>
         </a>
-
-        <a href="/contact" class="border px-7 py-3 rounded-full">
-          <span data-t="nav_contact">Contact Us</span>
-        </a>
-      </div>
-
-      <div class="mt-8 flex flex-wrap justify-center gap-5 text-sm font-bold text-slate-100">
-        <span>👉 <span data-t="home_hero_tag1">Experienced Doctors</span></span>
-        <span>👉 <span data-t="home_hero_tag2">Affordable Care</span></span>
-        <span>👉 <span data-t="home_hero_tag3">Modern Facilities</span></span>
       </div>
     </div>
   </section>
