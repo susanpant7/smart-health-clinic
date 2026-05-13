@@ -1,130 +1,139 @@
 ---
-const { images, title = '', autoplay = false, interval = 3000 } = Astro.props;
+// Changed default speed to 0.6 for a much calmer movement
+const { images, title = '', speed = 0.7 } = Astro.props;
+const tripledImages = [...images, ...images, ...images];
 ---
 
-<div class="w-full image-slider" data-autoplay={autoplay.toString()} data-interval={interval}>
-  {title && <h3 class="text-xl font-bold mb-4">{title}</h3>}
+<div class="w-full image-slider-container py-12 bg-white" data-speed={speed}>
+  {
+    title && (
+      <h2 class="text-3xl md:text-4xl font-bold mb-10 px-8 text-center text-slate-800">{title}</h2>
+    )
+  }
 
-  <div class="relative w-full overflow-hidden">
-    <!-- 🔥 FADE EDGES (PUT HERE) -->
+  <div class="relative group">
+    <!-- Gradient Overlays -->
     <div
-      class="pointer-events-none absolute inset-y-0 left-0 w-12 bg-linear-to-r from-white to-transparent z-10"
+      class="pointer-events-none absolute inset-y-0 left-0 w-24 md:w-48 bg-linear-to-r from-white via-white/40 to-transparent z-10"
     >
     </div>
     <div
-      class="pointer-events-none absolute inset-y-0 right-0 w-12 bg-linear-to-l from-white to-transparent z-10"
+      class="pointer-events-none absolute inset-y-0 right-0 w-24 md:w-48 bg-linear-to-l from-white via-white/40 to-transparent z-10"
     >
     </div>
 
-    <!-- TRACK -->
-    <div class="flex track will-change-transform">
+    <!-- Scrollable Track -->
+    <div
+      class="slider-track flex gap-8 md:gap-12 overflow-x-auto no-scrollbar cursor-grab active:cursor-grabbing select-none px-4"
+    >
       {
-        images.map((img) => (
-          <img
-            src={img}
-            class="w-full h-auto max-h-125 object-contain shrink-0 select-none"
-            alt="Slider Image"
-            draggable="false"
-          />
+        tripledImages.map((img) => (
+          <div class="shrink-0">
+            <img
+              src={img}
+              class="h-75 md:h-112.5 w-auto object-cover rounded-xl shadow-sm pointer-events-none border border-slate-100 opacity-90 hover:opacity-100 transition-opacity duration-500"
+              alt="Slider Content"
+            />
+          </div>
         ))
       }
     </div>
-
-    <!-- LEFT -->
-    <button
-      class="prev absolute left-3 top-1/2 -translate-y-1/2 text-6xl font-bold z-20 text-black hover:text-clinic-teal transition"
-    >
-      ‹
-    </button>
-
-    <!-- RIGHT -->
-    <button
-      class="next absolute right-3 top-1/2 -translate-y-1/2 text-6xl font-bold z-20 text-black hover:text-clinic-teal transition"
-    >
-      ›
-    </button>
   </div>
 </div>
 
+<style>
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .slider-track {
+    scroll-behavior: auto;
+    /* This ensures the movement doesn't jitter at slow speeds */
+    perspective: 1000px;
+    backface-visibility: hidden;
+  }
+</style>
+
 <script>
-  document.querySelectorAll('.image-slider').forEach((slider) => {
-    const track = slider.querySelector('.track');
-    const slides = track.children.length;
-    const nextBtn = slider.querySelector('.next');
-    const prevBtn = slider.querySelector('.prev');
+  const containers = document.querySelectorAll('.image-slider-container');
 
-    const autoplayEnabled = slider.getAttribute('data-autoplay') === 'true';
-    const intervalTime = Number(slider.getAttribute('data-interval')) || 3000;
+  containers.forEach((container) => {
+    const track = container.querySelector('.slider-track');
+    const speed = parseFloat(container.getAttribute('data-speed')) || 0.7;
 
-    let index = 0;
-    let autoSlide;
-    let startX = 0;
-    let isDragging = false;
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+    let animationId;
+    // Using a high-precision float for sub-pixel scrolling
+    let currentX = 0;
 
-    // smooth animation
-    track.style.transition = 'transform 0.6s cubic-bezier(0.22, 1, 0.36, 1)';
+    const animate = () => {
+      if (!isDown) {
+        currentX += speed;
+        track.scrollLeft = currentX;
 
-    const update = () => {
-      track.style.transform = `translateX(-${index * 100}%)`;
-    };
+        const sectionWidth = track.scrollWidth / 3;
 
-    const next = () => {
-      index = (index + 1) % slides;
-      update();
-    };
-
-    const prev = () => {
-      index = (index - 1 + slides) % slides;
-      update();
-    };
-
-    const startAutoplay = () => {
-      if (!autoplayEnabled || slides <= 1) return;
-      stopAutoplay();
-      autoSlide = setInterval(next, intervalTime);
-    };
-
-    const stopAutoplay = () => {
-      if (autoSlide) clearInterval(autoSlide);
-    };
-
-    // Buttons
-    nextBtn.addEventListener('click', () => {
-      next();
-      startAutoplay();
-    });
-
-    prevBtn.addEventListener('click', () => {
-      prev();
-      startAutoplay();
-    });
-
-    // Pause on hover
-    slider.addEventListener('mouseenter', stopAutoplay);
-    slider.addEventListener('mouseleave', startAutoplay);
-
-    // Swipe (mobile)
-    track.addEventListener('touchstart', (e) => {
-      startX = e.touches[0].clientX;
-      isDragging = true;
-      stopAutoplay();
-    });
-
-    track.addEventListener('touchend', (e) => {
-      if (!isDragging) return;
-
-      const endX = e.changedTouches[0].clientX;
-      const diff = startX - endX;
-
-      if (Math.abs(diff) > 50) {
-        diff > 0 ? next() : prev();
+        // Loop logic
+        if (track.scrollLeft >= sectionWidth * 2) {
+          currentX -= sectionWidth;
+          track.scrollLeft = currentX;
+        } else if (track.scrollLeft <= 0) {
+          currentX += sectionWidth;
+          track.scrollLeft = currentX;
+        }
       }
+      animationId = requestAnimationFrame(animate);
+    };
 
-      isDragging = false;
-      startAutoplay();
-    });
+    const getX = (e) => e.pageX || e.touches[0].pageX;
 
-    update();
-    startAutoplay();
+    const startDragging = (e) => {
+      isDown = true;
+      startX = getX(e) - track.offsetLeft;
+      scrollLeft = track.scrollLeft;
+    };
+
+    const stopDragging = () => {
+      isDown = false;
+      // Sync our internal tracker with the manual position
+      currentX = track.scrollLeft;
+    };
+
+    const move = (e) => {
+      if (!isDown) return;
+      const x = getX(e) - track.offsetLeft;
+      const walk = (x - startX) * 1.5;
+      track.scrollLeft = scrollLeft - walk;
+    };
+
+    track.addEventListener('mousedown', startDragging);
+    track.addEventListener('mouseleave', stopDragging);
+    track.addEventListener('mouseup', stopDragging);
+    track.addEventListener('mousemove', move);
+
+    track.addEventListener('touchstart', startDragging, { passive: true });
+    track.addEventListener('touchend', stopDragging);
+    track.addEventListener('touchmove', move, { passive: false });
+
+    // Set initial position and tracker
+    const init = () => {
+      const startPos = track.scrollWidth / 3;
+      track.scrollLeft = startPos;
+      currentX = startPos;
+      animate();
+    };
+
+    // Wait for images to load to get correct scrollWidth
+    if (document.readyState === 'complete') {
+      init();
+    } else {
+      window.addEventListener('load', init);
+    }
   });
 </script>
