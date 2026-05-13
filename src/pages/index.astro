@@ -99,30 +99,50 @@ import { womenCampImages } from '../data/women-camp-images';
       </h2>
 
       <div class="grid md:grid-cols-5 gap-5">
-        <div class="bg-white p-5 rounded-xl shadow-sm hover:shadow transition">
+        <!-- 1. Doctors -->
+        <a
+          href="/doctors"
+          class="bg-white p-5 rounded-xl shadow-sm hover:shadow transition block hover:scale-105 duration-200"
+        >
           <div class="text-2xl mb-2">👨‍⚕️</div>
-          <p data-t="home_why_1">Experienced Doctors</p>
-        </div>
+          <p class="font-medium text-clinic-slate" data-t="home_why_1">Experienced Doctors</p>
+        </a>
 
-        <div class="bg-white p-5 rounded-xl shadow-sm hover:shadow transition">
+        <!-- 2. Facilities -->
+        <a
+          href="/facilities"
+          class="bg-white p-5 rounded-xl shadow-sm hover:shadow transition block hover:scale-105 duration-200"
+        >
           <div class="text-2xl mb-2">🏥</div>
-          <p data-t="home_why_2">Modern Facilities</p>
-        </div>
+          <p class="font-medium text-clinic-slate" data-t="home_why_2">Modern Facilities</p>
+        </a>
 
-        <div class="bg-white p-5 rounded-xl shadow-sm hover:shadow transition">
+        <!-- 3. Services -->
+        <a
+          href="/services"
+          class="bg-white p-5 rounded-xl shadow-sm hover:shadow transition block hover:scale-105 duration-200"
+        >
           <div class="text-2xl mb-2">💯</div>
-          <p data-t="home_why_3">Affordable Care</p>
-        </div>
+          <p class="font-medium text-clinic-slate" data-t="home_why_3">Our Services</p>
+        </a>
 
-        <div class="bg-white p-5 rounded-xl shadow-sm hover:shadow transition">
+        <!-- 4. Packages -->
+        <a
+          href="/packages"
+          class="bg-white p-5 rounded-xl shadow-sm hover:shadow transition block hover:scale-105 duration-200"
+        >
           <div class="text-2xl mb-2">⚡</div>
-          <p data-t="home_why_4">Fast Service</p>
-        </div>
+          <p class="font-medium text-clinic-slate" data-t="home_why_4">Health Packages</p>
+        </a>
 
-        <div class="bg-white p-5 rounded-xl shadow-sm hover:shadow transition">
+        <!-- 5. Community Engagement (Scroll Link) -->
+        <a
+          href="#community-engagement"
+          class="bg-white p-5 rounded-xl shadow-sm hover:shadow transition block hover:scale-105 duration-200"
+        >
           <div class="text-2xl mb-2">🤝</div>
-          <p data-t="home_why_5">Patient Friendly</p>
-        </div>
+          <p class="font-medium text-clinic-slate" data-t="home_why_5">Community Engagement</p>
+        </a>
       </div>
     </div>
   </section>
@@ -172,6 +192,7 @@ import { womenCampImages } from '../data/women-camp-images';
     </div>
   </section>
 
+  <div id="community-engagement"></div>
   <section class="py-10 bg-white">
     <div class="container mx-auto px-6 max-w-6xl text-center">
       <h2 data-t="community_blood_title" class="text-3xl font-bold text-clinic-slate"></h2>
