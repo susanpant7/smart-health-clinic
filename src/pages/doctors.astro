@@ -14,15 +14,7 @@ import doctors from '../data/doctors.json';
       <h1 data-t="doctors_hero_title" class="text-4xl md:text-6xl font-black mb-6"></h1>
 
       <p data-t="doctors_hero_desc" class="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto"></p>
-    </div>
-  </section>
-
-  <!-- INTRO -->
-  <section class="py-16 bg-white">
-    <div class="container mx-auto px-6 max-w-4xl text-center">
-      <h2 data-t="doctors_intro_title" class="text-3xl font-bold text-clinic-slate mb-4"></h2>
-
-      <p data-t="doctors_intro_desc" class="text-gray-600 leading-relaxed"></p>
+      <p data-t="doctors_intro_desc" class="text-slate-300 leading-relaxed"></p>
     </div>
   </section>
 
@@ -32,12 +24,6 @@ import doctors from '../data/doctors.json';
   <!-- MEET THE TEAM -->
   <section class="py-20 bg-slate-50">
     <div class="container mx-auto px-6 max-w-6xl">
-      <h2
-        data-t="doctors_team_title"
-        class="text-3xl font-bold text-center text-clinic-slate mb-10"
-      >
-      </h2>
-
       <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
         {
           doctors.map((doc) => (
@@ -104,7 +90,7 @@ import doctors from '../data/doctors.json';
   </section>
 
   <!-- CTA -->
-  <section class="py-20 bg-clinic-slate text-white text-center">
+  <section class="pt-10 bg-clinic-slate text-white text-center">
     <div class="container mx-auto px-6 max-w-3xl">
       <h2 data-t="doctors_cta_title" class="text-3xl font-bold mb-4"></h2>
 
