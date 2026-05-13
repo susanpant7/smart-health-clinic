@@ -10,7 +10,9 @@ const currentPath = pathname === '/' ? '/' : pathname.replace(/\/$/, '');
 // Helper function to define classes
 const linkClass = (path: string) =>
   `transition-colors hover:text-clinic-teal ${
-    currentPath === path ? 'text-clinic-teal font-bold' : 'text-clinic-slate'
+    currentPath === path
+      ? 'text-clinic-teal font-bold underline underline-offset-4'
+      : 'text-clinic-slate'
   }`;
 
 const mobileLinkClass = (path: string) =>
