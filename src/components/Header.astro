@@ -96,8 +96,8 @@ const mobileLinkClass = (path: string) =>
     });
 
     // for doctors page descriptions
-    document.querySelectorAll('[data-i18n]').forEach((el) => {
-      const value = el.getAttribute(`data-value-${lang}`);
+    document.querySelectorAll('[data-value-en]').forEach((el) => {
+      const value = el.dataset[`value${lang.charAt(0).toUpperCase() + lang.slice(1)}`];
       if (value) el.textContent = value;
     });
 

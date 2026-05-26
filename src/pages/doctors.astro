@@ -24,7 +24,7 @@ import doctors from '../data/doctors.json';
   <!-- MEET THE TEAM -->
   <section class="py-20 bg-slate-50">
     <div class="container mx-auto px-6 max-w-6xl">
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-6 text-primary font-bold">
         {
           doctors.map((doc) => (
             <div class="group relative text-center bg-white rounded-xl p-4 shadow-sm hover:shadow-lg transition duration-300">
@@ -38,31 +38,29 @@ import doctors from '../data/doctors.json';
                 />
               </div>
 
-              <h3
+              <h1
                 class="mt-3 font-semibold"
                 data-value-en={doc.name.en}
                 data-value-ne={doc.name.ne}
               >
                 {doc.name.en}
-              </h3>
+              </h1>
 
-              <p
-                class="text-sm text-gray-500"
-                data-value-en={doc.specialty.en}
-                data-value-ne={doc.specialty.ne}
-              >
+              <p class="text-sm" data-value-en={doc.specialty.en} data-value-ne={doc.specialty.ne}>
                 {doc.specialty.en}
               </p>
 
               <p
-                class="text-xs text-gray-500 mt-1"
+                class="text-xs mt-1"
                 data-value-en={doc.schedule.en}
                 data-value-ne={doc.schedule.ne}
               >
                 {doc.schedule.en}
               </p>
 
-              <p class="text-xs text-gray-600 mt-1">{doc.qualification}</p>
+              <p class="text-xs  mt-1">{doc.qualification}</p>
+
+              <p class="text-xs  mt-1">{doc.nmc}</p>
 
               <div
                 class="pointer-events-none absolute left-1/2 -translate-x-1/2 bottom-full mb-3 w-64 
@@ -70,7 +68,7 @@ import doctors from '../data/doctors.json';
                   group-hover:opacity-100 group-hover:translate-y-0
                   transition duration-300 z-20"
               >
-                <div class="bg-white text-gray-700 text-xs p-4 rounded-xl shadow-xl border relative">
+                <div class="bg-white text-xs p-4 rounded-xl shadow-xl border relative">
                   <p
                     data-value-en={doc.description.en}
                     data-value-ne={doc.description.ne}
