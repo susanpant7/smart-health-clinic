@@ -15,7 +15,7 @@ export const translations = {
 
     // HOME - HERO
     home_hero_title_1: 'Trusted',
-    home_hero_title_2: 'Specialist Healthcare',
+    home_hero_title_2: 'Advanced Healthcare',
     home_hero_title_3: 'in Pepsicola.',
     home_hero_desc:
       'Delivering trusted, affordable, and modern healthcare services for you and your family.',

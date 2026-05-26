@@ -1,7 +1,7 @@
 [
   {
     "id": "pawan-kumar",
-    "image": "Dr-Pawan-Kumar.png",
+    "image": "Doctors Photos_डा. पवन कुमार.png",
     "name": { "en": "Dr. Pawan Kumar", "ne": "डा. पवन कुमार" },
     "specialty": { "en": "Senior Neurologist", "ne": "वरिष्ठ नशा रोग विशेषज्ञ" },
     "qualification": "MBBS, MS (Neuro)",
@@ -19,7 +19,7 @@
   },
   {
     "id": "prajay-shikhar-shrestha",
-    "image": "Dr-Prajay-Shikhar-Shrestha.png",
+    "image": "Doctors Photos_डा. प्रजय शिखर श्रेष्ठ.png",
     "name": { "en": "Dr. Prajay Shikhar Shrestha", "ne": "डा. प्रजय शिखर श्रेष्ठ" },
     "specialty": {
       "en": "Endocrinologist (Diabetes, Thyroid & Hormonal Disorders)",
@@ -33,14 +33,14 @@
       "ne": "म MD (Endocrine) विशेषज्ञता प्राप्त एन्डोक्राइनोलोजिस्ट हुँ, र मधुमेह, थाइराइड, हर्मोन असन्तुलन तथा मेटाबोलिक रोगहरूको विशेषज्ञ उपचारमा समर्पित छु। मेरो लक्ष्य आधुनिक जाँच, व्यक्तिगत उपचार योजना तथा बिरामीमैत्री सेवामार्फत दीर्घकालीन स्वास्थ्य सुधार गर्नु हो।"
     },
     "schedule": {
-      "en": "First, second and third Friday (5:00 PM to 6:00 PM)",
-      "ne": "पहिलो, दोस्रो र तेस्रो शुक्रबार (साँझ ५:०० बजेदेखि ६:०० बजेसम्म)"
+      "en": "First, second and third Friday (5:00 PM to 7:00 PM)",
+      "ne": "पहिलो, दोस्रो र तेस्रो शुक्रबार (साँझ ५:०० बजेदेखि ७:०० बजेसम्म)"
     },
     "language": { "en": "Nepali / English", "ne": "नेपाली / अंग्रेजी" }
   },
   {
     "id": "Dr-Shahid-Murtuja",
-    "image": "Dr-Shahid-Murtuja.png",
+    "image": "Doctors Photos_डा. शाहिद मुर्तुजा.png",
     "name": { "en": "Dr. Shahid Murtuza", "ne": "डा. शाहिद मुर्तुजा" },
     "specialty": { "en": "Senior Cardiologist", "ne": "वरिष्ठ मुटु रोग विशेषज्ञ" },
     "qualification": "MBBS, MD (Cardio), Fellowship in cardiology (3years, Lincoln University, Malaysia) Ex Sr. Cardiologist, RAMA Heart Center, Delhi NCR, India",
@@ -58,7 +58,7 @@
   },
   {
     "id": "Dr-Subash-Chandra-Sah",
-    "image": "Dr-Subash-Chandra-Sah.png",
+    "image": "Doctors Photos_डा. सुबास चन्द्र साह.png",
     "name": { "en": "Dr. Subash Chandra Sah", "ne": "डा. सुबास चन्द्र साह" },
     "specialty": { "en": "Senior Pediatric Cardiologist", "ne": "वरिष्ठ बाल मुटु रोग विशेषज्ञ" },
     "qualification": "MBBS, MD (Pediatric Cardiology, Pediatric cardiac critical care, fetal ECO cardiography)",
@@ -76,7 +76,7 @@
   },
   {
     "id": "Dr-Prakash-Jyoti-Pokhrel",
-    "image": "Dr-Prakash-Jyoti-Pokhrel.png",
+    "image": "Doctors Photos_डा. प्रकाश ज्योति पोख्रेल.png",
     "name": { "en": "Dr. Prakash Jyoti Pokhrel", "ne": "डा. प्रकाश ज्योति पोख्रेल" },
     "specialty": {
       "en": "Senior Pediatrician and Neonatologist",
@@ -97,7 +97,7 @@
   },
   {
     "id": "Dr-Jhuma-Silwal",
-    "image": "Dr-Jhuma-Silwal.png",
+    "image": "Doctors Photos_डा. झुमा सिलवाल.png",
     "name": { "en": "Dr. Jhuma Silwal", "ne": "डा. झुमा सिलवाल" },
     "specialty": {
       "en": "Senior Obstetrician and Gynecologist",
@@ -118,7 +118,7 @@
   },
   {
     "id": "Dr-Deepak-Sharma",
-    "image": "Dr-Deepak-Sharma.png",
+    "image": "Doctors Photos_डा. दीपक शर्मा.png",
     "name": { "en": "Dr. Deepak Sharma", "ne": "डा. दीपक शर्मा" },
     "specialty": { "en": "Senior Nephrologist", "ne": "वरिष्ठ मृगौला रोग विशेषज्ञ" },
     "qualification": "MD (Internal Medicine), DM (Nephrology)",
@@ -136,7 +136,7 @@
   },
   {
     "id": "Dr-Chunumila-Maharjan",
-    "image": "Dr-Chunumila-Maharjan.png",
+    "image": "Doctors Photos_डा. चुनुमिला महर्जन.png",
     "name": { "en": "Dr. Chunumila Maharjan", "ne": "डा. चुनुमिला महर्जन" },
     "specialty": {
       "en": "Senior Obstetrician, Gynecologist and Infertility Specialist",
@@ -157,7 +157,7 @@
   },
   {
     "id": "Dr-Roshan-Bhagat",
-    "image": "Dr-Roshan-Bhagat.png",
+    "image": "Doctors Photos_डा. रोशन भगत.png",
     "name": { "en": "Dr. Roshan Bhagat", "ne": "डा. रोशन भगत" },
     "specialty": {
       "en": "Orthopedic and Nerve Specialist",
@@ -178,7 +178,7 @@
   },
   {
     "id": "Dr-Rabin-Pandit",
-    "image": "Dr-Rabin-Pandit.png",
+    "image": "Doctors Photos_डा. रबिन पण्डित.png",
     "name": { "en": "Dr. Rabin Pandit", "ne": "डा. रबिन पण्डित" },
     "specialty": {
       "en": "General and Laparoscopic Surgeon",
@@ -199,7 +199,7 @@
   },
   {
     "id": "Dr-Riju-Vaidhya",
-    "image": "Dr-Riju-Vaidhya.png",
+    "image": "Doctors Photos_डा. रिजु वैद्य.png",
     "name": { "en": "Dr. Riju Vaidhya", "ne": "डा. रिजु वैद्य" },
     "specialty": { "en": "Family Physician", "ne": "फ्यामिली फिजिसियन" },
     "qualification": "MBBS, MD (GP & EM)",
@@ -217,7 +217,7 @@
   },
   {
     "id": "Dr-Rohit-Gupta",
-    "image": "Dr-Rohit-Gupta.png",
+    "image": "Doctors Photos_डा. रोहित गुप्ता.png",
     "name": { "en": "Dr. Rohit Gupta", "ne": "डा. रोहित गुप्ता" },
     "specialty": { "en": "Consultant Radiologist", "ne": "कन्सल्टेण्ट रेडियोलोजिस्ट" },
     "qualification": "MBBS, MD (AIIMS)",
@@ -235,7 +235,7 @@
   },
   {
     "id": "Dr-Sandeep-Koirala",
-    "image": "Dr-Sandeep-Koirala.png",
+    "image": "Doctors Photos_डा. सन्दीप कोइराला.png",
     "name": { "en": "Dr. Sandeep Koirala", "ne": "डा. सन्दीप कोइराला" },
     "specialty": { "en": "Consultant Radiologist", "ne": "कन्सल्टेण्ट रेडियोलोजिस्ट" },
     "qualification": "MBBS, MD (Radiology)",
@@ -252,26 +252,8 @@
     "language": { "en": "Nepali / English", "ne": "नेपाली / अंग्रेजी" }
   },
   {
-    "id": "Dr-Ashtha-Karki",
-    "image": "Dr-Ashtha-Karki.png",
-    "name": { "en": "Dr. Aastha Karki", "ne": "डा. आस्था कार्की" },
-    "specialty": { "en": "General Physician", "ne": "जनरल फिजिसियन" },
-    "qualification": "MBBS (General Physician)",
-    "nmc": "NMC-31472",
-    "experience": { "en": "3 years", "ne": "३ वर्ष" },
-    "description": {
-      "en": "I am Dr. Aastha Karki, a general physician with MBBS expertise. I am dedicated to overall health and long-term health improvement through expert examination of various general and chronic health problems, disease prevention, effective treatment, and patient-friendly care.",
-      "ne": "म डा. आस्था कार्की, MBBS विशेषज्ञता प्राप्त जनरल फिजिसियन हुँ। विभिन्न सामान्य तथा दीर्घकालीन स्वास्थ्य समस्याहरूको विशेषज्ञ जाँच, रोग रोकथाम, प्रभावकारी उपचार तथा बिरामीमैत्री सेवामार्फत समग्र स्वास्थ्य र दीर्घकालीन स्वास्थ्य सुधारमा समर्पित छु।"
-    },
-    "schedule": {
-      "en": "Every Day (9:00 AM to 4:00 PM)",
-      "ne": "हरेक दिन (बिहान ९:०० बजेदेखि ४:०० बजेसम्म)"
-    },
-    "language": { "en": "Nepali / English", "ne": "नेपाली / अंग्रेजी" }
-  },
-  {
     "id": "Dr-Amrita-Shrestha",
-    "image": "Dr-Amrita-Shrestha.png",
+    "image": "Doctors Photos_डा. अमृता श्रेष्ठ.png",
     "name": { "en": "Dr. Amrita Shrestha", "ne": "डा. अमृता श्रेष्ठ" },
     "specialty": {
       "en": "Dermatologist, Venereologist and Aesthetic Specialist",
@@ -292,7 +274,7 @@
   },
   {
     "id": "Dr-Bishwas-Pokhrel",
-    "image": "Dr-Biswas-Pokhrel.png",
+    "image": "Doctors Photos_डा. विश्वास पोख्रेल.png",
     "name": { "en": "Dr. Bishwas Pokhrel", "ne": "डा. विश्वास पोख्रेल" },
     "specialty": {
       "en": "Orthopedic and Nerve Specialist",
@@ -313,7 +295,7 @@
   },
   {
     "id": "Dr-Deep-Sijapati",
-    "image": "Dr-Deep-Sijapati.png",
+    "image": "Doctors Photos_डा. दीप सिजापति.png",
     "name": { "en": "Dr. Deep Sijapati", "ne": "डा. दीप सिजापति" },
     "specialty": { "en": "ENT Specialist", "ne": "नाक, कान तथा घाँटी रोग विशेषज्ञ" },
     "qualification": "MBBS, MS (ENT)",
@@ -331,7 +313,7 @@
   },
   {
     "id": "Dr-Dikshya-Neupane",
-    "image": "Dr-Diksha-Neupane.png",
+    "image": "Doctors Photos_डा. दिक्षा न्यौपाने.png",
     "name": { "en": "Dr. Dikshya Neupane", "ne": "डा. दिक्षा न्यौपाने" },
     "specialty": { "en": "Psychiatrist", "ne": "मनोरोग विशेषज्ञ" },
     "qualification": "MBBS, MD (AIIMS) Consultant Psychiatric",
@@ -349,7 +331,7 @@
   },
   {
     "id": "Dr-Prerana-Sah",
-    "image": "Dr-Prerana-Sah.png",
+    "image": "Doctors Photos_डा. प्रेरणा साह.png",
     "name": { "en": "Dr. Prerana Sah", "ne": "डा. प्रेरणा साह" },
     "specialty": { "en": "Dental Specialist", "ne": "दन्त रोग विशेषज्ञ" },
     "qualification": "BDS (Dental)",
@@ -367,7 +349,7 @@
   },
   {
     "id": "Dr-Diwash-Baskota",
-    "image": "Dr-Diwash-Baskota.png",
+    "image": "Doctors Photos_डा. दिवश बास्कोटा.png",
     "name": { "en": "Dr. Diwash Baskota", "ne": "डा. दिवश बास्कोटा" },
     "specialty": { "en": "Family Physician", "ne": "फ्यामिली फिजिसियन" },
     "qualification": "MBBS, MD (GP & EM)",
@@ -385,7 +367,7 @@
   },
   {
     "id": "Dr-Elina-Mulmi",
-    "image": "Dr-Elina-Mulmi.png",
+    "image": "Doctors Photos_डा. एलिना मुल्मी.png",
     "name": { "en": "Dr. Elina Mulmi", "ne": "डा. एलिना मुल्मी" },
     "specialty": { "en": "Consultant Physician", "ne": "कन्सल्टेण्ट फिजिसियन" },
     "qualification": "MBBS, MD (Internal Medicine)",
@@ -403,7 +385,7 @@
   },
   {
     "id": "Dr-Manisha-Koirala",
-    "image": "Dr-Manisha-Koirala.png",
+    "image": "Doctors Photos_डा. मनिषा कोइराला.png",
     "name": { "en": "Dr. Manisha Koirala", "ne": "डा. मनिषा कोइराला" },
     "specialty": {
       "en": "Dermatologist, Venereologist and Aesthetic Specialist",
