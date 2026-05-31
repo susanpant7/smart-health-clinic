@@ -18,13 +18,13 @@ const { showDetails = false } = Astro.props;
 
     <h2 
       data-t="doctors_title"
-      class="text-center text-3xl font-bold text-clinic-slate mb-4">
+      class="text-center text-3xl font-bold text-primary-color mb-4">
     </h2>
 
     {showDetails && (
       <p 
         data-t="doctors_desc"
-        class="mb-8 text-gray-600 max-w-2xl mx-auto text-center">
+        class="mb-8  max-w-2xl mx-auto text-center">
       </p>
     )}
 
@@ -49,7 +49,7 @@ const { showDetails = false } = Astro.props;
                 <div class="p-4 text-center">
                   <h3 class="font-bold text-lg">{doc.name}</h3>
                   {doc.specialty && (
-                    <p class="text-gray-500 text-sm">{doc.specialty}</p>
+                    <p class=" text-sm">{doc.specialty}</p>
                   )}
                 </div>
               )}

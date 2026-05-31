@@ -1,15 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;700;800&display=swap');
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
-    /* Pantone 3275C - bright teal */
-    --color-clinic-teal: #00a98f;
+  --font-sans: 'Mukta', sans-serif;
 
-    /* Pantone 3025C - dark slate/blue */
-    --color-clinic-slate: #21576a;
-
-    --font-sans: 'Mukta', sans-serif;
-
-    --color-primary: #812990;
-    --color-secondary: #1eb0a1;
+  /* Pantone 3025C - dark slate/blue */
+  --color-primary-color: #21576a;
+  /* Pantone 3275C - bright teal */
+  --color-secondary-color: #00a98f;
 }

@@ -9,14 +9,14 @@ const currentPath = pathname === '/' ? '/' : pathname.replace(/\/$/, '');
 
 // Helper function to define classes
 const linkClass = (path: string) =>
-  `transition-colors hover:text-clinic-teal ${
+  `transition-colors hover:text-secondary-color ${
     currentPath === path
-      ? 'text-clinic-teal font-bold underline underline-offset-4'
-      : 'text-clinic-slate'
+      ? 'text-secondary-color font-bold underline underline-offset-4'
+      : 'text-primary-color'
   }`;
 
 const mobileLinkClass = (path: string) =>
-  `transition-colors ${currentPath === path ? 'text-clinic-teal font-bold' : 'text-clinic-slate'}`;
+  `transition-colors ${currentPath === path ? 'text-secondary-color font-bold' : 'text-primary-color'}`;
 ---
 
 <header class="sticky top-0 z-50 w-full border-b border-gray-100 bg-white/90 backdrop-blur-md">
@@ -41,7 +41,7 @@ const mobileLinkClass = (path: string) =>
     <div class="flex items-center gap-2 md:gap-4">
       <button
         id="lang-switcher"
-        class="flex items-center gap-1.5 rounded-lg border border-gray-200 px-3 py-2 text-sm font-bold text-clinic-slate hover:bg-slate-50"
+        class="flex items-center gap-1.5 rounded-lg border border-gray-200 px-3 py-2 text-sm font-bold text-primary-color hover:bg-slate-50"
       >
         🌐 <span id="lang-label">नेपाली</span>
       </button>
@@ -50,12 +50,12 @@ const mobileLinkClass = (path: string) =>
         href="https://vendor.smarthealthnepal.com/"
         target="_blank"
         rel="noopener noreferrer"
-        class="hidden sm:block rounded-full bg-clinic-teal px-6 py-2.5 text-sm font-bold text-white shadow-md hover:bg-clinic-slate transition-all"
+        class="hidden sm:block rounded-full bg-secondary-color px-6 py-2.5 text-sm font-bold text-white shadow-md hover:bg-primary-color transition-all"
       >
         <span data-t="cta_book">Book Now</span>
       </a>
 
-      <button id="menu-btn" class="lg:hidden p-2 text-clinic-slate">
+      <button id="menu-btn" class="lg:hidden p-2 text-primary-color">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
           ><path d="M4 6h16M4 12h16m-7 6h7" stroke-width="2" stroke-linecap="round"></path></svg
         >
@@ -78,7 +78,7 @@ const mobileLinkClass = (path: string) =>
       <a
         href="https://vendor.smarthealthnepal.com/"
         target="_blank"
-        class="bg-clinic-teal text-white text-center py-3 rounded-xl mt-2 font-bold"
+        class="bg-secondary-color text-white text-center py-3 rounded-xl mt-2 font-bold"
         data-t="cta_book">Book Now</a
       >
     </nav>

@@ -390,6 +390,7 @@ export const translations = {
     footer_links_title: 'Quick Links',
     footer_services_title: 'Our Services',
     footer_contact_title: 'Contact Details',
+    footer_slogan: 'Your Health, Our Responsibility',
   },
 
   ne: {
@@ -407,6 +408,9 @@ export const translations = {
     cta_book: 'टिकट काट्नुहोस्',
 
     // HOME - HERO
+    home_hero_title_1: 'विश्वसनीय',
+    home_hero_title_2: 'आधुनिक स्वास्थ्य सेवा',
+    home_hero_title_3: 'पेप्सीकोलामा।',
     home_hero_title: 'तपाईंको स्वास्थ्य, हाम्रो प्राथमिकता।',
     home_hero_desc:
       'तपाईं र तपाईंको परिवारको लागि भरपर्दो, सुलभ र आधुनिक स्वास्थ्य सेवाहरू प्रदान गर्दै।',
@@ -774,5 +778,6 @@ export const translations = {
     footer_links_title: 'क्विक लिङ्कहरू',
     footer_services_title: 'हाम्रा सेवाहरू',
     footer_contact_title: 'हामीलाई भेट्नुहोस्',
+    footer_slogan: 'तपाईंको स्वास्थ्य, हाम्रो जिम्मेवारी',
   },
 };

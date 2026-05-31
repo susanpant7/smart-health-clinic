@@ -9,7 +9,7 @@ import doctors from '../data/doctors.json';
   description="Meet experienced doctors at Smart Health Clinic in Kathmandu."
 >
   <!-- HERO -->
-  <section class="bg-clinic-slate text-white py-20">
+  <section class="bg-primary-color text-white py-20">
     <div class="container mx-auto px-6 max-w-5xl text-center">
       <h1 data-t="doctors_hero_title" class="text-4xl md:text-6xl font-black mb-6"></h1>
 
@@ -22,7 +22,7 @@ import doctors from '../data/doctors.json';
   <DoctorSlider showDetails={true} />
 
   <!-- MEET THE TEAM -->
-  <section class="py-20 bg-slate-50">
+  <section class="py-20 bg-slate-50 text-primary-color">
     <div class="container mx-auto px-6 max-w-6xl">
       <div class="grid grid-cols-2 md:grid-cols-3 gap-6 text-primary font-bold">
         {
@@ -50,17 +50,17 @@ import doctors from '../data/doctors.json';
                 {doc.specialty.en}
               </p>
 
-              <p
+              {/* <p
                 class="text-xs mt-1"
                 data-value-en={doc.schedule.en}
                 data-value-ne={doc.schedule.ne}
               >
                 {doc.schedule.en}
-              </p>
+              </p> */}
 
               <p class="text-xs  mt-1">{doc.qualification}</p>
 
-              <p class="text-xs  mt-1">{doc.nmc}</p>
+              <p class="text-xs  mt-1 text-secondary-color">{doc.nmc}</p>
 
               <div
                 class="pointer-events-none absolute left-1/2 -translate-x-1/2 bottom-full mb-3 w-64 
@@ -88,7 +88,7 @@ import doctors from '../data/doctors.json';
   </section>
 
   <!-- CTA -->
-  <section class="pt-10 bg-clinic-slate text-white text-center">
+  <section class="pt-10 bg-primary-color text-white text-center">
     <div class="container mx-auto px-6 max-w-3xl">
       <h2 data-t="doctors_cta_title" class="text-3xl font-bold mb-4"></h2>
 
@@ -98,7 +98,7 @@ import doctors from '../data/doctors.json';
         href="https://vendor.smarthealthnepal.com/"
         target="_blank"
         rel="noopener noreferrer"
-        class="bg-clinic-teal px-7 py-3 rounded-full font-bold inline-block"
+        class="bg-secondary-color px-7 py-3 rounded-full font-bold inline-block"
       >
         <span data-t="doctors_cta_btn"></span>
       </a>
