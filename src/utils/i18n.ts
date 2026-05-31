@@ -14,6 +14,7 @@ export const translations = {
     cta_book: 'Book Now',
 
     // HOME - HERO
+    home_address: 'Kandaghari, Pepsicola, Kathmandu',
     home_hero_title_1: 'Trusted',
     home_hero_title_2: 'Advanced Healthcare',
     home_hero_title_3: 'in Pepsicola.',
@@ -23,6 +24,7 @@ export const translations = {
     home_hero_tag2: 'Experienced Doctors',
     home_hero_tag3: 'Compassionate Service',
     home_hero_location: 'Pepsicola, Kathmandu',
+    home_hero_follow: 'हामीसँग जोडिनुहोस्',
 
     // HOME - WHY
     home_why_title: 'Why Choose Smart Health Clinic?',
@@ -391,6 +393,9 @@ export const translations = {
     footer_services_title: 'Our Services',
     footer_contact_title: 'Contact Details',
     footer_slogan: 'Your Health, Our Responsibility',
+    footer_copyright: '© 2024 Smart Health Clinic',
+    footer_privacy:'Privacy Policy',
+    footer_terms:'Terms of Service',
   },
 
   ne: {
@@ -408,6 +413,7 @@ export const translations = {
     cta_book: 'टिकट काट्नुहोस्',
 
     // HOME - HERO
+    home_address: 'काँडाघारी, पेप्सीकोला, काठमाडौं',
     home_hero_title_1: 'विश्वसनीय',
     home_hero_title_2: 'आधुनिक स्वास्थ्य सेवा',
     home_hero_title_3: 'पेप्सीकोलामा।',
@@ -418,6 +424,7 @@ export const translations = {
     home_hero_tag2: 'उन्नत स्वास्थ्य परीक्षण',
     home_hero_tag3: 'समुदायमा आधारित सेवा',
     home_hero_location: 'पेप्सीकोला, काठमाडौँ',
+    home_hero_follow: 'Follow Us',
 
     // HOME - WHY
     home_why_title: 'स्मार्ट हेल्थ क्लिनिक किन रोज्ने?',
@@ -779,5 +786,8 @@ export const translations = {
     footer_services_title: 'हाम्रा सेवाहरू',
     footer_contact_title: 'हामीलाई भेट्नुहोस्',
     footer_slogan: 'तपाईंको स्वास्थ्य, हाम्रो जिम्मेवारी',
+    footer_copyright: '© २०२४ स्मार्ट हेल्थ क्लिनिक',
+    footer_privacy: 'गोपनीयता नीति',
+    footer_terms: 'सेवा सर्तहरू',
   },
 };
