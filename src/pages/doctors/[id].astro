@@ -1,0 +1,194 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import doctorsData from '../../data/doctors.json';
+
+export async function getStaticPaths() {
+  return doctorsData.map((doctor) => ({
+    params: { id: doctor.id },
+    props: { doctor },
+  }));
+}
+
+const { id } = Astro.params;
+const { doctor } = Astro.props;
+
+const selectedDoctor = doctorsData.find((doc) => doc.id === id);
+const absoluteImagePath = `/images/doctors/dp/${selectedDoctor?.image}`;
+
+const pageTitle = `${doctor.name.en} | Smart Health Clinic`;
+const pageDescription = doctor.description.en;
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <!-- PROFILE HERO BANNER -->
+  <section class="bg-primary-color text-white py-12 md:py-16">
+    <div class="container mx-auto px-6 max-w-5xl">
+      <a
+        href="/doctors"
+        class="inline-flex items-center gap-2 text-slate-300 hover:text-white mb-6 transition-colors group text-sm font-medium"
+      >
+        <span class="transform group-hover:-translate-x-1 transition-transform">&larr;</span>
+        <span data-t="doctor_id_back_to_doctors">Back to All Doctors</span>
+      </a>
+
+      <div
+        class="flex flex-col md:flex-row gap-8 items-center md:items-start text-center md:text-left"
+      >
+        <!-- Optimized Image Fitting Wrapper -->
+        <div class="relative w-44 h-44 md:w-52 md:h-52 shrink-0 flex items-center justify-center">
+          <img
+            src={absoluteImagePath}
+            alt={doctor.name.en}
+            class="max-w-full max-h-full object-contain block"
+            onerror="this.onerror=null; this.src='/fallback-doctor.png';"
+          />
+        </div>
+
+        <div class="flex-1 flex flex-col justify-center h-full pt-2">
+          <div class="space-y-1">
+            <h1
+              class="text-3xl md:text-5xl font-black tracking-tight"
+              data-value-en={doctor.name.en}
+              data-value-ne={doctor.name.ne}
+            >
+              {doctor.name.en}
+            </h1>
+          </div>
+
+          <div class="mt-4 inline-flex flex-col items-center md:items-start">
+            <span
+              class="bg-white/10 text-white px-4 py-1.5 rounded-full text-sm font-bold tracking-wide uppercase border border-white/10"
+              data-value-en={doctor.specialty.en}
+              data-value-ne={doctor.specialty.ne}
+            >
+              {doctor.specialty.en}
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN PROFILE SYSTEM BODY -->
+  <section class="py-12 bg-slate-50 min-h-100">
+    <div class="container mx-auto px-6 max-w-5xl">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2 space-y-8">
+          <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+            <h3
+              class="text-sm font-bold uppercase tracking-wider text-primary-color mb-4"
+              data-t="doctor_id_professional_overview"
+            >
+              Professional Overview
+            </h3>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-6 text-sm">
+              <div class="space-y-1">
+                <span
+                  class="text-secondary-color font-medium block"
+                  data-t="doctor_id_medical_qualifications"
+                >
+                  Medical Qualifications
+                </span>
+                <span class="font-bold text-slate-800 text-base">{doctor.qualification}</span>
+              </div>
+              <div class="space-y-1">
+                <span class="text-secondary-color font-medium block" data-t="doctor_id_nmc_number"
+                  >NMC Number</span
+                >
+                <span
+                  class="font-mono font-bold text-primary-color text-base bg-slate-100 px-2 py-0.5 rounded border border-slate-200 inline-block"
+                >
+                  {doctor.nmc}
+                </span>
+              </div>
+              <div class="space-y-1 border-t border-slate-100 pt-3 sm:border-0 sm:pt-0">
+                <span
+                  class="text-secondary-color font-medium block"
+                  data-t="doctor_id_clinical_experience"
+                >
+                  Clinical Experience
+                </span>
+                <span
+                  class="font-bold text-slate-800 text-base"
+                  data-value-en={doctor.experience.en}
+                  data-value-ne={doctor.experience.ne}
+                >
+                  {doctor.experience.en}
+                </span>
+              </div>
+              <div class="space-y-1 border-t border-slate-100 pt-3 sm:border-0 sm:pt-0">
+                <span
+                  class="text-secondary-color font-medium block"
+                  data-t="doctor_id_consultation_languages"
+                >
+                  Consultation Languages
+                </span>
+                <span
+                  class="font-bold text-slate-800 text-base"
+                  data-value-en={doctor.language.en}
+                  data-value-ne={doctor.language.ne}
+                >
+                  {doctor.language.en}
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-100 space-y-4">
+            <h3
+              class="text-sm font-bold uppercase tracking-wider text-primary-color"
+              data-t="doctor_id_about_doctor"
+            >
+              About the Doctor
+            </h3>
+
+            <div class="text-slate-700 leading-relaxed text-base md:text-lg">
+              <p data-value-en={doctor.description.en} data-value-ne={doctor.description.ne}>
+                {doctor.description.en}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-1">
+          <div
+            class="bg-white rounded-2xl shadow-md border border-slate-100 overflow-hidden sticky top-6"
+          >
+            <div class="bg-primary-color px-6 py-4 text-white">
+              <h3 class="font-bold text-lg tracking-wide" data-t="doctor_id_opd_schedule">
+                OPD Schedule
+              </h3>
+            </div>
+
+            <div class="p-6 space-y-4">
+              <div class="space-y-1">
+                <span
+                  class="text-xs uppercase font-bold text-secondary-color block tracking-wider"
+                  data-t="doctor_id_available_hours"
+                >
+                  Available Hours
+                </span>
+                <p
+                  class="text-slate-800 font-semibold leading-snug"
+                  data-value-en={doctor.schedule.en}
+                  data-value-ne={doctor.schedule.ne}
+                >
+                  {doctor.schedule.en}
+                </p>
+              </div>
+
+              <div class="pt-4">
+                <button
+                  class="w-full bg-primary-color hover:bg-opacity-95 text-white font-bold py-3 px-4 rounded-xl shadow-sm transition-all text-center text-sm tracking-wide uppercase"
+                >
+                  <span data-t="doctor_id_book_appointment">Book Appointment</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

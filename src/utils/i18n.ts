@@ -24,7 +24,7 @@ export const translations = {
     home_hero_tag2: 'Experienced Doctors',
     home_hero_tag3: 'Compassionate Service',
     home_hero_location: 'Pepsicola, Kathmandu',
-    home_hero_follow: 'हामीसँग जोडिनुहोस्',
+    home_hero_follow: 'Follow Us',
 
     // HOME - WHY
     home_why_title: 'Why Choose Smart Health Clinic?',
@@ -394,8 +394,19 @@ export const translations = {
     footer_contact_title: 'Contact Details',
     footer_slogan: 'Your Health, Our Responsibility',
     footer_copyright: '© 2024 Smart Health Clinic',
-    footer_privacy:'Privacy Policy',
-    footer_terms:'Terms of Service',
+    footer_privacy: 'Privacy Policy',
+    footer_terms: 'Terms of Service',
+
+    doctor_id_back_to_doctors: 'Back to All Doctors',
+    doctor_id_professional_overview: 'Professional Overview',
+    doctor_id_medical_qualifications: 'Medical Qualifications',
+    doctor_id_nmc_number: 'NMC Number',
+    doctor_id_clinical_experience: 'Clinical Experience',
+    doctor_id_consultation_languages: 'Consultation Languages',
+    doctor_id_about_doctor: 'About the Doctor',
+    doctor_id_opd_schedule: 'OPD Schedule',
+    doctor_id_available_hours: 'Available Hours',
+    doctor_id_book_appointment: 'Book Appointment',
   },
 
   ne: {
@@ -424,7 +435,7 @@ export const translations = {
     home_hero_tag2: 'उन्नत स्वास्थ्य परीक्षण',
     home_hero_tag3: 'समुदायमा आधारित सेवा',
     home_hero_location: 'पेप्सीकोला, काठमाडौँ',
-    home_hero_follow: 'Follow Us',
+    home_hero_follow: 'हामीसँग जोडिनुहोस्',
 
     // HOME - WHY
     home_why_title: 'स्मार्ट हेल्थ क्लिनिक किन रोज्ने?',
@@ -789,5 +800,16 @@ export const translations = {
     footer_copyright: '© २०२४ स्मार्ट हेल्थ क्लिनिक',
     footer_privacy: 'गोपनीयता नीति',
     footer_terms: 'सेवा सर्तहरू',
+
+    doctor_id_back_to_doctors: 'सबै डाक्टरहरूमा फिर्ता',
+    doctor_id_professional_overview: 'व्यावसायिक सिंहावलोकन',
+    doctor_id_medical_qualifications: 'शैक्षिक योग्यता',
+    doctor_id_nmc_number: 'एन.एम.सी नम्बर',
+    doctor_id_clinical_experience: 'क्लिनिकल अनुभव',
+    doctor_id_consultation_languages: 'परामर्श भाषाहरू',
+    doctor_id_about_doctor: 'डाक्टरको बारेमा',
+    doctor_id_opd_schedule: 'ओ.पि.डि तालिका',
+    doctor_id_available_hours: 'उपलब्ध समय',
+    doctor_id_book_appointment: 'अपोइन्टमेन्ट बुक गर्नुहोस्',
   },
 };
