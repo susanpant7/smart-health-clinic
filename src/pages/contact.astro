@@ -19,40 +19,53 @@ import Layout from '../layouts/Layout.astro';
   <section class="py-10 bg-white text-primary-color">
     <div class="container mx-auto px-6 max-w-6xl grid lg:grid-cols-2 gap-10 items-start">
       <!-- LEFT INFO -->
-      <div>
-        <h2 data-t="contact_section_title" class="text-3xl font-bold mb-6"></h2>
+      <div class="space-y-10">
+        <!-- Contact Section -->
+        <div>
+          <h2 data-t="contact_section_title" class="text-3xl font-bold mb-6"></h2>
 
-        <div class="space-y-4 text-lg">
-          <p>
-            <span data-t="contact_location_label"></span>:
-            <span data-t="contact_location"></span>
-          </p>
+          <div class="space-y-4 text-lg">
+            <p>
+              <span data-t="contact_location_label"></span>:
+              <span data-t="contact_location"></span>
+            </p>
 
-          <p>
-            <span data-t="contact_phone_label"></span>:
-            <span data-t="contact_phone"></span>
-          </p>
+            <p>
+              <span data-t="contact_phone_label"></span>:
+              <span data-t="contact_phone"></span>
+            </p>
 
-          <p data-t="contact_time"></p>
+            <p data-t="contact_time"></p>
+
+            <p class="flex items-center gap-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5 text-primary"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.8"
+                  d="M3 8l9 6 9-6M5 6h14a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2z"
+                ></path>
+              </svg>
+
+              <span data-t="contact_email_label"></span>:
+              <a href="mailto:info@smarthealthnepal.com" class="text-primary hover:underline">
+                info@smarthealthnepal.com
+              </a>
+            </p>
+          </div>
         </div>
 
-        <!-- ACTION BUTTONS -->
-        <div class="mt-8 flex flex-col sm:flex-row gap-4">
-          <a
-            href="tel:015923005"
-            data-t="contact_call_btn"
-            class="bg-secondary-color text-white px-6 py-3 rounded-full font-bold text-center hover:opacity-90 transition"
-          ></a>
-
-          <a
-            href="https://wa.me/9779812345678?text=Hello%20Smart%20Health%20Clinic,%20I%20would%20like%20to%20book%20an%20appointment."
-            target="_blank"
-            data-t="contact_whatsapp_btn"
-            class="bg-green-500 text-white px-6 py-3 rounded-full font-bold text-center hover:opacity-90 transition"
-          ></a>
+        <!-- Info Section -->
+        <div>
+          <h2 data-t="contact_section_title_2" class="text-3xl font-bold mb-4"></h2>
+          <p data-t="contact_section_info_2" class="text-lg"></p>
         </div>
-
-        <p data-t="contact_hint" class="text-sm mt-4"></p>
       </div>
 
       <!-- RIGHT MAP -->

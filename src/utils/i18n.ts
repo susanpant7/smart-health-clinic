@@ -357,9 +357,13 @@ export const translations = {
 
     contact_hero_title: 'Contact Us',
     contact_hero_desc:
-      'We are always here to help you with appointments, emergencies, and medical inquiries.',
+      "We're here to help with appointments, general health queries, and any questions about our services",
 
     contact_section_title: 'Smart Health Clinic',
+
+    contact_section_title_2: 'Trusted by Thousands in Kathmandu',
+
+    contact_section_info_2: '18,000+ consultations · Experienced doctors · Affordable care ',
 
     contact_location_label: 'Location',
     contact_location: 'Sun City Road, Pepsicola',
@@ -384,7 +388,8 @@ export const translations = {
     contact_whatsapp_card_desc: 'Get instant responses from our team',
 
     contact_cta_title: 'Need Medical Help?',
-    contact_cta_desc: 'Contact us anytime for appointments, emergencies, or consultation.',
+    contact_cta_desc:
+      'Booking takes less than 2 minutes. Choose your preferred date, time, and reason for visit, and our team will confirm shortly.',
     contact_cta_btn: 'Book Appointment',
 
     footer_about:
@@ -761,9 +766,14 @@ export const translations = {
     package_cta_btn: 'अपोइन्टमेन्ट बुक गर्नुहोस्',
 
     contact_hero_title: 'सम्पर्क गर्नुहोस्',
-    contact_hero_desc: 'अपोइन्टमेन्ट, आपतकालीन सेवा र स्वास्थ्य परामर्शका लागि हामी सधैं यहाँ छौं।',
+    contact_hero_desc:
+      'हामी यहाँ अपोइन्टमेन्ट, सामान्य स्वास्थ्य सम्बन्धी जिज्ञासाहरू, र हाम्रो सेवाहरू सम्बन्धी कुनै पनि प्रश्नहरूमा सहयोग गर्न तयार छौँ।',
 
     contact_section_title: 'स्मार्ट हेल्थ क्लिनिक',
+
+    contact_section_title_2: 'काठमाडौँमा हजारौँद्वारा विश्वास गरिएको',
+
+    contact_section_info_2: '१८,०००+ परामर्श · अनुभवी डाक्टरहरू · किफायती उपचार',
 
     contact_location_label: 'ठेगाना',
     contact_location: 'सन सिटी रोड, पेप्सीकोला',
@@ -788,7 +798,9 @@ export const translations = {
     contact_whatsapp_card_desc: 'तत्काल जवाफ पाउनुहोस्',
 
     contact_cta_title: 'चिकित्सकीय सहयोग चाहिन्छ?',
-    contact_cta_desc: 'अपोइन्टमेन्ट, आपतकालीन वा परामर्शका लागि हामीलाई सम्पर्क गर्नुहोस्।',
+    contact_cta_desc:
+      'बुकिङ गर्न २ मिनेटभन्दा कम समय लाग्छ। आफ्नो रोजाइअनुसार मिति, समय, र भेटको कारण छान्नुहोस्, र हाम्रो टोलीले छिट्टै पुष्टि गर्नेछ।',
+
     contact_cta_btn: 'अपोइन्टमेन्ट बुक गर्नुहोस्',
 
     footer_about:
