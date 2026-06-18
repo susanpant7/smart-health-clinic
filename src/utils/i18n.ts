@@ -54,7 +54,7 @@ export const translations = {
     home_info_phone: '01-5923005 / 5924005',
 
     home_info_time_label: 'Timing',
-    home_info_time: 'Morning & Evening (5 AM - 8 PM)',
+    home_info_time: 'Morning & Evening (6:30 AM - 8:30 PM)',
 
     // HOME - IMPACT CARDS
     home_impact_card1: 'Health Camps',
@@ -470,7 +470,7 @@ export const translations = {
     home_info_phone: '०१-५९२३००५ / ५९२४००५',
 
     home_info_time_label: 'समय',
-    home_info_time: 'बिहान र साँझ (५ बजे - ८ बजे)',
+    home_info_time: 'बिहान र साँझ (५:३० बजे - ८:३० बजे)',
 
     // HOME - IMPACT CARDS
     home_impact_card1: 'स्वास्थ्य शिविर',
