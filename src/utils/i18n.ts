@@ -470,7 +470,7 @@ export const translations = {
     home_info_phone: '०१-५९२३००५ / ५९२४००५',
 
     home_info_time_label: 'समय',
-    home_info_time: 'बिहान र साँझ (५:३० बजे - ८:३० बजे)',
+    home_info_time: 'बिहान र साँझ (६:३० बजे - ८:३० बजे)',
 
     // HOME - IMPACT CARDS
     home_impact_card1: 'स्वास्थ्य शिविर',
