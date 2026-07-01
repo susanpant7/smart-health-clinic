@@ -1,4 +1,6 @@
 ---
+import ImageSlider from '../components/ImageSlider.astro';
+import { packageImages } from '../data/packages-images';
 import Layout from '../layouts/Layout.astro';
 ---
 
@@ -32,6 +34,14 @@ import Layout from '../layouts/Layout.astro';
 
         <p data-t="package_section_subtitle" class="mt-2"></p>
       </div>
+
+      <section class="text-primary-color">
+        <div class="container mx-auto px-6 max-w-6xl text-center">
+          <div class="mt-10">
+            <ImageSlider images={packageImages} />
+          </div>
+        </div>
+      </section>
 
       <div class="grid gap-8 md:grid-cols-2">
         <!-- PACKAGE 1 -->
