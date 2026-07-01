@@ -1,7 +1,8 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import DoctorSlider from '../../components/DoctorSlider.astro';
 import doctors from '../../data/doctors.json';
+import ImageSlider from '../../components/ImageSlider.astro';
+import { doctorImages } from '../../data/doctors-images';
 ---
 
 <Layout
@@ -18,12 +19,17 @@ import doctors from '../../data/doctors.json';
     </div>
   </section>
 
-  <!-- SLIDER -->
-  <DoctorSlider showDetails={true} />
+
 
   <!-- MEET THE TEAM -->
   <section class="py-20 bg-slate-50 text-primary-color">
     <div class="container mx-auto px-6 max-w-6xl">
+
+      <!-- SLIDER -->
+      <div class="m-10">
+        <ImageSlider images={doctorImages} />
+      </div>
+
       <div class="grid grid-cols-2 md:grid-cols-3 gap-6 text-primary font-bold">
         {
           doctors.map((doc) => (

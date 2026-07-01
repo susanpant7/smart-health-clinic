@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { service_images } from '../data/services-images';
+import { service_images, serviceImages } from '../data/services-images';
+import ImageSlider from '../components/ImageSlider.astro';
 ---
 
 <Layout
@@ -75,6 +76,11 @@ import { service_images } from '../data/services-images';
         <h2 data-t="services_adv_title" class="text-3xl font-bold"></h2>
         <p data-t="services_adv_subtitle" class='mt-2"'></p>
       </div>
+
+      <div class="mt-10">
+        <ImageSlider images={serviceImages} />
+      </div>
+
 
       <div class="grid gap-8 md:grid-cols-2">
         <div class="bg-white rounded-2xl p-6 shadow-sm border">

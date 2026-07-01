@@ -1,0 +1,16 @@
+export const doctorImages = [
+  '/images/doctors/doctor1.jpg',
+  '/images/doctors/doctor2.jpg',
+  '/images/doctors/doctor3.jpg',
+  '/images/doctors/doctor4.jpg',
+  '/images/doctors/doctor5.jpg',
+  '/images/doctors/doctor6.jpg',
+  '/images/doctors/doctor7.jpg',
+  '/images/doctors/doctor8.jpg',
+  '/images/doctors/doctor9.jpg',
+  '/images/doctors/doctor10.jpg',
+  '/images/doctors/doctor11.jpg',
+  '/images/doctors/doctor12.jpg',
+  '/images/doctors/doctor13.jpg',
+  '/images/doctors/doctor14.jpg',
+];
