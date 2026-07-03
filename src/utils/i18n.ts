@@ -51,7 +51,7 @@ export const translations = {
     home_info_location: 'Sun City Road, Pepsicola, Kathmandu',
 
     home_info_phone_label: 'Phone',
-    home_info_phone: '01-5923005 / 5924005',
+    home_info_phone: '01-5923005 / 5924005 / 9704543137',
 
     home_info_time_label: 'Timing',
     home_info_time: 'Morning & Evening (6:30 AM - 8:30 PM)',
@@ -369,7 +369,7 @@ export const translations = {
     contact_location: 'Sun City Road, Pepsicola',
 
     contact_phone_label: 'Phone',
-    contact_phone: '01-5923005 / 5924005',
+    contact_phone: '01-5923005 / 5924005 / 9704543137',
 
     contact_time_label: 'Timing',
     contact_time: '🕒 Open Daily',
@@ -467,7 +467,7 @@ export const translations = {
     home_info_location: 'सन सिटी रोड, पेप्सीकोला, काठमाडौँ',
 
     home_info_phone_label: 'फोन',
-    home_info_phone: '०१-५९२३००५ / ५९२४००५',
+    home_info_phone: '०१-५९२३००५ / ५९२४००५ / ९७०४५४३१३७',
 
     home_info_time_label: 'समय',
     home_info_time: 'बिहान र साँझ (६:३० बजे - ८:३० बजे)',
@@ -779,7 +779,7 @@ export const translations = {
     contact_location: 'सन सिटी रोड, पेप्सीकोला',
 
     contact_phone_label: 'फोन',
-    contact_phone: '०१-५९२३००५ / ५९२४००५',
+    contact_phone: '०१-५९२३००५ / ५९२४००५ / ९७०४५४३१३७',
 
     contact_time_label: 'समय',
     contact_time: '🕒 दैनिक खुला',
